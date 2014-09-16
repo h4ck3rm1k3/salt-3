@@ -1,0 +1,15 @@
+include:
+  - resolv
+  - {{ grains['os_family'] }}
+  - salt
+  - check_mk
+  - sysconfig.time
+  - ntp
+  - ssh
+  - bash
+  - logrotate
+  - basic_pkgs
+  - python
+  - ocs
+  - swatch
+  - virt

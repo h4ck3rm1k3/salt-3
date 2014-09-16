@@ -1,0 +1,5 @@
+[omd]
+name= omd
+baseurl=http://ftp01/repo/omd/$basearch
+enabled=1
+gpgcheck=0

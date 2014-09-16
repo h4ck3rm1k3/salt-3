@@ -1,0 +1,14 @@
+{% if grains['ipv4'][0].startswith('10.24.') %}
+{% set domain = 'hdtr.com' %}
+{% set search = 'hdtr.com' %}
+{% set ns_list = ['192.168.12.30', '192.168.12.31'] %}
+{% else %}
+{% set domain = 'hdtr.com' %}
+{% set search = 'hdtr.com' %}
+{% set ns_list = ['10.24.4.85', '10.24.4.95'] %}
+{% endif %}
+domain {{ domain }}
+search {{ domain }}
+{% for ns in ns_list %}
+nameserver {{ ns }}
+{% endfor %}

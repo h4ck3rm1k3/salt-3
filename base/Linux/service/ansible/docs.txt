@@ -1,0 +1,13 @@
+http://mageedu.blog.51cto.com/4265610/1412028
+http://docs.cloudstack.apache.org/en/master/ansible.html
+http://www.shencan.net/index.php/2013/09/02/ansible-%E5%88%9D%E4%BD%93%E9%AA%8C/
+docs:
+  - http://yanshisan.blog.51cto.com/7879234/1384405
+  - http://www.the5fire.com/ansible-guide-cn.html
+  - http://blog.csdn.net/smallfish1983/article/details/37813911
+  - http://www.ibm.com/developerworks/cn/linux/1407_liheng_ansible/
+  - http://heylinux.com/archives/2674.html
+  - http://my.oschina.net/songmingming/blog/267028
+  - windows_support
+    - http://docs.ansible.com/intro_windows.html
+    - https://servercheck.in/blog/running-ansible-within-windows

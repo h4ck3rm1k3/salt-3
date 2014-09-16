@@ -1,0 +1,1 @@
+http://devopslogic.blogspot.com/2013/09/building-custom-saltstack-modules.html

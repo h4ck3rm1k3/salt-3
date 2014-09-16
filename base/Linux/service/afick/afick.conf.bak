@@ -1,0 +1,139 @@
+# afick config sample file
+
+############
+# directives
+############
+# database : name with full path to database file
+database:=/var/lib/afick/afick
+# history : name with full path to history file
+history := /var/lib/afick/history
+# archive : name with full path to directory for archived results
+archive := /var/lib/afick/archive
+# report_url : where to send the result : stdout/stderr/null
+report_url := stdout
+# verbose : (obsolete) boolean value
+verbose := no
+# debug : set a level of debugging messages, from 0 (none) to 3 (full)
+debug := 0
+# warn_dead_symlinks : boolean : if set, warn about dead symlinks
+warn_dead_symlinks := no
+# report_full_newdel : boolean : if set, report all changes, if not set, report only a summary on top directories
+report_full_newdel := yes
+# warn_missing_file  : boolean : is set, warn about selected files (in this config), which do not exists
+warn_missing_file := yes
+# running_files : boolean : if set, warn about files changed during a program run
+running_files := yes
+# timing : boolean : if set, print timing statistics about the job
+timing := yes
+# ignore_case : boolean : if set, ignore case on file name
+ignore_case := no
+
+# exclude_suffix : list of suffixes to ignore
+# text files
+exclude_suffix := log LOG html htm HTM txt TXT xml
+# help files
+exclude_suffix := hlp pod chm
+# old files
+exclude_suffix := tmp old bak
+# fonts
+exclude_suffix := fon ttf TTF
+# images
+exclude_suffix := bmp BMP jpg JPG gif png ico
+# audio
+exclude_suffix := wav WAV mp3 avi
+
+########
+# macros
+########
+# used by cron job (afick.cron)
+# define the mail adress to send cron job result
+@@define MAILTO root
+# truncate the result sended by mail to the number of lines (avoid too long mails)
+@@define LINES 1000
+# VERBOSE = 1 to have one mail by run, =0 to have a mail only if changes are detected
+@@define VERBOSE 0
+# define the nice value (priority of the job)
+@@define NICE 15
+# = 1 to allow cron job, = 0 to suppress cron job
+@@define BATCH 1
+
+######################################
+# list the file or directories to scan
+######################################
+# syntaxe : 
+# file action
+#     to have action on file (see below
+# ! file
+#     to remove file from scan
+# file with blank character have to be quoted
+
+# action : a list of item to check
+# md5 : md5 checksum
+# d : device
+# i : inode
+# p : permissions
+# n : number of links
+# u : user
+# g : group
+# s : size
+# b : number of blocks
+# m : mtime
+# c : ctime
+# a : atime
+
+#R:      p+d+i+n+u+g+s+m+c+md5
+#L:      p+d+i+n+u+g
+
+# action alias may be configured with 
+# your_alias = another_alias|item[+item][-item]
+# all is a pre-defined alias for all items except "a"
+
+# alias :
+#########
+DIR=p+i+n+u+g
+ETC = p+d+i+u+g+s+md5
+Logs = p+n+u+g
+MyRule = p+d+i+n+u+g+s+b+md5+m
+
+# files to scan
+##############
+
+=/  DIR
+ 
+/bin	MyRule
+
+/boot	MyRule
+!/boot/map
+!/boot/System.map
+
+/etc	ETC
+/etc/mtab ETC - i
+/etc/adjtime ETC - md5
+/etc/aliases.db ETC - md5
+/etc/mail/statistics ETC - md5
+!/etc/cups/certs/0
+!/etc/map
+!/etc/samba/secrets.tdb
+!/etc/webmin/sysstats/modules/
+
+/lib	MyRule
+/lib/modules MyRule -m
+
+/root MyRule
+!/root/.viminfo
+!/root/.bash_history
+!/root/.mc
+!/root/tmp
+
+/sbin	MyRule
+
+/usr/bin	MyRule
+/usr/sbin	MyRule
+/usr/lib	MyRule
+/usr/local/bin	MyRule
+/usr/local/sbin	MyRule
+/usr/local/lib	MyRule
+
+/var/ftp MyRule
+/var/log Logs
+/var/www MyRule

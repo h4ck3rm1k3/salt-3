@@ -1,0 +1,19 @@
+{% set map = {
+    'Debian': {
+        'client': 'openssh-clients',
+        'server': 'openssh-server',
+        'service': 'ssh',
+        'sshd_conf': '/etc/ssh/sshd_config',
+        'ssh_conf': '/etc/ssh/ssh_config',
+    },
+    'RedHat': {
+        'client': 'openssh-clients',
+        'server': 'openssh-server',
+        'service': 'sshd',
+
+        'sshd_conf': '/etc/ssh/sshd_config',
+        'ssh_conf': '/etc/ssh/ssh_config',
+    },
+} %}
+
+{% set ssh = map.get(grains.os_family) %}
