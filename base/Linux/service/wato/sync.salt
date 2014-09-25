@@ -1,0 +1,8 @@
+host_file:
+  file.managed
+    - name: /etc/wato/host.mk
+    - source: salt://cloud/salt/minions
+rules:
+  file.managed
+    - name: /etc/wato/rules.mk
+    - source: salt://cloud/salt/rules.jinja

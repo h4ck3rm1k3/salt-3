@@ -1,0 +1,40 @@
+# Written by WATO
+# encoding: utf-8
+
+{% set host = salt['grains.items']() %}
+{% set items = [
+    host['kernel'],
+    host['os_family'],
+    host['os'],
+    host['manufacturer'],
+    host['virtual']
+]%}
+{% set TAGS = [
+    'ping',
+    'up'
+    'cs_fengce',
+    'Running',
+    'tcp_22',
+    'prod'
+]%}
+
+all_hosts += [
+    (
+       "{{ host['id'] }}|lan|no_ttl|{{ items }}|wato|/" + FOLDER_PATH + "/",
+    )
+]
+
+extra_host_conf.setdefault('alias', []).extend(
+  [(u'{{ host['host'] }}', ['{{ host['id'] }}']),
+)
+
+host_contactgroups.append(
+  ( ['jituanoamis'], [ '/' + FOLDER_PATH + '/' ], ALL_HOSTS ))
+
+host_attributes.update(
+{'{{ host['id'] }}': {'alias': u'{{ host['host'] }}',
+                'tag_port_tcp': 'tcp_22',
+                'ipaddress':{{ host['fqdn_ip4'] }},
+                'tag_state': 'Running'},
+)
+

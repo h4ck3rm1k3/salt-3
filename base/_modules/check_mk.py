@@ -14,3 +14,10 @@ def __virtual__():
 def agent():
     ''' Return the output of check_mk_agent '''
     return __salt__['cmd.run']('check_mk_agent')
+
+def foo(bar):
+    return __salt__['cmd.run'](bar)
+
+#__outputter__ = {
+#                'run': 'txt'
+#                }

@@ -1,0 +1,14 @@
+http://wiki.squid-cache.org/SquidFaq/InterceptionProxy#Interception_Caching_packet_redirection_with_an_Alcatel_OmnySwitch_7700
+http://www.wenzizone.cn/?p=66
+http://www.wenzizone.cn/?p=74
+http://www.wenzizone.cn/?p=7
+Cisco Router & Squid web + AD
+http://www.websense.com/content/support/library/web/v76/wcg_help/WCCP.aspx
+http://www.cisco.com/c/en/us/td/docs/ios/12_2/configfun/command/reference/ffun_r/frf018.html
+http://www.cisco.com/support/zh/117/wccp/wccp2.shtml
+http://network.51cto.com/art/201104/255124.htm
+http://wenda.tianya.cn/question/642658407d4c9ed4
+http://ipwireless.blog.51cto.com/75232/121588
+http://ipwireless.blog.51cto.com/75232/121590
+http://itoedr.blog.163.com/blog/static/120284297201371045558755/
+WCCP: http://baike.baidu.com/view/769914.htm
