@@ -1,40 +1,43 @@
 # Written by WATO
 # encoding: utf-8
-
 {% set host = salt['grains.items']() %}
-{% set items = [
+{% set tags = [
     host['kernel'],
     host['os_family'],
     host['os'],
     host['manufacturer'],
     host['virtual']
 ]%}
-{% set TAGS = [
-    'ping',
-    'up'
-    'cs_fengce',
-    'Running',
-    'tcp_22',
-    'prod'
-]%}
-
+{% set ext_tags = ['no_ttl', 'tcp_22'] %}
+{% set tags = tags + ext_tags %}
+{% set tags = '|'.join(tags) %}
 all_hosts += [
     (
-       "{{ host['id'] }}|lan|no_ttl|{{ items }}|wato|/" + FOLDER_PATH + "/",
+       "{{ host['id'] }}|{{ tags }}|wato|/" + FOLDER_PATH + "/",
     )
 ]
 
 extra_host_conf.setdefault('alias', []).extend(
-  [(u'{{ host['host'] }}', ['{{ host['id'] }}']),
+  [
+    (u'{{ host['host'] }}', ['{{ host['id'] }}'])
+  ],
 )
 
 host_contactgroups.append(
-  ( ['jituanoamis'], [ '/' + FOLDER_PATH + '/' ], ALL_HOSTS ))
-
-host_attributes.update(
-{'{{ host['id'] }}': {'alias': u'{{ host['host'] }}',
-                'tag_port_tcp': 'tcp_22',
-                'ipaddress':{{ host['fqdn_ip4'] }},
-                'tag_state': 'Running'},
+  ( ['omdadmin'], [ '/' + FOLDER_PATH + '/' ], ALL_HOSTS )
 )
 
+host_attributes.update(
+{'{{ host['id'] }}': {
+    'alias': u'{{ host['host'] }}',
+    'ipaddress': u'{{ host['fqdn_ip4'][0] }}'
+)
+
+{% if host['kernel'] =='Linux' %}
+host_attributes.update(
+    {'{{ host['id'] }}': {
+        'tag_port_tcp': 'tcp_22',
+        'tag_state': 'Running'
+    }
+)
+{% endif %}

@@ -12,3 +12,6 @@ vncserver:
     - reload: True
     - require:
       - cmd: vncpassword
+  cmd.run:
+    - name: sed -i '/initdefault/s/3/5/' /etc/inittab
+    - stateful: True
