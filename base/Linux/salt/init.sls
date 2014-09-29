@@ -5,21 +5,27 @@ salt:
   host.present:
     - ip: 192.168.12.7
 
-salt-minion-daemon:
-  pkg.installed:
-    - names:
-      - salt-minion
-      - python-jinja2
+python-jinja2:
+  pkg.installed
+
+salt-minion-conf:
+  file:
+    - managed
+    - name: /etc/salt/minion
+    - source: salt://salt/minion
+    - require:
+      - pkg: salt-minion
+
+start_salt-minion:
   service:
     - name: salt-minion
     - running
     - enable: True
     - reload: True
-    - watch:
-      - file: /etc/salt/minion
+    - require:
+      - file: mine_conf
 
-minion_conf:
-  file:
-    - managed
-    - name: /etc/salt/minion
-    - source: salt://salt/minion
+mine_conf:
+  file.recurse:
+    - name: /etc/salt/minion.d
+    - source: salt://salt/minion.d

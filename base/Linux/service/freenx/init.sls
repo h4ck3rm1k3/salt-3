@@ -4,7 +4,7 @@ freenx-repo:
     - name: /etc/yum.repos.d/misc.repo
     - source: salt://service/freenx/misc.repo
 
-nomachine-pkg:
+nomachine:
   pkg.installed
 
 teamviewer.i686:

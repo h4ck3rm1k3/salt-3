@@ -9,10 +9,12 @@ salt-minion:
     - installed
     - require:
       - file: salt-repo
-{% endif %}
 
-salt-minion:
+
+{% else %}
+salt-minion-other:
   pkg.installed:
     - pkgs:
       - salt-minion
       - python-msgpack
+{% endif %}

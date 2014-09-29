@@ -5,7 +5,7 @@ vncpassword:
    cmd.script:
      - source: salt://service/vnc/vncpassword.sh
      - require:
-       - sls: vncserver
+       - pkg: tigervnc-server
      - statful: True
 
 xrdp:
