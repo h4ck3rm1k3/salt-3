@@ -1,12 +1,8 @@
-{% if grains['manufacturer'] is defined %}
-idc:
+{% if grains['manufacturer'] == 'Supermicro' %}
+rack:
   grains.present:
-    - value: WKS-B2-F00-L00
+    - value: WKS-B2-Fxx-Lxx
 {% endif %}
-
-#location:
-#  grains.present:
-#    - value: xsm02
 
 #nodegroups:
 #  ops: 'L@wiki,pxe,ntp,syslog,mail01,netflow,squid,ftp01,backup01'
@@ -16,3 +12,7 @@ idc:
 #  xsm: 'L@xsm01,xsm02'
 #  csdb: 'L@csdb-master,csdb-slave'
 #  test: 'L@salt-test'
+
+owner:
+  grains.present:
+    - value: zhanghu
