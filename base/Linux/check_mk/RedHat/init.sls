@@ -24,7 +24,7 @@ iptables_save:
     - name: iptables-save > /etc/iptables/rules
     - stateful: True
     - watch:
-      - cmd: allow_tcp_port
+      - cmd: allow_tcp_port_6556
 
 cmk-repo:
   file.managed:

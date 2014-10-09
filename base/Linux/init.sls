@@ -1,4 +1,5 @@
 include:
+  - hosts
   - resolv
   - {{ grains['os_family'] }}
   - salt

@@ -1,18 +1,6 @@
 include:
    - .{{ grains['os_family'] }}
 
-#open_tcp_port:
-#  iptables.insert:
-#    - position: 1
-#    - table: filter
-#    - chain: INPUT
-#    - jump: ACCEPT
-#    - match: state
-#    - connstate: NEW
-#    - dport: 6556
-#    - proto: tcp
-#    - save: True
-
 xinetd:
   pkg:
     - installed
@@ -25,12 +13,6 @@ builtin_plugins:
     - name: /usr/lib/check_mk_agent/plugins
     - source: salt://check_mk/plugins
     - file_mode: 755
-    - clean: True
-
-cmk-local:
-  file.recurse:
-    - name: /usr/lib/check_mk_agent/local
-    - source: salt://check_mk/local
     - clean: True
 
 custom_plugins:

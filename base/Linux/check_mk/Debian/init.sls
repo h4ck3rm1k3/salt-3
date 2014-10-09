@@ -11,10 +11,19 @@ check_mk-source:
     - name: /etc/apt/sources.list.d/check_mk.list
     - source: salt://check_mk/{{ grains['os_family'] }}/check_mk.list.jinja
     - template: jinja
-  pkg.installed:
-    - name: check-mk-agent
-    - refresh: True
+
+check-mk-agent:
   cmd.run:
-    - name: sed -i '/disable/s/yes/no/' /etc/xinetd.d/check_mk
-    - onlyif: grep -q yes /etc/xinetd.d/check_mk
+    - name: apt-get install check-mk-agent --force-yes -y > /dev/null
     - stateful: True
+    - unless: dpkg -l | grep -q check-mk-agent 
+    - require:
+      - file: /etc/apt/sources.list.d/check_mk.list
+
+xinetd_check_mk:
+  file.managed:
+    - name: /etc/xinetd.d/check_mk
+    - source: salt://check_mk/xinetd_check_mk.jinja
+    - mode: 644
+    - require:
+      - sls: check-mk-agent
