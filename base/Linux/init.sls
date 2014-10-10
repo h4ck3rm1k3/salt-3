@@ -9,8 +9,8 @@ include:
   - ssh
   - bash
   - logrotate
-  - basic_pkgs
   - python
+  - basic_utils
   - ocs
   - swatch
   - virt
