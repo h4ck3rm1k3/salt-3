@@ -12,5 +12,4 @@ include:
   - python
   - basic_utils
   - ocs
-  - swatch
   - virt

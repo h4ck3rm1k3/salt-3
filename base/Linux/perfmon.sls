@@ -1,6 +1,7 @@
 perfmon-utils:
   pkg.installed:
     - names:
+      - nfs-utils
       - iotop
       - dstat
       - hping3

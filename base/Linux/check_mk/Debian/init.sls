@@ -1,11 +1,3 @@
-ftp01:
-  host.present:
-    - ip: 192.168.31.245
-
-squid:
-  host.present:
-    - ip: 192.168.31.246
-
 check_mk-source:
   file.managed:
     - name: /etc/apt/sources.list.d/check_mk.list

@@ -2,8 +2,11 @@ include:
   - .yum
   - .repos
 
-iptstate:
-  pkg.installed
+basic_utils:
+  pkg.installed:
+    - names:
+      - cronie
+      - iptstate
 
 iptables:
   service:

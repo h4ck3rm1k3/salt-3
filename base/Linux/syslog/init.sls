@@ -4,7 +4,25 @@
 #    - unless: grep -q rsyslog.d /etc/rsyslog.conf
 #    - stateful: True
 
-#{% if grains['os'] == 'XenServer' %}
+swatch:
+  pkg:
+    - installed
+
+{% if grains['os'] == 'XenServer' %}
+rsyslog:
+  pkg:
+    - installed
+  file.managed:
+    - name: /etc/rsyslog.conf
+    - source: salt://syslog/rsyslog.conf
+    - template: jinja
+#  service.running:
+#    - enable: True
+#    - reload: True
+#    - require:
+#      - file: /etc/rsyslog.conf
+#    - watch:
+#      - file: /etc/rsyslog.conf
 #sendmail:
 #  file.managed:
 #    - name: /tmp/sendmail.sh
@@ -20,4 +38,4 @@
 #    - require:
 #      - file: sendmail
 #      - pkg: rsyslog
-#{% endif %}
+{% endif %}
