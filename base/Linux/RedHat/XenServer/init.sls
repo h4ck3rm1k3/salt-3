@@ -1,3 +1,6 @@
+include:
+  - .license
+
 virt-what:
   pkg.installed
 

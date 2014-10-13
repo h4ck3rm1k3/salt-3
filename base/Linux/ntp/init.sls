@@ -1,6 +1,27 @@
-include:
-  - .{{ grains['os_family']}}
-
 ntp:
   hosts.present:
-    - ip: 10.24.4.10
+    - ip: 192.168.11.10
+
+{% if grains['os_family'] =='RedHat' %}
+{% set ntp = ntp %}
+{% endif %}
+
+{% if grains['os_family'] =='Debian' %}
+{% set ntp = ntpd %}
+{% endif %}
+
+ntpd:
+  pkg.installed:
+    - name: ntp
+  service.running:
+    - enable: True
+    - reload: True
+    - watch:
+      - file: /etc/ntp.conf
+    - require:
+      - pkg: ntp
+
+ntp_conf:
+  file.managed:
+    - name: /etc/ntp.conf
+    - source: salt://ntp/ntp.conf
