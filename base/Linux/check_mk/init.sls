@@ -1,5 +1,6 @@
 include:
    - .{{ grains['os_family'] }}
+   - .perfmon
 
 xinetd:
   pkg:

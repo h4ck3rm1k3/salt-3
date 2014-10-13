@@ -3,8 +3,14 @@ yum_repos:
     - name: /etc/yum.repos.d
     - source: salt://RedHat/repos/files
 
-{% if grains['osrelease'][0] == '6' %}
+{% if grains['os'] == 'RedHat' %}
 sed -i '/releasever/s/\$releasever/6/' /etc/yum.repos.d/*:
+  cmd.run:
+    - stateful: True
+    - require:
+      - file: yum_repos
+{% elif grains['os'] == 'XenServer' %}
+sed -i '/releasever/s/\$releasever/5/' /etc/yum.repos.d/*:
   cmd.run:
     - stateful: True
     - require:
