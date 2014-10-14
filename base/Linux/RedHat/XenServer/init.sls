@@ -15,6 +15,11 @@ virt-what:
     - source: salt://RedHat/XenServer/set_ubuntu_pv_args.sh
     - mode: 0755
 
+/tmp/xs_patcher:
+  file.managed:
+    - source: salt://RedHat/XenServer/xs_patcher.sh
+    - mode: 0755
+
 save_ubuntu_pv_args:
   cmd.run:
     - name: /root/.set_ubuntu_pv_args.sh
