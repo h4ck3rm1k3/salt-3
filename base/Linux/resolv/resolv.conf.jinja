@@ -1,4 +1,4 @@
-{% if grains['ipv4'][1].startswith('192.168.') or grains['ipv4'][1].startswith('10.24.6') %}
+{% if grains['ipv4'][-1].startswith('192.168.') or grains['ipv4'][1].startswith('10.24.6') %}
 {% set domain = 'hdtr.com' %}
 {% set search = 'hdtr.com' %}
 {% set ns_list = ['192.168.12.30', '192.168.12.31'] %}

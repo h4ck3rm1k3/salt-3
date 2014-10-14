@@ -8,7 +8,7 @@ ocs-agent:
     - name: ocsinventory-agent
     - skip_verify: True
     - require:
-      - file: remi_repo
+      - file: /etc/yum.repos.d/remi.repo
 
 ocs-conf:
   file.managed:
@@ -17,4 +17,4 @@ ocs-conf:
     - template: jinja
     - mode: 0644
     - require:
-      - pkg: ocs-agent
+      - pkg: ocsinventory-agent
