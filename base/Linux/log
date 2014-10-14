@@ -1,0 +1,1169 @@
+xs243:
+----------
+          ID: nagios-plugins
+    Function: pkg.installed
+      Result: True
+     Comment: All specified packages are already installed.
+     Changes:   
+----------
+          ID: check_mk-agent
+    Function: pkg.latest
+      Result: True
+     Comment: All packages are up-to-date (check_mk-agent, check_mk-agent-logwatch, mtr, pynag, xinetd).
+     Changes:   
+----------
+          ID: allow_tcp_port_6556
+    Function: cmd.run
+        Name: iptables -I INPUT 1 -p tcp --dport 6556 -j ACCEPT
+      Result: True
+     Comment: unless execution succeeded
+     Changes:   
+----------
+          ID: iptables_save
+    Function: cmd.wait
+        Name: iptables-save > /etc/iptables/rules
+      Result: True
+     Comment: 
+     Changes:   
+----------
+          ID: cmk-repo
+    Function: file.managed
+        Name: /etc/yum.repos.d/cmk.repo
+      Result: True
+     Comment: File /etc/yum.repos.d/cmk.repo is in the correct state
+     Changes:   
+----------
+          ID: nsca_client
+    Function: pkg.installed
+        Name: nagios-nsca-client
+      Result: True
+     Comment: Package nagios-nsca-client is already installed
+     Changes:   
+----------
+          ID: nsca_client
+    Function: file.managed
+        Name: /etc/nagios/send_nsca.cfg
+      Result: True
+     Comment: File /etc/nagios/send_nsca.cfg is in the correct state
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: ethtool
+      Result: True
+     Comment: Package ethtool is already installed
+     Changes:   
+----------
+          ID: xinetd
+    Function: pkg.installed
+      Result: True
+     Comment: Package xinetd is already installed
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: lrzsz
+      Result: False
+     Comment: The following packages failed to install/update: lrzsz.
+     Changes:   
+----------
+          ID: xinetd
+    Function: service.running
+      Result: True
+     Comment: Enable is not available on this minion, service xinetd is in the desired state
+     Changes:   
+----------
+          ID: builtin_plugins
+    Function: file.recurse
+        Name: /usr/lib/check_mk_agent/plugins
+      Result: True
+     Comment: The directory /usr/lib/check_mk_agent/plugins is in the correct state
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: hping3
+      Result: True
+     Comment: Package hping3 is already installed
+     Changes:   
+----------
+          ID: custom_plugins
+    Function: file.recurse
+        Name: /usr/lib/check_mk_agent/custom
+      Result: True
+     Comment: The directory /usr/lib/check_mk_agent/custom is in the correct state
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: iftop
+      Result: True
+     Comment: Package iftop is already installed
+     Changes:   
+----------
+          ID: mkdir /etc/check_mk
+    Function: cmd.run
+      Result: True
+     Comment: unless execution succeeded
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: lsb-release
+      Result: False
+     Comment: The following package(s) were not found, and no possible matches were found in the package db: lsb-release
+     Changes:   
+----------
+          ID: /etc/check_mk/mrpe.cfg
+    Function: file.managed
+      Result: True
+     Comment: File /etc/check_mk/mrpe.cfg is in the correct state
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: ncdu
+      Result: True
+     Comment: Package ncdu is already installed
+     Changes:   
+----------
+          ID: /etc/check_mk/logwatch.cfg
+    Function: file.managed
+      Result: True
+     Comment: File /etc/check_mk/logwatch.cfg is in the correct state
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: htop
+      Result: True
+     Comment: Package htop is already installed
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: iptraf
+      Result: False
+     Comment: The following packages failed to install/update: iptraf.
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: sysstat
+      Result: True
+     Comment: Package sysstat is already installed
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: agedu
+      Result: True
+     Comment: Package agedu is already installed
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: iotop
+      Result: True
+     Comment: Package iotop is already installed
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: dmidecode
+      Result: True
+     Comment: Package dmidecode is already installed
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: sos
+      Result: True
+     Comment: Package sos is already installed
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: nfs-utils
+      Result: True
+     Comment: Package nfs-utils is already installed
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: pciutils
+      Result: True
+     Comment: Package pciutils is already installed
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: innotop
+      Result: True
+     Comment: Package innotop is already installed
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: tcpdump
+      Result: True
+     Comment: Package tcpdump is already installed
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: dstat
+      Result: True
+     Comment: Package dstat is already installed
+     Changes:   
+
+Summary
+-------------
+Succeeded: 29
+Failed:     3
+-------------
+Total:     32
+xs241:
+----------
+          ID: nagios-plugins
+    Function: pkg.installed
+      Result: True
+     Comment: All specified packages are already installed.
+     Changes:   
+----------
+          ID: check_mk-agent
+    Function: pkg.latest
+      Result: True
+     Comment: The following packages were successfully installed/upgraded: check_mk-agent, check_mk-agent-logwatch, mtr, pynag. The following packages were already up-to-date: xinetd.
+     Changes:   
+              ----------
+              check_mk-agent:
+                  ----------
+                  new:
+                      1.2.5i5p3-1
+                  old:
+                      
+              check_mk-agent-logwatch:
+                  ----------
+                  new:
+                      1.2.5i5p3-1
+                  old:
+                      
+              mtr:
+                  ----------
+                  new:
+                      0.71-3.1
+                  old:
+                      
+              pynag:
+                  ----------
+                  new:
+                      0.8.5-1.el5
+                  old:
+----------
+          ID: allow_tcp_port_6556
+    Function: cmd.run
+        Name: iptables -I INPUT 1 -p tcp --dport 6556 -j ACCEPT
+      Result: True
+     Comment: unless execution succeeded
+     Changes:   
+----------
+          ID: iptables_save
+    Function: cmd.wait
+        Name: iptables-save > /etc/iptables/rules
+      Result: True
+     Comment: 
+     Changes:   
+----------
+          ID: cmk-repo
+    Function: file.managed
+        Name: /etc/yum.repos.d/cmk.repo
+      Result: True
+     Comment: File /etc/yum.repos.d/cmk.repo is in the correct state
+     Changes:   
+----------
+          ID: nsca_client
+    Function: pkg.installed
+        Name: nagios-nsca-client
+      Result: True
+     Comment: Package nagios-nsca-client is already installed
+     Changes:   
+----------
+          ID: nsca_client
+    Function: file.managed
+        Name: /etc/nagios/send_nsca.cfg
+      Result: True
+     Comment: File /etc/nagios/send_nsca.cfg is in the correct state
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: ethtool
+      Result: True
+     Comment: Package ethtool is already installed
+     Changes:   
+----------
+          ID: xinetd
+    Function: pkg.installed
+      Result: True
+     Comment: Package xinetd is already installed
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: lrzsz
+      Result: False
+     Comment: The following packages failed to install/update: lrzsz.
+     Changes:   
+----------
+          ID: xinetd
+    Function: service.running
+      Result: True
+     Comment: Enable is not available on this minion, service xinetd is in the desired state
+     Changes:   
+----------
+          ID: builtin_plugins
+    Function: file.recurse
+        Name: /usr/lib/check_mk_agent/plugins
+      Result: True
+     Comment: Recursively updated /usr/lib/check_mk_agent/plugins
+     Changes:   
+              ----------
+              /usr/lib/check_mk_agent/plugins/mk_logwatch:
+                  ----------
+                  diff:
+                      ---  
+                      +++  
+                      @@ -118,7 +118,7 @@
+                               except:
+                                   if debug:
+                                       raise
+                      -            raise Exception("Invalid regular expression in line '%s'" % pattern)
+                      +            raise Exception("Invalid regular expression in line '%s'" % pattern) 
+                       
+                       # structure of statusfile
+                       # # LOGFILE         OFFSET    INODE
+                      @@ -190,7 +190,7 @@
+                           # Seek to the current end in order to determine file size
+                           current_end = os.lseek(fl, 0, 2) # os.SEEK_END not available in Python 2.4
+                           status[logfile] = current_end, inode
+                      -
+                      +        
+                           # If we have never seen this file before, we just set the
+                           # current pointer to the file end. We do not want to make
+                           # a fuss about ancient log messages...
+                      @@ -199,7 +199,7 @@
+                                   return
+                           	else:
+                       	    offset = 0
+                      -
+                      +   
+                       
+                           # If the inode of the logfile has changed it has appearently
+                           # been started from new (logfile rotation). At least we must
+                      @@ -267,7 +267,7 @@
+                                                   cont_line = next_line(f)
+                                                   if cont_line == None: # end of file
+                                                       break
+                      -                            line = line[:-1] + "\1" + cont_line
+                      +                            line = line[:-1] + "\1" + cont_line 
+                       
+                                           else: # pattern is regex
+                                               while True:
+                      @@ -275,7 +275,7 @@
+                                                   if cont_line == None: # end of file
+                                                       break
+                                                   elif cont_pattern.search(cont_line[:-1]):
+                      -                                line = line[:-1] + "\1" + cont_line
+                      +                                line = line[:-1] + "\1" + cont_line 
+                                                   else:
+                                                       pushed_back_line = cont_line # sorry for stealing this line
+                                                       break
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: hping3
+      Result: True
+     Comment: Package hping3 is already installed
+     Changes:   
+----------
+          ID: custom_plugins
+    Function: file.recurse
+        Name: /usr/lib/check_mk_agent/custom
+      Result: True
+     Comment: The directory /usr/lib/check_mk_agent/custom is in the correct state
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: iftop
+      Result: True
+     Comment: The following packages were installed/updated: iftop.
+     Changes:   
+              ----------
+              iftop:
+                  ----------
+                  new:
+                      1.0-0.7.pre4.el5
+                  old:
+----------
+          ID: mkdir /etc/check_mk
+    Function: cmd.run
+      Result: True
+     Comment: unless execution succeeded
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: lsb-release
+      Result: False
+     Comment: The following package(s) were not found, and no possible matches were found in the package db: lsb-release
+     Changes:   
+----------
+          ID: /etc/check_mk/mrpe.cfg
+    Function: file.managed
+      Result: True
+     Comment: File /etc/check_mk/mrpe.cfg is in the correct state
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: ncdu
+      Result: True
+     Comment: The following packages were installed/updated: ncdu.
+     Changes:   
+              ----------
+              ncdu:
+                  ----------
+                  new:
+                      1.5-1.el5
+                  old:
+----------
+          ID: /etc/check_mk/logwatch.cfg
+    Function: file.managed
+      Result: True
+     Comment: File /etc/check_mk/logwatch.cfg is in the correct state
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: htop
+      Result: True
+     Comment: Package htop is already installed
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: iptraf
+      Result: False
+     Comment: The following packages failed to install/update: iptraf.
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: sysstat
+      Result: True
+     Comment: Package sysstat is already installed
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: agedu
+      Result: True
+     Comment: The following packages were installed/updated: agedu.
+     Changes:   
+              ----------
+              agedu:
+                  ----------
+                  new:
+                      0-2.r9153.el5
+                  old:
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: iotop
+      Result: True
+     Comment: Package iotop is already installed
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: dmidecode
+      Result: True
+     Comment: Package dmidecode is already installed
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: sos
+      Result: True
+     Comment: Package sos is already installed
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: nfs-utils
+      Result: True
+     Comment: Package nfs-utils is already installed
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: pciutils
+      Result: True
+     Comment: Package pciutils is already installed
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: innotop
+      Result: True
+     Comment: The following packages were installed/updated: innotop.
+     Changes:   
+              ----------
+              innotop:
+                  ----------
+                  new:
+                      1.9.1-6.el5
+                  old:
+                      
+              mysql:
+                  ----------
+                  new:
+                      5.0.95-5.el5_9
+                  old:
+                      
+              perl-DBD-MySQL:
+                  ----------
+                  new:
+                      3.0007-2.el5
+                  old:
+                      
+              perl-DBI:
+                  ----------
+                  new:
+                      1.52-2.el5
+                  old:
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: tcpdump
+      Result: True
+     Comment: Package tcpdump is already installed
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: dstat
+      Result: True
+     Comment: Package dstat is already installed
+     Changes:   
+
+Summary
+-------------
+Succeeded: 29
+Failed:     3
+-------------
+Total:     32
+xs242:
+----------
+          ID: nagios-plugins
+    Function: pkg.installed
+      Result: True
+     Comment: 2 targeted packages were installed/updated.
+     Changes:   
+              ----------
+              nagios-common:
+                  ----------
+                  new:
+                      2.12-10.el5
+                  old:
+                      
+              nagios-plugins:
+                  ----------
+                  new:
+                      1.4.15-2.el5
+                  old:
+                      
+              nagios-plugins-ping:
+                  ----------
+                  new:
+                      1.4.15-2.el5
+                  old:
+                      
+              nagios-plugins-setuid:
+                  ----------
+                  new:
+                      1.4.16-1.el5.rf
+                  old:
+----------
+          ID: check_mk-agent
+    Function: pkg.latest
+      Result: False
+     Comment: No information found for 'check_mk-agent-logwatch'. No information found for 'check_mk-agent'.
+     Changes:   
+----------
+          ID: allow_tcp_port_6556
+    Function: cmd.run
+        Name: iptables -I INPUT 1 -p tcp --dport 6556 -j ACCEPT
+      Result: True
+     Comment: 
+     Changes:   
+----------
+          ID: iptables_save
+    Function: cmd.wait
+        Name: iptables-save > /etc/iptables/rules
+      Result: True
+     Comment: 
+     Changes:   
+----------
+          ID: cmk-repo
+    Function: file.managed
+        Name: /etc/yum.repos.d/cmk.repo
+      Result: True
+     Comment: File /etc/yum.repos.d/cmk.repo updated
+     Changes:   
+              ----------
+              diff:
+                  New file
+              mode:
+                  0644
+----------
+          ID: nsca_client
+    Function: pkg.installed
+        Name: nagios-nsca-client
+      Result: True
+     Comment: The following packages were installed/updated: nagios-nsca-client.
+     Changes:   
+              ----------
+              libmcrypt:
+                  ----------
+                  new:
+                      2.5.7-5.el5
+                  old:
+                      
+              nagios-nsca-client:
+                  ----------
+                  new:
+                      2.7.2-4.el5.rf
+                  old:
+----------
+          ID: nsca_client
+    Function: file.managed
+        Name: /etc/nagios/send_nsca.cfg
+      Result: True
+     Comment: File /etc/nagios/send_nsca.cfg updated
+     Changes:   
+              ----------
+              diff:
+                  ---  
+                  +++  
+                  @@ -4,7 +4,8 @@
+                   # 
+                   # Last Modified: 02-21-2002
+                   ####################################################
+                  -
+                  +#Example:
+                  +# echo -e "xs214\tsr-nfs\t2\tCRITIAL" | send_nsca -H nagios01 -c  /etc/nagios/send_nsca.cf
+                   
+                   # ENCRYPTION PASSWORD
+                   # This is the password/passphrase that should be used to encrypt the
+                  @@ -14,9 +15,7 @@
+                   # to read the password you specify here, so make sure to set
+                   # restrictive permissions on this config file!
+                   
+                  -#password=
+                  -
+                  -
+                  +password=omd-secret
+                   
+                   # ENCRYPTION METHOD
+                   # This option determines the method by which the send_nsca client will
+                  @@ -60,4 +59,3 @@
+                   #
+                   
+                   encryption_method=1
+                  -
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: ethtool
+      Result: True
+     Comment: Package ethtool is already installed
+     Changes:   
+----------
+          ID: xinetd
+    Function: pkg.installed
+      Result: True
+     Comment: The following packages were installed/updated: xinetd.
+     Changes:   
+              ----------
+              xinetd:
+                  ----------
+                  new:
+                      2.3.14-20.el5_10
+                  old:
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: lrzsz
+      Result: False
+     Comment: The following packages failed to install/update: lrzsz.
+     Changes:   
+----------
+          ID: xinetd
+    Function: service.running
+      Result: True
+     Comment: Enable is not available on this minion, service xinetd started
+     Changes:   
+----------
+          ID: builtin_plugins
+    Function: file.recurse
+        Name: /usr/lib/check_mk_agent/plugins
+      Result: True
+     Comment: Recursively updated /usr/lib/check_mk_agent/plugins
+     Changes:   
+              ----------
+              /usr/lib/check_mk_agent/plugins/apache_status:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/plugins/db2_mem.sh:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/plugins/dir_size:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/plugins/dmi_sysinfo:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/plugins/dmraid:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/plugins/ipmi_info.sh:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/plugins/j4p_performance:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/plugins/lmsensors:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/plugins/lscpu:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/plugins/mailman_lists:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/plugins/mk_jolokia:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/plugins/mk_logwatch:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/plugins/mk_mysql:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/plugins/mk_oracle:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/plugins/mk_postgres:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/plugins/mk_tsm:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/plugins/mk_zypper:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/plugins/nfsexports:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/plugins/plesk_backups:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/plugins/plesk_domains:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/plugins/smart:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/plugins/sylo:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/plugins/xs_info:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: hping3
+      Result: True
+     Comment: The following packages were installed/updated: hping3.
+     Changes:   
+              ----------
+              hping3:
+                  ----------
+                  new:
+                      0.0.20051105-8.el5
+                  old:
+                      
+              libpcap:
+                  ----------
+                  new:
+                      0.9.4-15.el5
+                  old:
+----------
+          ID: custom_plugins
+    Function: file.recurse
+        Name: /usr/lib/check_mk_agent/custom
+      Result: True
+     Comment: Recursively updated /usr/lib/check_mk_agent/custom
+     Changes:   
+              ----------
+              /usr/lib/check_mk_agent/custom/check_iostat:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/custom/check_iostat-1.00.tgz:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/custom/check_iostat-proc:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/custom/check_iostat_1.4.7.sh:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/custom/check_mio:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/custom/check_mtr.py:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/custom/check_powersupply:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/custom/ping-gateway:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/custom/send_nsca_rsyslog.sh:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+              /usr/lib/check_mk_agent/custom/xs-tools:
+                  ----------
+                  diff:
+                      New file
+                  mode:
+                      0755
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: iftop
+      Result: True
+     Comment: The following packages were installed/updated: iftop.
+     Changes:   
+              ----------
+              iftop:
+                  ----------
+                  new:
+                      1.0-0.7.pre4.el5
+                  old:
+----------
+          ID: mkdir /etc/check_mk
+    Function: cmd.run
+      Result: True
+     Comment: 
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: lsb-release
+      Result: False
+     Comment: The following package(s) were not found, and no possible matches were found in the package db: lsb-release
+     Changes:   
+----------
+          ID: /etc/check_mk/mrpe.cfg
+    Function: file.managed
+      Result: True
+     Comment: File /etc/check_mk/mrpe.cfg updated
+     Changes:   
+              ----------
+              diff:
+                  New file
+              mode:
+                  0644
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: ncdu
+      Result: True
+     Comment: The following packages were installed/updated: ncdu.
+     Changes:   
+              ----------
+              ncdu:
+                  ----------
+                  new:
+                      1.5-1.el5
+                  old:
+----------
+          ID: /etc/check_mk/logwatch.cfg
+    Function: file.managed
+      Result: True
+     Comment: File /etc/check_mk/logwatch.cfg updated
+     Changes:   
+              ----------
+              diff:
+                  New file
+              mode:
+                  0644
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: htop
+      Result: True
+     Comment: The following packages were installed/updated: htop.
+     Changes:   
+              ----------
+              htop:
+                  ----------
+                  new:
+                      1.0.3-1.el5.rf
+                  old:
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: iptraf
+      Result: False
+     Comment: The following packages failed to install/update: iptraf.
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: sysstat
+      Result: True
+     Comment: Package sysstat is already installed
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: agedu
+      Result: True
+     Comment: The following packages were installed/updated: agedu.
+     Changes:   
+              ----------
+              agedu:
+                  ----------
+                  new:
+                      0-2.r9153.el5
+                  old:
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: iotop
+      Result: True
+     Comment: The following packages were installed/updated: iotop.
+     Changes:   
+              ----------
+              iotop:
+                  ----------
+                  new:
+                      0.4.3-4.el5
+                  old:
+                      
+              python-ctypes:
+                  ----------
+                  new:
+                      1.0.2-3.el5
+                  old:
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: dmidecode
+      Result: True
+     Comment: Package dmidecode is already installed
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: sos
+      Result: True
+     Comment: The following packages were installed/updated: sos.
+     Changes:   
+              ----------
+              libxml2-python:
+                  ----------
+                  new:
+                      2.6.26-2.1.21.el5_9.3
+                  old:
+                      
+              sos:
+                  ----------
+                  new:
+                      1.7-9.73.el5.centos
+                  old:
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: nfs-utils
+      Result: True
+     Comment: Package nfs-utils is already installed
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: pciutils
+      Result: True
+     Comment: Package pciutils is already installed
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: innotop
+      Result: True
+     Comment: The following packages were installed/updated: innotop.
+     Changes:   
+              ----------
+              innotop:
+                  ----------
+                  new:
+                      1.9.1-6.el5
+                  old:
+                      
+              mysql:
+                  ----------
+                  new:
+                      5.0.95-5.el5_9
+                  old:
+                      
+              perl-DBD-MySQL:
+                  ----------
+                  new:
+                      3.0007-2.el5
+                  old:
+                      
+              perl-DBI:
+                  ----------
+                  new:
+                      1.52-2.el5
+                  old:
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: tcpdump
+      Result: True
+     Comment: Package tcpdump is already installed
+     Changes:   
+----------
+          ID: perfmon-utils
+    Function: pkg.installed
+        Name: dstat
+      Result: True
+     Comment: The following packages were installed/updated: dstat.
+     Changes:   
+              ----------
+              dstat:
+                  ----------
+                  new:
+                      0.6.6-5.el5
+                  old:
+
+Summary
+-------------
+Succeeded: 28
+Failed:     4
+-------------
+Total:     32
