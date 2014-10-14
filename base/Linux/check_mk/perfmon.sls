@@ -10,6 +10,14 @@ perfmon-utils:
       - lrzsz
       - htop
       - sos
-      - iotop
+      - iftop
       - ethtool
       - lsb-release
+      - dmidecode
+      - iptraf
+      - innotop
+      - agedu
+      - ncdu
+      - pciutils
+      - ethtool
+
