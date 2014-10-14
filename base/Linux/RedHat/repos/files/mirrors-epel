@@ -1,5 +1,2 @@
 http://mirrors.sohu.com/fedora-epel/$releasever/$basearch
 http://mirrors.aliyun.com/epel/$releasever/$basearch
-http://mirror.chpc.utah.edu/pub/epel/$releasever/$basearch
-http://repo.boun.edu.tr/epel/$releasever/$basearch
-

@@ -4,16 +4,17 @@ yum_proxy:
     - unless: egrep -q '^proxy=http://squid:3142' /etc/yum.conf
     - stateful: True
 
-
 yum-utils:
-  cmd.run:
-    - name: yum install -y yum-utils > /dev/null
-    - stateful: True
-    - unless: rpm -qa | grep -q yum-utils > /dev/null
+  pkg.installed
 
 etckeeper:
-  pkg:
-    - installed
+  pkg.installed:
+    - require:
+      - pkg: yum-utils
+
+etckeeper_init:
   cmd.run:
     - name: etckeeper init > /dev/null 1>&2
     - stateful: True
+    - require:
+      - pkg: etckeeper
