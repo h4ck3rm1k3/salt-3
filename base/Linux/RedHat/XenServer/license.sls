@@ -5,6 +5,5 @@ add_license:
     - source: salt://{{ grains['os_family'] }}/{{ grains['os'] }}//xs602-2015-1.xslic
   cmd.run:
     - name: xe host-license-add license-file=/tmp/xs602-2015-1.xslic > /dev/null
-    - unless: xe host-license-view | awk '/serialnumber/ { print $NF}' | grep -q [a-z]
     - stateful: True
 {% endif %}
