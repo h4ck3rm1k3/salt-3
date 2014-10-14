@@ -5,7 +5,6 @@ include:
 basic_utils:
   pkg.installed:
     - names:
-      - cronie
       - iptstate
 
 iptables:
