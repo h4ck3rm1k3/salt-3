@@ -19,8 +19,9 @@ salt-minion:
       - python-software-properties
       - msgpack-python
       - salt-minion
-  service.running:
+  service:
     - name: salt-minion
+    - running
     - enable: True
     - reload: True
   file.managed:

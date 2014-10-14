@@ -1,3 +1,4 @@
 crond:
-  service.running:
+  service:
+    - running
     - enable: True

@@ -7,7 +7,8 @@ vncserver:
   file.managed:
     - name: /etc/sysconfig/vncservers
     - source: salt://service/vnc/vncservers
-  service.running:
+  service:
+    - running
     - enable: True
     - reload: True
     - require:

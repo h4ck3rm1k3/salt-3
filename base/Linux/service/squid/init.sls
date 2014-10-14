@@ -52,7 +52,8 @@ save_rules:
       - cmd: redirect_tcp_80
     
 iptables-persistent:
-  service.running:
+  service:
+    - running
     - enable: True
     - require:
       - pkg:
