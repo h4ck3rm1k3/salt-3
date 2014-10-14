@@ -11,9 +11,11 @@ ntp:
 {% endif %}
 
 ntpd:
-  pkg.installed:
+  pkg:
+    - installed
     - name: ntp
-  service.running:
+  service:
+    - running
     - enable: True
     - reload: True
     - watch:
