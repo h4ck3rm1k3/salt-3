@@ -1,7 +1,3 @@
-ntp:
-  hosts.present:
-    - ip: 192.168.11.10
-
 {% if grains['os_family'] =='RedHat' %}
 {% set ntp = ntp %}
 {% endif %}
@@ -9,11 +5,14 @@ ntp:
 {% if grains['os_family'] =='Debian' %}
 {% set ntp = ntpd %}
 {% endif %}
+ntp:
+  hosts.present:
+    - ip: 192.168.11.10
 
 ntpd:
   pkg:
     - installed
-    - name: ntp
+    - name: {{ ntp }}
   service:
     - running
     - enable: True
