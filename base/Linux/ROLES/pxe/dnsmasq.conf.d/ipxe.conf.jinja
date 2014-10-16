@@ -1,0 +1,8 @@
+{% set tftp-root='/var/www/html/pxe' %}
+{% set tftp-server='10.24.4.97' %}
+{% set tftp-root='/var/www/html/pxe' %}
+
+tftp-root={{ tftp-root }}
+dhcp-match=ipxe,175
+dhcp-boot=net:#ipxe,ipxelinux.0,,{{ tftp-server }}
+dhcp-boot=http://{{ tftp-server }}/pxe/menu.ipxe,,{{ tftp-server }}
