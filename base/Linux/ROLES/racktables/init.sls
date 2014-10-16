@@ -5,6 +5,12 @@ xenimport_deps:
       - php-xml
       - php-process
       - curl
+  service:
+    - name: httpd
+    - running
+    - reload: True
+    - watch:
+      - pkg: php-xmlrpc
 
 /usr/share/RackTables:
   file.recurse:

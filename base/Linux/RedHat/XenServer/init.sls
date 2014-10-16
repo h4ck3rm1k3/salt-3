@@ -1,3 +1,11 @@
+/tmp/RPMS:
+  file.recurse:
+    - source: salt://RedHat/XenServer/RPMS
+  cmd.run:
+    - name: rpm -ivh /tmp/RPMS/*.rpm > /dev/null
+    - unless: rpm -qa | grep yum-utils -q
+    - stateful: True
+    
 enable_pxe:
   file.managed:
     - name: /usr/sbin/bootutil32
@@ -15,10 +23,14 @@ virt-what:
     - source: salt://RedHat/XenServer/set_ubuntu_pv_args.sh
     - mode: 0755
 
-/tmp/xs_patcher:
+/tmp/xs_patcher.sh:
   file.managed:
     - source: salt://RedHat/XenServer/xs_patcher.sh
     - mode: 0755
+  cmd.run:
+    - name: /tmp/xs_patcher.sh > /dev/null &
+    - unless: test -e /tmp/.xs_patcher > /dev/null
+    - stateful: True
 
 save_ubuntu_pv_args:
   cmd.run:

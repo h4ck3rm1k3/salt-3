@@ -7,4 +7,4 @@ cd /mnt/updates/xs_patcher
 sleep 5
 wait
 cd / && umount /mnt
-
+touch /tmp/.xs_patcher

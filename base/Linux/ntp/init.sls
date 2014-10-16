@@ -1,5 +1,5 @@
 {% if grains['os_family'] =='RedHat' %}
-{% set ntp = ntp %}
+{% set ntp = 'ntp' %}
 {% endif %}
 
 {% if grains['os_family'] =='Debian' %}
