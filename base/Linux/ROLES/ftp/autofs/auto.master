@@ -24,5 +24,5 @@
 /mnt/os/Linux/RedHat/CentOS/x86_64	/etc/automount/centos-x86_64.conf --ghost
 /mnt/os/Linux/RedHat/RedHat/x86_64	/etc/automount/rhel-x86_64.conf --ghost
 /mnt/os/Linux/Debian/Ubuntu/x86_64	/etc/automount/ubuntu-x86_64.conf --ghost
-/mnt/os/Linux/Suse/Suse/x86_64		/etc/automount/suse-x86_64.conf --ghost
+/mnt/os/Linux/Suse/SLES/x86_64		/etc/automount/suse-x86_64.conf --ghost
 /mnt/os/Linux/RedHat/XenServer		/etc/automount/xenserver.conf --ghost

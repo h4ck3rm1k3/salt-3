@@ -1,4 +1,4 @@
-MENU BEGIN UBUNTUINSTALL
+MENU BEGIN CENTOSINSTALL
 MENU LABEL ^CentOS
 # ------====> Include Menu Settings <====------
 #MENU INCLUDE er/menuinc/header.module

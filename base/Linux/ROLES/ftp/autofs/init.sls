@@ -2,6 +2,13 @@ autofs:
   pkg:
     - installed
 
+MAKEDEV /dev -m 64 loop > /dev/null:
+  cmd.run:
+    - stateful: True
+    - unless: test -b /dev/loop63 > /dev/null
+    - require:
+      - pkg: autofs
+
 auto.master:
   file.managed:
     - name: /etc/auto.master
