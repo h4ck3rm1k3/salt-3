@@ -1,3 +1,6 @@
+include:
+  - xenserver.sls
+
 squid:
   host.present:
     - ip: 192.168.31.246
