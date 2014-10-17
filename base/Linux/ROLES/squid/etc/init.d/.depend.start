@@ -1,0 +1,7 @@
+TARGETS = umountnfs.sh umountfs networking umountroot sendsigs apt-cacher-ng halt reboot killprocs pppd-dns dns-clean wpa-ifupdown urandom single rsync squid grub-common ondemand rc.local
+INTERACTIVE =
+wpa-ifupdown: networking
+single: killprocs pppd-dns dns-clean
+grub-common: apt-cacher-ng rsync pppd-dns dns-clean squid
+ondemand: apt-cacher-ng rsync pppd-dns dns-clean squid
+rc.local: apt-cacher-ng rsync pppd-dns dns-clean squid

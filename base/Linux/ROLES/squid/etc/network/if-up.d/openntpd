@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ "${METHOD}" = "loopback" ]
+then
+	exit 0
+fi
+
+invoke-rc.d openntpd force-reload
