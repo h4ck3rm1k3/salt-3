@@ -1,0 +1,8 @@
+
+
+
+
+LABEL SLES/x86_64/11SP1
+    KERNEL http://192.168.31.245/os/Linux/Suse/SLES/x86_64/11SP1/boot/x86_64/loader/linux
+    INITRD http://192.168.31.245/os/Linux/Suse/SLES/x86_64/11SP1/boot/x86_64/loader/initrd
+    APPEND autoyast=http://192.168.11.8/pxe/ks/template/Linux/Suse/autoinst.xml install=http://192.168.31.245/os/Linux/Suse/SLES/x86_64/11SP1 splash=verbose showopts

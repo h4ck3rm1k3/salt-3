@@ -1,11 +1,18 @@
+#!/usr/bin/python
 import web
+render = web.template.render('./templates/')
 
 urls = (
-    '/.*', 'hello',
-    )
+    '/gPXE', 'index',
+)
 
-class hello:
+class index:
     def GET(self):
-        return "Hello, world."
+        agent = web.ctx.env['HTTP_USER_AGENT']
+        return render.boot()
+#        raise web.seeother("GPXEBOOT/boot.gpxe")
 
-application = web.application(urls, globals()).wsgifunc()
+#application = web.application(urls, globals()).wsgifunc()
+if __name__ == "__main__":
+    app = web.application(urls, globals())
+    app.run()
