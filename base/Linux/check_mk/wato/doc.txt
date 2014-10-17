@@ -1,0 +1,9 @@
+hosts.mk:
+  - add python code for conditional setting
+  - example:
+    - def all_hosts():
+         all_hosts = []
+         with open('/tmp/cloud.vms.csv') as f:
+            for host in vms:
+                all_hosts += host
+            return all_hosts

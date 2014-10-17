@@ -3,16 +3,11 @@ if [ ! -f /opt/xensource/bin/xe ];then
   exit
 fi
 
-echo "<<<xe_host-cpu-info>>>"
-xe host-cpu-info
 echo "<<<xe-linux-distribution>>>"
 xe-linux-distribution
 echo "<<<xen_detect>>>"
 xen-detect  
 echo "<<<xe_host-compute-free-memory>>>"
 xe host-compute-free-memory host=xstest1.gdcloud.com
-echo "<<<xe_host-list>>>"
-for host in `xe host-list --minimal | tr ',' ' '`
-do
-  xe host-param-list uuid=$host
-done
+echo "<<<xe info>>>"
+xe info
