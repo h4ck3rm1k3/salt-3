@@ -1,6 +1,10 @@
 {% if grains['os'] == 'XenServer' %}
-ipmiutil:
-  pkg.installed
+ipmi-pkgs:
+  pkg.installed:
+    - names:
+      - ipmiutil
+      - freeipmi-ipmidetectd
+      - ipmitool
 
 ipmi_si:
   kmod.present
