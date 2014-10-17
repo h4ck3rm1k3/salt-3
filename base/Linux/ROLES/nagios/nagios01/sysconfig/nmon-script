@@ -1,0 +1,8 @@
+### The directory to store the nmon data files
+NMONDIR="/var/log/nmon"
+
+### Default options for nmon
+OPTIONS="-f -t"
+
+### Number of days to keep nmon data files
+KEEPDAYS="31"

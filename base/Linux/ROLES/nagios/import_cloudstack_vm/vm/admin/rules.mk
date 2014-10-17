@@ -1,0 +1,1 @@
+host_contactgroups = [( 'admin', ['/' + FOLDER_PATH + '/+'], ALL_HOSTS, {'comment': u'Put all hosts into the contact group "admin"'} ),] + host_contactgroups

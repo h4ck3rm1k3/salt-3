@@ -2,6 +2,11 @@
 # For debugging purposes, log each DNS query as it passes through
 # dnsmasq.
 log-queries
+#server=8.8.4.4 – Put your DNS forwarders IPs Addresses.
+#Put your network time servers – optionally (0.0.0.0 Address is for self-reference).
+dhcp-option=42,ntp.hdtr.com
+#pxe-prompt – Leave it as default – means to hit F8 key for entering menu 60 with seconds wait time..
+#pxe=service – Use x86PC for 32-bit/64-bit architectures and enter a menu description prompt under string quotes. Other values types can be: PC98, IA64_EFI, Alpha, Arc_x86, Intel_Lean_Client, IA32_EFI, BC_EFI, Xscale_EFI and X86-64_EFI.
 
 # Log lots of extra information about DHCP transactions.
 log-dhcp

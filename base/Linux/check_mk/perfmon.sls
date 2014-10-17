@@ -10,7 +10,6 @@ perfmon-utils:
       - iftop
       - innotop
       - sos
-      - lsb-release
       - dmidecode
       - iptraf
       - agedu
