@@ -1,4 +1,7 @@
 {% if grains['os'] == 'XenServer' %}
+ipmiutil:
+  pkg.installed
+
 ipmi_si:
   kmod.present
 

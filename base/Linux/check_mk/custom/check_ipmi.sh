@@ -1,0 +1,19 @@
+#!/bin/bash
+# cmd: ipmiutil lan
+# output example:
+##########################################
+#Lan Param(3) IP address: 192 168 10 13
+#Lan Param(4) IP addr src: 01 Static
+#Lan Param(5) MAC addr: 00 25 90 77 f2 08
+#Lan Param(6) Subnet mask: 255 255 255 0
+#Lan Param(12) Def gateway IP: 192 168 10 254
+#Lan Param(13) Def gateway MAC: e8 e7 32 52 b9 fc
+#Lan Param(14) Sec gateway IP: 0 0 0 0
+#Lan Param(15) Sec gateway MAC: 00 00 00 00 00 00
+#Lan Param(16) Community string: public
+##########################################
+# Test if BMC LAN is already configured
+# ipmiutil lan  -t
+#
+
+
