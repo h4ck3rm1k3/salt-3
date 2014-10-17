@@ -1,0 +1,58 @@
+# ******************************************************************
+# Cobbler managed dhcpd.conf file
+# generated from cobbler dhcp.conf template (Thu Nov 14 16:06:17 2013)
+# Do NOT make changes to /etc/dhcpd.conf. Instead, make your changes
+# in /etc/cobbler/dhcp.template, as /etc/dhcpd.conf will be
+# overwritten.
+# ******************************************************************
+
+ddns-update-style interim;
+
+allow booting;
+allow bootp;
+
+ignore client-updates;
+set vendorclass = option vendor-class-identifier;
+
+option pxe-system-type code 93 = unsigned integer 16;
+
+subnet 192.168.12.0 netmask 255.255.255.0 {
+     option routers             192.168.12.254;
+     option domain-name-servers 192.168.12.30;
+     option subnet-mask         255.255.255.0;
+     #range dynamic-bootp        192.168.1.100 192.168.1.254;
+     default-lease-time         21600;
+     max-lease-time             43200;
+     next-server                pxe.hdtr.com;
+     filename "pxelinux.0";
+#     class "pxeclients" {
+#          match if substring (option vendor-class-identifier, 0, 9) = "PXEClient";
+#          if option pxe-system-type = 00:02 {
+#                  filename "ia64/elilo.efi";
+#          } else if option pxe-system-type = 00:06 {
+#                  filename "grub/grub-x86.efi";
+#          } else if option pxe-system-type = 00:07 {
+#                  filename "grub/grub-x86_64.efi";
+#          } else {
+#                  filename "pxelinux.0";
+#          }
+#     }
+
+}
+
+subnet 192.168.11.0 netmask 255.255.255.0 {
+     option routers             192.168.12.254;
+     option domain-name-servers 192.168.12.30;
+     option subnet-mask         255.255.255.0;
+     range dynamic-bootp        192.168.11.100 192.168.1.254;
+     default-lease-time         21600;
+     max-lease-time             43200;
+     next-server                pxe.hdtr.com;
+     filename "pxelinux.0";
+
+}
+
+# group for Cobbler DHCP tag: default
+group {
+}
+
