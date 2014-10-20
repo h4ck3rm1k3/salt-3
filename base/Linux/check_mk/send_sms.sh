@@ -3,10 +3,11 @@
 # /usb/bin/sms.php
 NOTIFY_MSG="$NOTIFY_SHORTDATETIME;$NOTIFY_HOSTNAME: $NOTIFY_LASTHOSTSTATE$ -> $NOTIFY_HOSTSTATE$ ($NOTIFY_NOTIFICATIONTYPE$)|| $NOTIFY_HOSTOUTPUT$"
 
+CMD="/usr/bin/sms_5c.php"
 ###### log to file ############
 echo "$NOTIFY_SHORTDATETIME: sms.php $NOTIFY_CONTACTPAGER  $NOTIFY_MSG"
 ###### send SMS ############
-sms.php $NOTIFY_CONTACTPAGER  "$NOTIFY_MSG"
+$cmd $NOTIFY_CONTACTPAGER  "$NOTIFY_MSG"
 
 ################################################################################
 # NOTIFICATION VARIABLE FOR SMS
