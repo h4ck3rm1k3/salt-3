@@ -6,7 +6,7 @@ vncpassword:
      - source: salt://service/vnc/vncpassword.sh
      - require:
        - pkg: tigervnc-server
-     - statful: True
+     - stateful: True
 
 xrdp:
   pkg:
