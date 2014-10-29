@@ -40,26 +40,6 @@ def get_zones():
   for domain in domains:
     zones += cs.listZones({'domainid': domain['id']})
   return zones
-#  cloud['configs'] = cs_object.listConfigurations()
-#  cloud['alerts'] = cs_object.listAlerts()
-#  cloud['eventtypes'] = cs_object.listEventTypes()
-#  cloud['events'] = cs_object.listEvents()
-#  cloud['natrules'] = cs_object.listIpForwardingRules()
-#  cloud['hypvs'] = cs_object.listHypervisors()
-#  cloud['pods'] = []
-#  cloud['routers'] = []
-#  cloud['sysvms'] = []
-#  cloud['publicips'] = []
-#  for zone in cloud['zones']:
-#    cloud['pods'] += cs_object.listPods({'zone': zone['id']})
-#    cloud['publicips'] = cs_object.listPublicIpAddresses({'zone': zone['id']})
-#  cloud['clusters'] = []
-#  for pod in cloud['pods']:
-#    cloud['clusters'] += cs_object.listClusters({'podid': pod['id']})
-
-#  cloud['hosts'] = []
-#  for cluster in  cloud['clusters']:
-#    cloud['hosts'] += cs_object.listHosts({'clusterid': cluster['id']})
 
 def get_cg():
   accounts = get_accounts()
@@ -142,13 +122,6 @@ def add_wato_host(vm):
     host_path = 'all_hosts += ["%s|wato|%s|/" + FOLDER_PATH + "/",]\n' % (hostname, tags)
     host_conf = "extra_host_conf.setdefault('alias', []).extend([(u'%s', ['%s'])])\n" % (alias, hostname)
     host_attr = "host_attributes.update({'%s': {'alias': u'%s', 'tag_state': '%s'}})\n" % (hostname, alias, tags)
-
-#      folder_mk = host_folder + '/.wato'
-#      folder_conf = "{'num_hosts': %s, 'title': u'%s'}" % (num_hosts, account_name)
-#      f = open(folder_mk,'a')
-#      f.write(folder_conf)
-#      f.close()
-
 
     now = datetime.datetime.now()
     timestamp = now.strftime("%Y-%m-%d_%H-%M-%S")
