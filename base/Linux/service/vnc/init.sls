@@ -29,3 +29,8 @@ set_path:
 init_5:
   cmd.run:
     - name: sed -i '/initdefault/s/3/5/' /etc/inittab
+
+disable_ctrl_alt_del:
+  cmd.run:
+    - name: sed -i '/^exec/s/^/#/' /etc/init/control-alt-delete.conf
+    - stateful: True
