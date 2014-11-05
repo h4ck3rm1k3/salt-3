@@ -27,3 +27,6 @@ crond:
   service:
     - running
     - enable: True
+
+time:
+  pkg.installed
