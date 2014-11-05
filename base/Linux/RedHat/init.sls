@@ -22,3 +22,8 @@ disable_selinux:
     - name: senenforce 0 ;sed -i '/^SELINUX/s/enforcing/disabled/' /etc/selinux/config
     - onlyif: test -f /etc/selinux/config
     - stateful: True
+
+crond:
+  service:
+    - running
+    - enable: True
