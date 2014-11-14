@@ -1,0 +1,27 @@
+#!/bin/bash
+if ! which salt-key > /dev/null;then
+    exit
+fi
+
+MINIONS=$(salt-key -l acc --output=txt | sed -n '2,$p')
+UP=0
+DOWN=0
+for minion in $MINIONS
+do
+    result=$(salt $minion test.ping --output=txt)
+    if echo $result | grep -q True;then
+        let UP=$UP+1
+    else
+        let DOWN=$DOWN+1
+    fi
+done
+
+if [ $DOWN -gt 0 ];then
+    STATE=1
+    STATE_TEXT="WARN - minions down: $"
+else
+    STATE=0
+    STATE_TEXT="OK - all minions up"
+fi
+
+echo "$STATE minion.state minions=0;3;5; $STATE_TEXT"
