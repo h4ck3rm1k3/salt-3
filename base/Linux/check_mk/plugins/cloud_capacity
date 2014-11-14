@@ -15,19 +15,6 @@ def cs_client():
   cs_client = CloudStack.Client(api, apikey, secret)
   return cs_client 
 
-map = {
-    '0': 'MEMORY',
-    '1': 'CPU',
-    '2': 'STORAGE',
-    '3': 'STORAGE_ALLOCATED',
-    '4': 'VIRTUAL_NETWORK_PUBLIC_IP',
-    '5': 'PRIVATE_IP',
-    '6': 'SECONDARY_STORAGE',
-    '7': 'VLAN',
-    '8': 'DIRECT_ATTACHED_PUBLIC_IP',
-    '9': 'LOCAL_STORAGE'
-}
-
 def get_cloud_capacity():
   cs = cs_client()
   response = cs.listCapacity()
@@ -45,5 +32,18 @@ def print_cmk_data():
       print "<<<{0}>>>".format(map[str(type)])
       for i in cap[type]:
           print i
+
+map = {
+    '0': 'MEMORY',
+    '1': 'CPU',
+    '2': 'STORAGE',
+    '3': 'STORAGE_ALLOCATED',
+    '4': 'VIRTUAL_NETWORK_PUBLIC_IP',
+    '5': 'PRIVATE_IP',
+    '6': 'SECONDARY_STORAGE',
+    '7': 'VLAN',
+    '8': 'DIRECT_ATTACHED_PUBLIC_IP',
+    '9': 'LOCAL_STORAGE'
+}
 
 print_cmk_data()
