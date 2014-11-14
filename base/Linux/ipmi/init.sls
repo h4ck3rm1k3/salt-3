@@ -4,7 +4,7 @@ ipmi-pkgs:
     - names:
       - ipmiutil
       - freeipmi-ipmidetectd
-      - ipmitool
+      - freeipmi
 
 ipmi_si:
   kmod.present

@@ -9,6 +9,16 @@ xinetd:
     - running
     - enable: True
 
+freeipmi:
+  pkg.installed
+
+local_checks:
+  file.recurse:
+    - name: /usr/lib/check_mk_agent/local
+    - source: salt://check_mk/local
+    - file_mode: 755
+    - clean: True
+
 builtin_plugins:
   file.recurse:
     - name: /usr/lib/check_mk_agent/plugins

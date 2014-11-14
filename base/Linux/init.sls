@@ -1,12 +1,10 @@
 include:
-  - hosts
-  - resolv
+  - dns
   - {{ grains['os_family'] }}
   - salt
   - check_mk
   - sysconfig.time
   - ntp
-  - ssh
   - bash
   - logrotate
   - python

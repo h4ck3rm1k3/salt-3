@@ -5,9 +5,9 @@
 {% if grains['os_family'] =='Debian' %}
 {% set ntp = ntpd %}
 {% endif %}
-ntp:
-  hosts.present:
-    - ip: 192.168.11.10
+#ntp:
+#  hosts.present:
+#    - ip: 192.168.11.10
 
 ntpd:
   pkg:

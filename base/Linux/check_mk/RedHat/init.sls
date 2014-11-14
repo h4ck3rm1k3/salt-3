@@ -15,7 +15,7 @@ check_mk-agent:
 
 allow_tcp_port_6556:
   cmd.run:
-    - name: iptables -I INPUT 1 -p tcp --dport 6556 -j ACCEPT
+    - name: iptables -I INPUT 1 -m tcp -p tcp --dport 6556 -j ACCEPT
     - unless: iptables -L | grep -q 6556
     - stateful: True
 
@@ -23,6 +23,7 @@ iptables_save:
   cmd.wait:
     - name: iptables-save > /etc/iptables/rules
     - stateful: True
+    - onlyif: iptables -L | grep -q 6556
     - watch:
       - cmd: allow_tcp_port_6556
 

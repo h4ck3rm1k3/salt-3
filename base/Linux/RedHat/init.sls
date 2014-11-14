@@ -2,6 +2,11 @@ include:
   - .yum
   - .repos
 
+sshd_config:
+  cmd.run:
+    - name: sed -r -i '/UseDNS|GSSAPIAuthentication/s/yes/no/' /etc/salt/ssh/sshd_config
+    - stateful: True
+    
 basic_utils:
   pkg.installed:
     - names:
