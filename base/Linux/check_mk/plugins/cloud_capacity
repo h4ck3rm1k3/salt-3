@@ -1,14 +1,22 @@
 #!/usr/bin/python
+# check_mk_agent plugin for CloudStack Capacity check
+# /etc/check_mk/cloud_manager.ini:
+# [cloudstack]
+# api=http://localhost:8080/client/api
+# apikey=xxxxxxxxx
+# secret=xxxxxxxxx
+
 import os, sys
 import CloudStack
 import ConfigParser
 
 def cs_client(): 
-  if not os.path.exists('/etc/check_mk/cloud_manager.ini'):
+  cloud_manager_conf = '/etc/check_mk/cloud_manager.ini'
+  if not os.path.exists(cloud_manager_conf):
        sys.exit(0)
 
   cf = ConfigParser.ConfigParser()
-  cf.read('/etc/check_mk/cloud_manager.ini')
+  cf.read(cloud_manager_conf)
   api = cf.get('cloudstack', 'api')
   apikey = cf.get('cloudstack', 'apikey')
   secret = cf.get('cloudstack', 'secret')
