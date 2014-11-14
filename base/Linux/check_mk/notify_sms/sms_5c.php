@@ -1,5 +1,5 @@
 #!/usr/bin/php -q
-<?
+<?php
 /*--------------------------------
 功能:		PHP HTTP接口 发送短信
 修改日期:	2013-05-08
@@ -29,7 +29,7 @@ $username = 'hdtr';		//用户账号
 $password = '123456';	//密码
 $apikey = '8d683e752ec57d1bf38f46ca6c562b19';	//密码
 $mobile	 = $argv[1];	//号手机码
-$content = $argv[2];		//内容
+$content = $argv[2];//内容
 //即时发送
 $result = sendSMS($username,$password,$mobile,$content,$apikey);
 echo $result;

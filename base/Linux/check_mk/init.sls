@@ -41,12 +41,12 @@ mkdir /etc/check_mk:
 
 /etc/check_mk/mrpe.cfg:
   file.managed:
-    - source: salt://check_mk/mrpe.cfg
+    - source: salt://check_mk/mrpe.cfg.jinja
     - template: jinja
     - file_mode: 644
 
 /etc/check_mk/logwatch.cfg:
   file.managed:
-    - source: salt://check_mk/logwatch.cfg
+    - source: salt://check_mk/logwatch.cfg.jinja
     - template: jinja
     - file_mode: 644
