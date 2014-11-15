@@ -4,3 +4,4 @@ if [ ! -f /opt/xensource/bin/xe ];then
 fi
 echo "<<<xen>>>"
 xl info | sed -nr '/free_memory|total_memory/p'
+xe host-license-view | sed -n '1,8p' | sed -nr 's/^\s+//p'

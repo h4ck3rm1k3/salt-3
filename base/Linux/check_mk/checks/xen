@@ -32,3 +32,51 @@ check_info['xen.mem'] = {
     "has_perfdata"            : True,
     "default_levels_variable" : "xen_mem_default_levels",
 }
+
+#############################################################################
+# XenServer License Expire Check
+# xe host-license-view output:
+# version: 6.0.2 
+# serialnumber:
+# productcode:
+# expiry: 20141213T00:00:00Z
+# grace: no  
+# name:
+# company: 
+#############################################################################
+
+def inventory_xen_license(info):
+    return [(None, 'xen_license_default_levels')]
+
+def check_xen_license(item, params, info):
+    import time
+    from datetime import date
+    warn = 30
+    crit = 10
+    expire = ''
+    for line in info:
+      if 'expiry:' in line:
+        expires = time.strptime(line[-1][0:8], "%Y%m%d")[0:3]
+        expires_on = date(int(expires[0]), int(expires[1]), int(expires[2]))
+        expire_days = (expires_on - date.today()).days
+
+    if expire_days < crit:
+        state = 2
+        state_txt = "CRIT - {0} days left".format(expire_days)
+    elif expire_days > crit and expire_days < warn:
+        state = 1
+        state_txt = "WARN - {0} days left".format(expire_days)
+    else:
+        state = 0
+        state_txt = "OK - {0} days left".format(expire_days)
+        
+    return (state, state_txt)
+
+check_info['xen.license'] = {
+    "check_function"          : check_xen_license,
+    "inventory_function"      : inventory_xen_license,
+    "service_description"     : "Xen license",
+    "has_perfdata"            : False,
+    "default_levels_variable" : "xen_license_default_levels",
+}
+
