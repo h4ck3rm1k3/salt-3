@@ -1,57 +1,40 @@
 #!/usr/bin/python
-# check_mk_agent plugin for CloudStack Capacity check
-# /etc/check_mk/cloud_manager.ini:
-# [cloudstack]
-# api=http://localhost:8080/client/api
-# apikey=xxxxxxxxx
-# secret=xxxxxxxxx
-
 import os, sys
 import CloudStack
 import ConfigParser
 
-def cs_client(): 
-  cloud_manager_conf = '/etc/check_mk/cloud_manager.ini'
-  if not os.path.exists(cloud_manager_conf):
+def get_cloud_zones():
+  if not os.path.exists('/etc/check_mk/cloud_manager.ini'):
        sys.exit(0)
 
   cf = ConfigParser.ConfigParser()
-  cf.read(cloud_manager_conf)
+  cf.read('/etc/check_mk/cloud_manager.ini')
   api = cf.get('cloudstack', 'api')
   apikey = cf.get('cloudstack', 'apikey')
   secret = cf.get('cloudstack', 'secret')
-  cs_client = CloudStack.Client(api, apikey, secret)
-  return cs_client 
+  cs = CloudStack.Client(api, apikey, secret)
 
-def get_cloud_capacity():
-  cs = cs_client()
-  response = cs.listCapacity()
-  capacity = response['capacity']
-  data = {}
-  for cap in capacity:
-      type = cap['type']
-      info = "{0} {1} {2} {3}".format(cap['zonename'], cap['percentused'], cap['capacityused'], cap['capacitytotal'])
-      data.setdefault(type, []).extend([info])
-  return data
+  zones = cs.listZones()
+  map = {
+    '0': 'memory',
+    '1': 'cpu',
+    '2': 'storage',
+    '3': 'storage_allocated',
+    '4': 'virtual_network_public_ip',
+    '5': 'private_ip',
+    '6': 'secondary_storage',
+    '7': 'vlan',
+    '8': 'direct_attached_public_ip',
+    '9': 'local_storage'
+  }
+  for type in range(0,9):
+      id = str(type)
+      print '<<<cloud_{0}>>>'.format(map[id])
+      for zone in zones:
+          zoneid = zone['id']
+          response = cs.listCapacity({'zoneid': zoneid, 'type': id})
+          cap = response['capacity'][0]
+          info = "{0} {1} {2} {3} {4}".format(cap['zonename'],cap['type'], cap['percentused'], cap['capacityused'], cap['capacitytotal'])
+          print info
 
-def print_cmk_data():
-  cap = get_cloud_capacity()
-  for type in cap.keys():
-      print "<<<{0}>>>".format(map[str(type)])
-      for i in cap[type]:
-          print i
-
-map = {
-    '0': 'MEMORY',
-    '1': 'CPU',
-    '2': 'STORAGE',
-    '3': 'STORAGE_ALLOCATED',
-    '4': 'VIRTUAL_NETWORK_PUBLIC_IP',
-    '5': 'PRIVATE_IP',
-    '6': 'SECONDARY_STORAGE',
-    '7': 'VLAN',
-    '8': 'DIRECT_ATTACHED_PUBLIC_IP',
-    '9': 'LOCAL_STORAGE'
-}
-
-print_cmk_data()
+get_cloud_zones()
