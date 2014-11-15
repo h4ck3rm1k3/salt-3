@@ -1,0 +1,6 @@
+#!/bin/bash
+if [ ! -f /opt/xensource/bin/xe ];then
+  exit
+fi
+echo "<<<xen>>>"
+xl info | sed -nr '/free_memory|total_memory/p'
