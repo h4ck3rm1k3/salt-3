@@ -19,7 +19,7 @@ def get_cloudstack_capacity():
   response = cs.listCapacity()
   caps = response['capacity']
   type_txt = {
-    '0': 'MEMRORY',
+    '0': 'MEMORY',
     '1': 'CPU',
     '2': 'STORAGE',
     '3': 'STORAGE_ALLOCATED',
