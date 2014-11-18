@@ -1,9 +1,10 @@
 #!/usr/bin/python
 import os, sys
+import pprint
 import CloudStack
 import ConfigParser
 
-def get_cloud_zones():
+def get_cloudstack_capacity():
   if not os.path.exists('/etc/check_mk/cloud_manager.ini'):
        sys.exit(0)
 
@@ -14,27 +15,22 @@ def get_cloud_zones():
   secret = cf.get('cloudstack', 'secret')
   cs = CloudStack.Client(api, apikey, secret)
 
-  zones = cs.listZones()
-  map = {
-    '0': 'memory',
-    '1': 'cpu',
-    '2': 'storage',
-    '3': 'storage_allocated',
-    '4': 'virtual_network_public_ip',
-    '5': 'private_ip',
-    '6': 'secondary_storage',
-    '7': 'vlan',
-    '8': 'direct_attached_public_ip',
-    '9': 'local_storage'
+  print '<<<cloudstack>>>'
+  response = cs.listCapacity()
+  caps = response['capacity']
+  type_txt = {
+    '0': 'MEMRORY',
+    '1': 'CPU',
+    '2': 'STORAGE',
+    '3': 'STORAGE_ALLOCATED',
+    '4': 'VIRTUAL_NETWORK_PUBLIC_IP',
+    '5': 'PRIVATE_IP',
+    '6': 'SECONDARY_STORAGE',
+    '7': 'VLAN',
+    '8': 'DIRECT_ATTACHED_IP',
+    '9': 'LOCAL_STORAGE',
   }
-  for type in range(0,9):
-      id = str(type)
-      print '<<<cloud_{0}>>>'.format(map[id])
-      for zone in zones:
-          zoneid = zone['id']
-          response = cs.listCapacity({'zoneid': zoneid, 'type': id})
-          cap = response['capacity'][0]
-          info = "{0} {1} {2} {3} {4}".format(cap['zonename'],cap['type'], cap['percentused'], cap['capacityused'], cap['capacitytotal'])
-          print info
+  for cap in caps:
+     print type_txt[str(cap['type'])], cap['zonename'], cap['percentused'], cap['capacityused'], cap['capacitytotal']
 
-get_cloud_zones()
+get_cloudstack_capacity()
