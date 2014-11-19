@@ -38,5 +38,10 @@ disabl_citrix_repo:
 
 xs_patcher:
   cmd.script:
-    - source: salt://RedHat/XenServer/apply_patcher.sh
+    - source: salt://RedHat/XenServer/xs_patcher.sh
     - stateful: True
+
+set_domain_hdtr:
+  cmd.script:
+    - source: salt://RedHat/XenServer/set_domain.sh
+    - sateful: True
