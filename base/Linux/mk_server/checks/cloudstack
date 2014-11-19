@@ -1,0 +1,394 @@
+###########################################################################
+# CLOUDSTACK  CPU
+###########################################################################
+cloud_cpu_percentused_default_levels = (80, 90)
+
+def inventory_cloudstack_cpu(info):
+    inventory = []
+    for line in info:
+      if line[0] == 'CPU':
+        zonename = line[1]
+        inventory.append( (zonename, 'cloud_cpu_percentused_default_levels') )
+    return inventory
+
+def check_cloudstack_cpu(item, params, info):
+    warn, crit = cloud_cpu_percentused_default_levels
+    for line in info:
+      if line[0] == 'CPU':
+        zonename = line[1]
+        if zonename == item:
+            percentused = float(line[2])
+            capacityused = (int(line[3]))
+            capacitytotal = (int(line[4]))
+
+            if percentused > crit:
+                STATE = 2
+            elif percentused > warn:
+                STATE = 1
+            else:
+                STATE = 0
+
+            STATE_TXT = "{0:.2f}% used ( {1} of {2} MHz ),(levels at {3}/{4} %)".format(percentused, capacityused, capacitytotal, warn, crit)
+            perfdata = [ ( "%s percentused" % line[0], percentused, warn, crit, 0, 100 ) ]
+            return (STATE, STATE_TXT, perfdata)
+
+check_info["cloudstack.cpu"] = {
+    "inventory_function"  : inventory_cloudstack_cpu,
+    "check_function"      : check_cloudstack_cpu,
+    "has_perfdata"        : True,
+    "service_description" : "CPU percentused of %s"
+}
+
+###########################################################################
+# CLOUDSTACK  MEMORY
+###########################################################################
+cloud_memory_percentused_default_levels = (80, 90)
+
+def inventory_cloudstack_memory(info):
+    inventory = []
+    for line in info:
+      if line[0] == 'MEMORY':
+        zonename = line[1]
+        inventory.append( (zonename, 'cloud_memory_percentused_default_levels') )
+    return inventory
+
+def check_cloudstack_memory(item, params, info):
+    warn, crit = cloud_memory_percentused_default_levels
+    for line in info:
+      if line[0] == 'MEMORY':
+        zonename = line[1]
+        if zonename == item:
+            percentused = float(line[2])
+            capacityused = (int(line[3])/1024/1024/1024)
+            capacitytotal = (int(line[4])/1024/1024/1024)
+
+            if percentused > crit:
+                STATE = 2
+            elif percentused > warn:
+                STATE = 1
+            else:
+                STATE = 0
+
+            STATE_TXT = "{0:.2f}% used ( {1} of {2} GB),(levels at {3}/{4} %)".format(percentused, capacityused, capacitytotal, warn, crit)
+            perfdata = [ ( "MEMORY percentused", percentused, warn, crit, 0, 100 ) ]
+            return (STATE, STATE_TXT, perfdata)
+
+check_info["cloudstack.memory"] = {
+    "inventory_function"  : inventory_cloudstack_memory,
+    "check_function"      : check_cloudstack_memory,
+    "has_perfdata"        : True,
+    "service_description" : "cloudstack memory percentused of %s"
+}
+
+###########################################################################
+# CLOUDSTACK  STORAGE
+###########################################################################
+cloud_storage_percentused_default_levels = (80, 90)
+
+def inventory_cloudstack_storage(info):
+    inventory = []
+    for line in info:
+        zonename = line[0]
+        inventory.append( (zonename, 'cloud_storage_percentused_default_levels') )
+    return inventory
+
+def check_cloudstack_storage(item, params, info):
+    warn, crit = cloud_storage_percentused_default_levels
+    for line in info:
+        zonename = line[0]
+        if zonename == item:
+            percentused = float(line[2])
+            capacityused = (float(line[3])/1000/1000/1000/1000)
+            capacitytotal = (float(line[4])/1000/1000/1000/1000)
+
+            if percentused > crit:
+                STATE = 2
+            elif percentused > warn:
+                STATE = 1
+            else:
+                STATE = 0
+
+            STATE_TXT = "{0:.2f}% used ( {1:.2f} of {2:.2f} TB),(levels at {3}/{4} %)".format(percentused, capacityused, capacitytotal, warn, crit)
+            perfdata = [ ( "cloud memory percentused", percentused, warn, crit, 0, 100 ) ]
+            return (STATE, STATE_TXT, perfdata)
+
+check_info["cloudstack.storage"] = {
+    "inventory_function"  : inventory_cloudstack_storage,
+    "check_function"      : check_cloudstack_storage,
+    "has_perfdata"        : True,
+    "service_description" : "cloudstack storage percentused of %s"
+}
+
+
+###########################################################################
+# CLOUDSTACK  STORAGE_ALLOCATED
+###########################################################################
+cloud_storage_allocated_percentused_default_levels = (80, 90)
+
+def inventory_cloudstack_storage_allocated(info):
+    inventory = []
+    for line in info:
+        zonename = line[0]
+        inventory.append( (zonename, 'cloud_storage_allocated_percentused_default_levels') )
+    return inventory
+
+def check_cloudstack_storage_allocated(item, params, info):
+    warn, crit = cloud_storage_allocated_percentused_default_levels
+    for line in info:
+        zonename = line[0]
+        if zonename == item:
+            percentused = float(line[2])
+            capacityused = (int(line[3])/1024/1024/1024)
+            capacitytotal = (int(line[4])/1024/1024/1024)
+
+            if percentused > crit:
+                STATE = 2
+            elif percentused > warn:
+                STATE = 1
+            else:
+                STATE = 0
+
+            STATE_TXT = "{0:.2f}% used ( {1} of {2} GB),(levels at {3}/{4} %)".format(percentused, capacityused, capacitytotal, warn, crit)
+            perfdata = [ ( "primary storage allocated percentused", percentused, warn, crit, 0, 100 ) ]
+            return (STATE, STATE_TXT, perfdata)
+
+check_info["cloudstack.storage_allocated"] = {
+    "inventory_function"  : inventory_cloudstack_storage_allocated,
+    "check_function"      : check_cloudstack_storage_allocated,
+    "has_perfdata"        : True,
+    "service_description" : "primary storage percent allocated of %s"
+}
+
+###########################################################################
+# CLOUDSTACK  VLAN
+###########################################################################
+cloud_vlan_percentused_default_levels = (80, 90)
+
+def inventory_cloudstack_vlan(info):
+    inventory = []
+    for line in info:
+        zonename = line[0]
+        inventory.append( (zonename, 'cloud_vlan_percentused_default_levels') )
+    return inventory
+
+def check_cloudstack_vlan(item, params, info):
+    warn, crit = cloud_vlan_percentused_default_levels
+    for line in info:
+        zonename = line[0]
+        if zonename == item:
+            percentused = float(line[2])
+            capacityused = (int(line[3]))
+            capacitytotal = (int(line[4]))
+
+            if percentused > crit:
+                STATE = 2
+            elif percentused > warn:
+                STATE = 1
+            else:
+                STATE = 0
+
+            STATE_TXT = "{0:.2f}% used ( {1} of {2} MHz ),(levels at {3}/{4} %)".format(percentused, capacityused, capacitytotal, warn, crit)
+            perfdata = [ ( "cloud vlan percentused", percentused, warn, crit, 0, 100 ) ]
+            return (STATE, STATE_TXT, perfdata)
+
+check_info["cloudstack.vlan"] = {
+    "inventory_function"  : inventory_cloudstack_vlan,
+    "check_function"      : check_cloudstack_vlan,
+    "has_perfdata"        : True,
+    "service_description" : "cloudstack vlan percentused of %s"
+}
+
+###########################################################################
+# CLOUDSTACK  PRIVATE_IP
+###########################################################################
+cloud_private_ip_percentused_default_levels = (80, 90)
+
+def inventory_cloudstack_private_ip(info):
+    inventory = []
+    for line in info:
+        zonename = line[0]
+        inventory.append( (zonename, 'cloud_private_ip_percentused_default_levels') )
+    return inventory
+
+def check_cloudstack_private_ip(item, params, info):
+    warn, crit = cloud_private_ip_percentused_default_levels
+    for line in info:
+        zonename = line[0]
+        if zonename == item:
+            percentused = float(line[2])
+            capacityused = (int(line[3]))
+            capacitytotal = (int(line[4]))
+
+            if percentused > crit:
+                STATE = 2
+            elif percentused > warn:
+                STATE = 1
+            else:
+                STATE = 0
+
+            STATE_TXT = "{0:.2f}% used ( {1} of {2} ),(levels at {3}/{4} %)".format(percentused, capacityused, capacitytotal, warn, crit)
+            perfdata = [ ( "cloud private_ip percentused", percentused, warn, crit, 0, 100 ) ]
+            return (STATE, STATE_TXT, perfdata)
+
+check_info["cloudstack.private_ip"] = {
+    "inventory_function"  : inventory_cloudstack_private_ip,
+    "check_function"      : check_cloudstack_private_ip,
+    "has_perfdata"        : True,
+    "service_description" : "cloud private_ip percentused of %s"
+}
+
+###########################################################################
+# CLOUDSTACK  VIRT_NETWORK_PUBLIC_IP
+###########################################################################
+cloud_virtual_network_public_ip_percentused_default_levels = (80, 90)
+
+def inventory_cloudstack_virtual_network_public_ip(info):
+    inventory = []
+    for line in info:
+        zonename = line[0]
+        inventory.append( (zonename, 'cloud_virtual_network_public_ip_percentused_default_levels') )
+    return inventory
+
+def check_cloudstack_virtual_network_public_ip(item, params, info):
+    warn, crit = cloud_virtual_network_public_ip_percentused_default_levels
+    for line in info:
+        zonename = line[0]
+        if zonename == item:
+            percentused = float(line[2])
+            capacityused = (int(line[3]))
+            capacitytotal = (int(line[4]))
+
+            if percentused > crit:
+                STATE = 2
+            elif percentused > warn:
+                STATE = 1
+            else:
+                STATE = 0
+
+            STATE_TXT = "{0:.2f}% used ( {1} of {2} ),(levels at {3}/{4} %)".format(percentused, capacityused, capacitytotal, warn, crit)
+            perfdata = [ ( "cloud virtual_network_public_ip percentused", percentused, warn, crit, 0, 100 ) ]
+            return (STATE, STATE_TXT, perfdata)
+
+check_info["cloudstack.virtual_network_public_ip"] = {
+    "inventory_function"  : inventory_cloudstack_virtual_network_public_ip,
+    "check_function"      : check_cloudstack_virtual_network_public_ip,
+    "has_perfdata"        : True,
+    "service_description" : "cloud virtual_network_public_ip percentused of %s"
+}
+
+###########################################################################
+# CLOUDSTACK DIRECT_ATTACHED_IP
+###########################################################################
+cloud_direct_attached_public_ip_percentused_default_levels = (80, 90)
+
+def inventory_cloudstack_direct_attached_public_ip(info):
+    inventory = []
+    for line in info:
+        zonename = line[0]
+        inventory.append( (zonename, 'cloud_direct_attached_public_ip_percentused_default_levels') )
+    return inventory
+
+def check_cloudstack_direct_attached_public_ip(item, params, info):
+    warn, crit = cloud_direct_attached_public_ip_percentused_default_levels
+    for line in info:
+        zonename = line[0]
+        if zonename == item:
+            percentused = float(line[2])
+            capacityused = (int(line[3]))
+            capacitytotal = (int(line[4]))
+
+            if percentused > crit:
+                STATE = 2
+            elif percentused > warn:
+                STATE = 1
+            else:
+                STATE = 0
+
+            STATE_TXT = "{0:.2f}% used ( {1} of {2} ),(levels at {3}/{4} %)".format(percentused, capacityused, capacitytotal, warn, crit)
+            perfdata = [ ( "cloud direct_attached_public_ip percentused", percentused, warn, crit, 0, 100 ) ]
+            return (STATE, STATE_TXT, perfdata)
+
+check_info["cloudstack.direct_attached_public_ip"] = {
+    "inventory_function"  : inventory_cloudstack_direct_attached_public_ip,
+    "check_function"      : check_cloudstack_direct_attached_public_ip,
+    "has_perfdata"        : True,
+    "service_description" : "cloud direct_attached_public_ip percentused of %s"
+}
+
+###########################################################################
+# CLOUDSTACK LOCAL STORAGE
+###########################################################################
+cloud_local_storage_percentused_default_levels = (80, 90)
+
+def inventory_cloudstack_local_storage(info):
+    inventory = []
+    for line in info:
+        zonename = line[0]
+        inventory.append( (zonename, 'cloud_local_storage_percentused_default_levels') )
+    return inventory
+
+def check_cloudstack_local_storage(item, params, info):
+    warn, crit = cloud_local_storage_percentused_default_levels
+    for line in info:
+        zonename = line[0]
+        if zonename == item:
+            percentused = float(line[2])
+            capacityused = (int(line[3])/1024/1024/1024)
+            capacitytotal = (int(line[4])/1024/1024/1024)
+
+            if percentused > crit:
+                STATE = 2
+            elif percentused > warn:
+                STATE = 1
+            else:
+                STATE = 0
+
+            STATE_TXT = "{0:.2f}% used ( {1} of {2} GB),(levels at {3}/{4} %)".format(percentused, capacityused, capacitytotal, warn, crit)
+            perfdata = [ ( "cloud memory percentused", percentused, warn, crit, 0, 100 ) ]
+            return (STATE, STATE_TXT, perfdata)
+
+check_info["cloudstack.local_storage"] = {
+    "inventory_function"  : inventory_cloudstack_local_storage,
+    "check_function"      : check_cloudstack_local_storage,
+    "has_perfdata"        : True,
+    "service_description" : "cloud local_storage percentused of %s"
+}
+
+###########################################################################
+# CLOUDSTACK  SECONDARY STORAGE
+###########################################################################
+cloud_secondary_storage_percentused_default_levels = (80, 90)
+
+def inventory_cloudstack_secondary_storage(info):
+    inventory = []
+    for line in info:
+        zonename = line[0]
+        inventory.append( (zonename, 'cloud_secondary_storage_percentused_default_levels') )
+    return inventory
+
+def check_cloudstack_secondary_storage(item, params, info):
+    warn, crit = cloud_secondary_storage_percentused_default_levels
+    for line in info:
+        zonename = line[0]
+        if zonename == item:
+            percentused = float(line[2])
+            capacityused = (int(line[3])/1024/1024/1024)
+            capacitytotal = (int(line[4])/1024/1024/1024)
+
+            if percentused > crit:
+                STATE = 2
+            elif percentused > warn:
+                STATE = 1
+            else:
+                STATE = 0
+
+            STATE_TXT = "{0:.2f}% used ( {1} of {2} GB),(levels at {3}/{4} %)".format(percentused, capacityused, capacitytotal, warn, crit)
+            perfdata = [ ( "cloud secondary storage percentused", percentused, warn, crit, 0, 100 ) ]
+            return (STATE, STATE_TXT, perfdata)
+
+check_info["cloudstack.secondary_storage"] = {
+    "inventory_function"  : inventory_cloudstack_secondary_storage,
+    "check_function"      : check_cloudstack_secondary_storage,
+    "has_perfdata"        : True,
+    "service_description" : "cloud secondary storage percentused of %s"
+}
