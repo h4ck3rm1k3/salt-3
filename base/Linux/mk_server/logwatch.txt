@@ -1,0 +1,6 @@
+https://github.com/fayetted/logWatch
+https://github.com/smazurov/logwatch
+https://github.com/cparedes/redbluemagenta-new/blob/master/_posts/2011-08-19-modern-log-management-and-monitoring.markdown
+http://theagileadmin.com/2010/06/14/log-management-tools/
+https://wiki.koumbit.net/MonitoringService/SoftwareComparison
+https://github.com/ewilded/Intrusive
