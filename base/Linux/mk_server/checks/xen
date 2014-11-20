@@ -9,9 +9,9 @@ def check_xen_mem(item, params, info):
     crit = 90
     for line in info:
         if 'free_memory' in line:
-            free_mem = int(line[-1]) / 1024
+            free_mem = int(line[-1]) / 1000
         if 'total_memory' in line:
-            total_mem = int(line[-1]) / 1024
+            total_mem = int(line[-1]) / 1000
     used_mem = total_mem -free_mem
     percent = float(used_mem / total_mem * 100)
     if percent > crit:
