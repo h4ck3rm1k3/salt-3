@@ -34,7 +34,7 @@ check_info['xen.mem'] = {
 }
 
 #############################################################################
-# XenServer License Expire Check
+# XenServer License Expiry Check
 # xe host-license-view output:
 # version: 6.0.2 
 # serialnumber:
@@ -83,32 +83,25 @@ check_info['xen.license'] = {
 #################################################
 # XenServer Patches Check
 #################################################
+xs_patches_list = []
 def inventory_xen_patches(info):
-    return [(None, None)]
-
-def check_xen_patches(item, params, info):
-    xs_patches_list=[
-        'XS602E001',
-        'XS602E002',
-        'XS602E003',
-        'XS602E004',
-        'XS602E005',
-        'XS602E006',
-        'XS602E007',
-        'XS602E008',
-    ]
-
-    p_lost = []
+    inventory = []
     for line in info:
         if line[0].strip(':') == 'patches':
             p_installed = line[:-1]
-            for p in xs_patches_list:
-                if p not in p_installed:
-                     p_lost.append(p)
+    return [(None, xs_patches_list)]
 
+def check_xen_patches(item, params, info):
+    p_lost = params
+    for line in info:
+        if line[0].strip(':') == 'patches':
+            p_installed = line[1:]
+            for p in p_installed:
+                p_lost.remove(p)
+                
     if len(p_lost) != 0:
          state = 1
-         state_txt = 'WARN - patches lost: %s' % (str(p_lost))
+         state_txt = 'WARN - patches lost: %s' % (','.join(p_lost))
     else:
          state = 0
          state_txt = 'OK - all patches installed'
