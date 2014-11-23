@@ -83,25 +83,24 @@ check_info['xen.license'] = {
 #################################################
 # XenServer Patches Check
 #################################################
-xs_patches_list = []
+xs_patches = []
 def inventory_xen_patches(info):
     inventory = []
     for line in info:
         if line[0].strip(':') == 'patches':
             p_installed = line[:-1]
-    return [(None, xs_patches_list)]
+    return [(None, xs_patches)]
 
 def check_xen_patches(item, params, info):
-    p_lost = params
     for line in info:
         if line[0].strip(':') == 'patches':
             p_installed = line[1:]
             for p in p_installed:
-                p_lost.remove(p)
+                xs_patches.remove(p)
                 
-    if len(p_lost) != 0:
+    if len(xs_patches) != 0:
          state = 1
-         state_txt = 'WARN - patches lost: %s' % (','.join(p_lost))
+         state_txt = 'WARN - patches lost: %s' % (','.join(xs_patches))
     else:
          state = 0
          state_txt = 'OK - all patches installed'
