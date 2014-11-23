@@ -1,7 +1,16 @@
 #!/bin/bash
+patches_applied(){
+    host=$(xl info | sed -nr '/^host/s/\s+//p' | awk '{ print $2}')
+    host_id=$(xe host-list name-label=$host --minimal)
+    patches_applied=$(xe patch-list hosts=$host_id params=name-label --minimal | tr ',' ' ')
+    echo $patches_applied
+}
+
 if [ ! -f /opt/xensource/bin/xe ];then
   exit
 fi
 echo "<<<xen>>>"
 xl info | sed -nr '/free_memory|total_memory/p'
 xe host-license-view | sed -n '1,8p' | sed -nr 's/^\s+//p'
+patches=$(xe patch-list params=name-label --minimal | tr ',' ' ')
+echo "patches: $patches"

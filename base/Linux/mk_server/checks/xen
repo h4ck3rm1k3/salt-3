@@ -80,3 +80,45 @@ check_info['xen.license'] = {
     "default_levels_variable" : "xen_license_default_levels",
 }
 
+#################################################
+# XenServer Patches Check
+#################################################
+def inventory_xen_patches(info):
+    return [(None, None)]
+
+def check_xen_patches(item, params, info):
+    xs_patches_list=[
+        'XS602E001',
+        'XS602E002',
+        'XS602E003',
+        'XS602E004',
+        'XS602E005',
+        'XS602E006',
+        'XS602E007',
+        'XS602E008',
+    ]
+
+    p_lost = []
+    for line in info:
+        if line[0].strip(':') == 'patches':
+            p_installed = line[:-1]
+            for p in xs_patches_list:
+                if p not in p_installed:
+                     p_lost.append(p)
+
+    if len(p_lost) != 0:
+         state = 1
+         state_txt = 'WARN - patches lost: %s' % (str(p_lost))
+    else:
+         state = 0
+         state_txt = 'OK - all patches installed'
+
+    return (state, state_txt)
+
+check_info['xen.patches'] = {
+    "check_function"          : check_xen_patches,
+    "inventory_function"      : inventory_xen_patches,
+    "service_description"     : "Xen patches",
+    "has_perfdata"            : False,
+}
+

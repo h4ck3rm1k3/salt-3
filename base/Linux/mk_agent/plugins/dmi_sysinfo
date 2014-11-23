@@ -2,5 +2,5 @@
 
 if which dmidecode >/dev/null 2>&1; then
     echo "<<<dmi_sysinfo>>>"
-    dmidecode -t 1 -q
+    dmidecode -t 1 -q | awk '/^System Information/'
 fi

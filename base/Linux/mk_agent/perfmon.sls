@@ -1,5 +1,5 @@
 perfmon-utils:
-  pkg.installed:
+  pkg.latest:
     - names:
       - freeipmi
       - nfs-utils
@@ -12,7 +12,6 @@ perfmon-utils:
       - innotop
       - sos
       - dmidecode
-      - iptraf
       - agedu
       - ncdu
       - pciutils

@@ -21,7 +21,7 @@ allow_tcp_port_6556:
 
 iptables_save:
   cmd.wait:
-    - name: iptables-save > /etc/iptables/rules
+    - name: iptables-save > /etc/sysconfig/iptables
     - stateful: True
     - onlyif: iptables -L | grep -q 6556
     - watch:
@@ -30,14 +30,14 @@ iptables_save:
 cmk-repo:
   file.managed:
     - name: /etc/yum.repos.d/cmk.repo
-    - source: salt://check_mk/{{ grains['os_family'] }}/cmk.repo
+    - source: salt://mk_agent/{{ grains['os_family'] }}/cmk.repo
 
 nsca_client:
   pkg.installed:
     - name: nagios-nsca-client
   file.managed:
     - name: /etc/nagios/send_nsca.cfg
-    - source: salt://check_mk/send_nsca.cfg
+    - source: salt://mk_agent/send_nsca.cfg
     - require:
       - pkg: nagios-nsca-client
 
