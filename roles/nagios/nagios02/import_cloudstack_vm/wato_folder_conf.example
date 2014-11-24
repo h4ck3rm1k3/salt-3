@@ -1,0 +1,6 @@
+#{'attributes': {'contactgroups': (True, ['admin']), 'tag_state': 'Running'}, 'num_hosts': 1, 'title': u'admin'}
+
+folder_conf = "{'attributes': {'contactgroups': (True, ['%s']), 'tag_state': 'Running'}, 'num_hosts': %s, 'title': u'%s'}" % (cg, num_hosts, title)
+#host_contactgroups = [( 'admin', ['/' + FOLDER_PATH + '/+'], ALL_HOSTS, {'comment': u'Put all hosts into the contact group "admin"'} ),] + host_contactgroups
+rule_conf = "host_contactgroups = [( '%s', ['/' + FOLDER_PATH + '/+'], ALL_HOSTS, {'comment': u'Put all hosts into the contact group "%s"'} ),] + host_contactgroups" % (cg, host_folder)
+

@@ -1,0 +1,11 @@
+# Netdisco - crontab
+#       This is the crontab for the netdisco user
+#       Output is found in /data/netdisco/logs
+# $Id: netdisco.crontab,v 1.7 2004/12/05 02:14:26 maxbaker Exp $
+
+#MAILTO=max
+PATH=/bin:/usr/bin:/usr/local/bin:/usr/lib/netdisco
+
+# Refresh Graph every day
+# 0 3     * * *   netdisco    [ -f /etc/netdisco/netdisco.conf ] && /usr/bin/netdisco -b -g 2>&1
+

@@ -1,0 +1,14 @@
+contacts.update(
+{'cmdb_automation': {'alias': u'cmdb_automation',
+                     'notifications_enabled': False,
+                     'contactgroups': [],
+                     'disable_notifications': False,
+                     'email': '',
+                     'pager': '',
+                     'host_notification_options': 'durfs',
+                     'notification_method': 'email',
+                     'notification_period': '24X7',
+                     'service_notification_options': 'wucrfs'},
+ 'omdadmin': {'alias': 'omdadmin'}}
+)
+

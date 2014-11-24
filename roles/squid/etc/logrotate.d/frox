@@ -1,0 +1,11 @@
+#
+#	Logrotate fragment for frox.
+#
+/var/log/frox.log {
+	weekly	
+	rotate 7 
+	compress
+	delaycompress
+	notifempty 
+	missingok
+}

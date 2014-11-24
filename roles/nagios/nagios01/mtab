@@ -1,0 +1,11 @@
+/dev/mapper/vg_centos6264minimal-lv_root / ext4 rw 0 0
+proc /proc proc rw 0 0
+sysfs /sys sysfs rw 0 0
+devpts /dev/pts devpts rw,gid=5,mode=620 0 0
+tmpfs /dev/shm tmpfs rw 0 0
+/dev/xvda1 /boot ext4 rw 0 0
+/dev/mapper/vg_nagios01-lv_nagios01 /opt ext4 rw 0 0
+none /proc/sys/fs/binfmt_misc binfmt_misc rw 0 0
+none /proc/xen xenfs rw 0 0
+sunrpc /var/lib/nfs/rpc_pipefs rpc_pipefs rw 0 0
+tmpfs /opt/omd/sites/site01/tmp tmpfs rw,noexec,nosuid,nodev,mode=755,uid=492,gid=505,user=site01 0 0

@@ -1,0 +1,6 @@
+
+
+LABEL 6.3-minimal-unattend
+    KERNEL http://10.24.4.4/os/Linux/RedHat/CentOS/x86_64/6.3/images/pxeboot/vmlinuz
+    INITRD http://10.24.4.4/os/Linux/RedHat/CentOS/x86_64/6.3/images/pxeboot/initrd.img
+    APPEND ip=dhcp ks=http://10.24.4.97/pxe/ks/template/Linux/RedHat/minimal.ks

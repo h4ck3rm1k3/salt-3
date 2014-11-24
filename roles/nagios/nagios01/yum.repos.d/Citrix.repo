@@ -1,0 +1,7 @@
+[citrix]
+name=XenServer 6.0.2 updates
+mirrorlist=http://updates.vmd.citrix.com/XenServer/6.0.2/domain0/mirrorlist
+baseurl=http://updates.vmd.citrix.com/XenServer/6.0.2/domain0/
+gpgcheck=1
+gpgkey=http://updates.vmd.citrix.com/XenServer/RPM-GPG-KEY-6.0.2
+enabled=0

@@ -1,0 +1,1 @@
+ipmitool -I lanplus -H 192.168.10.13 -U ADMIN -P ipmiXSM02  lan print

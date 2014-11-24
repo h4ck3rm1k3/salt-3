@@ -1,0 +1,9 @@
+dmi
+ipmi
+ping
+xs-tools
+proc_salt
+proc_ntp
+proc_cron
+proc_zombie
+check_mtr

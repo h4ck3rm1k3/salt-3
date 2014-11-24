@@ -1,0 +1,18 @@
+#!/usr/bin/env python
+import pycurl
+
+objtype = {
+    '4': 'Server',
+    '5': 'DiskArray',
+    '7': 'Router',
+    '8': 'Nework Switch',
+    '798': 'Nework Security',
+    '1504': 'VM',
+}
+
+all_objects = "http://admin:gdcloud.com@racktables/racktables/api.php?method=get_depot"
+hosts = []
+for object in objtype.keys():
+   if object['objtype_id'] in objtype.keys():
+       hosts += [ object ]
+    

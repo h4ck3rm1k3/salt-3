@@ -1,0 +1,6 @@
+https://wiki.icinga.org/display/howtos/NSCA-ng
+http://exchange.nagios.org/directory/Addons/Passive-Checks/NRDP--2D-Nagios-Remote-Data-Processor/details
+http://lists.mathias-kettner.de/pipermail/checkmk-en/2013-March/008783.html
+http://lists.mathias-kettner.de/pipermail/checkmk-en/2013-March/008780.html
+NSCP:
+  - http://www.admin-enclave.com/en/projects/nagios-monitoring/nscp-installation.html

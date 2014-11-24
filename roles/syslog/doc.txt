@@ -1,0 +1,15 @@
+http://www.johnandcailin.com/blog/john/how-setup-real-time-email-notification-critical-syslog-events
+logwatch
+swatch:
+  - http://www.linuxjournal.com/article/4776
+  - http://etutorials.org/Linux+systems/secure+linux-based+servers/Chapter+10.+System+Log+Management+and+Monitoring/Section+10.5.+Using+Swatch+for+Automated+Log+Monitoring/
+  - http://www.csdn123.com/html/20130206/31/bb6c8894dac15a08d2cbb9f6f404fffb.htm
+example:
+  - swatch --config-file=/home/zhaoke/swatch.conf --tail-file=/var/log/messages
+  - http://blog.csdn.net/lllzd/article/details/7871865
+  - http://smartest.blog.51cto.com/3585938/1284510
+  - http://www.db110.com/swatch%E4%BD%BF%E7%94%A8/
+
+init-script:
+  - http://bbs.cisco-club.com.cn/blog-115584-1744.html
+  - nagios-proc-swatch

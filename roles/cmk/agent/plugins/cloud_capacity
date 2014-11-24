@@ -1,0 +1,36 @@
+#!/usr/bin/python
+import os, sys
+import pprint
+import CloudStack
+import ConfigParser
+
+def get_cloudstack_capacity():
+  if not os.path.exists('/etc/check_mk/cloud_manager.ini'):
+       sys.exit(0)
+
+  cf = ConfigParser.ConfigParser()
+  cf.read('/etc/check_mk/cloud_manager.ini')
+  api = cf.get('cloudstack', 'api')
+  apikey = cf.get('cloudstack', 'apikey')
+  secret = cf.get('cloudstack', 'secret')
+  cs = CloudStack.Client(api, apikey, secret)
+
+  print '<<<cloudstack>>>'
+  response = cs.listCapacity()
+  caps = response['capacity']
+  type_txt = {
+    '0': 'MEMORY',
+    '1': 'CPU',
+    '2': 'STORAGE',
+    '3': 'STORAGE_ALLOCATED',
+    '4': 'VIRTUAL_NETWORK_PUBLIC_IP',
+    '5': 'PRIVATE_IP',
+    '6': 'SECONDARY_STORAGE',
+    '7': 'VLAN',
+    '8': 'DIRECT_ATTACHED_IP',
+    '9': 'LOCAL_STORAGE',
+  }
+  for cap in caps:
+     print type_txt[str(cap['type'])], cap['zonename'], cap['percentused'], cap['capacityused'], cap['capacitytotal']
+
+get_cloudstack_capacity()

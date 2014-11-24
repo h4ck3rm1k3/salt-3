@@ -1,0 +1,4 @@
+http://mirrors.sohu.com/centos/$releasever/os/$basearch/
+http://mirrors.163.com/centos/$releasever/os/$basearch/
+http://mirrors.aliyun.com/centos/$releasever/os/$basearch/
+http://mirrors.oschina.com/centos/$releasever/os/$basearch/

@@ -1,0 +1,37 @@
+# Written by WATO
+# encoding: utf-8
+
+
+
+
+
+all_hosts += [
+    (
+       "nagios01|Linux|RedHat|CentOS|Xen|xen|no_ttl|tcp_22|wato|/" + FOLDER_PATH + "/",
+    )
+]
+
+extra_host_conf.setdefault('alias', []).extend(
+  [
+    (u'nagios01', ['nagios01'])
+  ],
+)
+
+host_contactgroups.append(
+  ( ['omdadmin'], [ '/' + FOLDER_PATH + '/' ], ALL_HOSTS )
+)
+
+host_attributes.update(
+{'nagios01': {
+    'alias': u'nagios01',
+    'ipaddress': u'192.168.11.9'
+)
+
+
+host_attributes.update(
+    {'nagios01': {
+        'tag_port_tcp': 'tcp_22',
+        'tag_state': 'Running'
+    }
+)
+

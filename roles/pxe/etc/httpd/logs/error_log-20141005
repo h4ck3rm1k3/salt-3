@@ -1,0 +1,15 @@
+[Sun Sep 28 03:18:01 2014] [notice] Digest: generating secret for digest authentication ...
+[Sun Sep 28 03:18:01 2014] [notice] Digest: done
+[Sun Sep 28 03:18:01 2014] [notice] Apache/2.2.15 (Unix) DAV/2 PHP/5.3.3 mod_ssl/2.2.15 OpenSSL/1.0.0-fips mod_wsgi/3.2 Python/2.6.6 configured -- resuming normal operations
+[Mon Sep 29 10:53:17 2014] [error] [client 10.24.23.52] (13)Permission denied: access to /pxe/doc/index.php denied
+[Mon Sep 29 10:53:17 2014] [error] [client 10.24.23.52] (13)Permission denied: access to /pxe/doc/index.html denied
+[Mon Sep 29 10:53:17 2014] [error] [client 10.24.23.52] (13)Permission denied: access to /pxe/doc/index.html.var denied
+[Mon Sep 29 10:53:17 2014] [error] [client 10.24.23.52] File does not exist: /var/www/html/favicon.ico
+[Mon Sep 29 11:19:32 2014] [error] [client 192.168.32.243] File does not exist: /var/www/html/pxe/ks/template/linux
+[Mon Sep 29 11:19:32 2014] [error] [client 192.168.32.243] File does not exist: /var/www/html/pxe/ks/template/linux
+[Mon Sep 29 11:19:32 2014] [error] [client 192.168.32.243] File does not exist: /var/www/html/pxe/ks/template/linux
+[Mon Sep 29 11:19:32 2014] [error] [client 192.168.32.243] File does not exist: /var/www/html/pxe/ks/template/linux
+[Mon Sep 29 11:19:32 2014] [error] [client 192.168.32.243] File does not exist: /var/www/html/pxe/ks/template/linux
+[Mon Sep 29 11:19:32 2014] [error] [client 192.168.32.243] File does not exist: /var/www/html/pxe/ks/template/linux
+[Sun Oct 05 03:09:01 2014] [notice] SIGHUP received.  Attempting to restart
+httpd: Could not reliably determine the server's fully qualified domain name, using 192.168.11.8 for ServerName

@@ -1,0 +1,3 @@
+create database todo
+username/passwor: edit config/settings.py
+mysql -uroot -pgdcloud.com todo < ./static/sql/todo.sql

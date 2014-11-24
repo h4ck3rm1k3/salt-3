@@ -1,0 +1,13 @@
+#!/bin/bash
+if ! test -c /dev/ipmi0;then
+    exit
+elif ! modprobe -l | grep -q ipmi_si;then
+    exit
+elif ! which ipmitool > /dev/null;then
+    exit
+else
+    grep -q ipmi_si /proc/modules || modprobe ipmi_si > /dev/null
+fi
+
+echo '<<<ipmi_info>>>'
+ipmitool lan print

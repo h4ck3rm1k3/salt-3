@@ -1,0 +1,21 @@
+#local=/hdtr.com/
+# For debugging purposes, log each DNS query as it passes through
+# dnsmasq.
+# Note: for cloudstack VR, delete local=/hdtr.com/
+log-queries
+
+# Log lots of extra information about DHCP transactions.
+log-dhcp
+
+{% if grains['ipv4'][-1].startswith('192.168') or grains['ipv4'][-1].startswith('172.') %}
+{% set pxe-server = '192.168.11.8' %}
+{% else %}
+{% set pxe-server = '10.24.4.97' %}
+{% endif %}
+
+{% set tftp-root = '/var/www/html/pxe' %}
+
+tftp-root={{ tftp-root }}
+dhcp-match=ipxe,175
+dhcp-boot=net:#ipxe,ipxelinux.0,,{{ pxe-server }}
+dhcp-boot=http://{{ pxe-server }}/pxe/menu.ipxe,, {{ pxe-server }}
