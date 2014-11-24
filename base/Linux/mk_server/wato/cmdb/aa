@@ -1,0 +1,13 @@
+#!/usr/bin/python
+#sms_5c.py
+import sys, os
+import pycurl, urllib
+import re, pprint
+import simplejson as json
+
+request_uri = 'http://admin:gdcloud.com@racktables/racktables/api.php?method=get_depot'
+http_body = urllib.urlopen(request_uri).read()
+output = json.loads(http_body)
+pp = pprint.PrettyPrinter()
+objects = output['response']
+pp.pprint(objects)

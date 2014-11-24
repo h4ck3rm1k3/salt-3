@@ -5,9 +5,6 @@
 {% if grains['os_family'] =='Debian' %}
 {% set ntp = ntpd %}
 {% endif %}
-#ntp:
-#  hosts.present:
-#    - ip: 192.168.11.10
 
 ntpd:
   pkg:
@@ -25,4 +22,5 @@ ntpd:
 ntp_conf:
   file.managed:
     - name: /etc/ntp.conf
-    - source: salt://ntp/ntp.conf
+    - source: salt://ntp/ntp.conf.jinja
+    - template: jinja
