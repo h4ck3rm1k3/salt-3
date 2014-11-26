@@ -2,9 +2,9 @@ enable_pxe:
   file.managed:
     - name: /usr/sbin/bootutil32
     - source: salt://RedHat/XenServer/files/bootutil32
-    - mode: 0644
+    - mode: 0755
   cmd.run:
-    - name: bootutil32 -STE > /dev/null
+    - name: bootutil32 -STE -ALL > /dev/null
     - stateful: True
 
 /root/.set_ubuntu_pv_args.sh:
@@ -34,3 +34,13 @@ disable_boot_splash:
   cmd.run:
     - name: sed -i '/append/s/quiet//p' /boot/extlinux.conf
     - stateful: True
+
+{% if grains['osrelease'] == '6.0.2' %}
+add_license:
+  file.managed:
+    - name: /tmp/xs602.xslic
+    - source: salt://RedHat/XenServer/files/xs602.xslic
+  cmd.run:
+    - name: xe host-license-add license-file=/tmp/xs602.xslic > /dev/null
+    - stateful: True
+{% endif %}
