@@ -3,6 +3,32 @@ if [ ! -f /opt/xensource/bin/xe ];then
   exit
 fi
 echo "<<<xen>>>"
+##################################
+# get this hosts' memory info
+##################################
 xl info | sed -nr '/free_memory|total_memory/p'
+##################################
+# get host's license info
+##################################
 xe host-license-view | sed -n '1,8p' | sed -nr 's/^\s+//p'
+##################################
+# get management pif's params info
+##################################
 echo "patches: $(xe patch-list params=name-label --minimal | tr ',' ' ')"
+##################################
+# get management pif's params info
+##################################
+hostname=$(xl info | awk -F ':' '/host/ { print $2}' | sed -nr 's/\s+//p')
+pifs=$(xe pif-list management=true host-name-label=z4p1c1h2 --minimal | tr ',' ' ')
+for pif in $pifs
+do
+   pif_ip=$(xe pif-param-get param-name=IP uuid=$pif)
+   if [ ! -z $pif_ip ];then
+      xe pif-list params= uuid=$pif | egrep -v '^$'
+   fi
+done
+
+##################################
+# get xenserver's inventory info
+##################################
+cat /etc/xensource-inventory
