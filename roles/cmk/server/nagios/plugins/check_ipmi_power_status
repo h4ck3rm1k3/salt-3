@@ -1,0 +1,7 @@
+#!/bin/bash
+output=$(ipmitool -I lanplus -H $1 -U $2 -P $3 chassis power status)
+if echo $output | grep -q on ;then
+    echo 'OK - IPMI Power Status is ON' && exit 0
+else
+    echo 'WARN - IPMI Power Status is Down' && exit 2
+fi
