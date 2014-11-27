@@ -12,9 +12,7 @@ mk_agent:
       - check_mk-agent
   file.managed:
     - name: /etc/yum.repos.d/cmk.repo
-    - source: salt://mk_agent/{{ grains['os_family'] }}/cmk.repo
-    - require:
-      - pkg: check_mk-agent
+    - source: salt://cmk/agent/{{ grains['os_family'] }}/cmk.repo
 
 mk_agent-plugins:
   pkg.latest:
@@ -48,6 +46,7 @@ nsca_client:
     - name: nagios-nsca-client
   file.managed:
     - name: /etc/nagios/send_nsca.cfg
-    - source: salt://mk_agent/send_nsca.cfg
+    - source: salt://cmk/agent/nsca/send_nsca.cfg.jinja
+    - template: jinja
     - require:
       - pkg: nagios-nsca-client

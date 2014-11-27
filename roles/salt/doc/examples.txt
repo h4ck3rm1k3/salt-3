@@ -1,0 +1,10 @@
+http://blog.coocla.org/342.html
+grains deploy: http://blog.csdn.net/shanliangliuxing/article/details/8742523
+dynamic sls: http://imil.net/wp/2013/06/06/saltstack-dynamic-sls/
+
+init.sls: conditional control include
+top.sls: base env kernel os_family os osrelease osarch role
+cpu analyzer: http://blog.itpub.net/8554499/viewspace-580300/
+http://www.2cto.com/os/201309/245531.html
+https://developer.rackspace.com/blog/marconi-and-salt-part-2/
+salt '*' state.sls Linux.RedHat.CentOS.6

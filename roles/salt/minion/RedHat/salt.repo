@@ -1,0 +1,5 @@
+[saltstack]
+name= saltstack
+baseurl=http://ftp01/repo/salt/$releasever/$basearch
+enabled=1
+gpgcheck=0

@@ -1,0 +1,4663 @@
+ldap:
+  biosversion: Revision: 1.221
+  cpu_model: Intel64 Family 6 Model 45 Stepping 7, GenuineIntel
+  cpuarch: AMD64
+  defaultencoding: cp936
+  defaultlanguage: zh_CN
+  domain: hdtr.com
+  external_ip: 111.205.45.254
+  fqdn: AD.hdtr.com
+  fqdn_ip4:
+      192.168.12.2
+  fqdn_ip6:
+      fe80::f18d:bf5b:882b:7dfc%13
+  gpus:
+  host: AD
+  hwaddr_interfaces: {'Citrix PV Ethernet Adapter #0': '72:F9:62:A2:02:E1'}
+  id: ldap
+  ip_interfaces: {'Citrix PV Ethernet Adapter #0': ['192.168.12.2']}
+  ipv4:
+      192.168.12.2
+  ipv6:
+      fe80::f18d:bf5b:882b:7dfc
+  kernel: Windows
+  kernelrelease: 6.1.7601
+  localhost: AD
+  manufacturer: Xen
+  master: salt
+  mem_total: 4092
+  nodename: AD
+  num_cpus: 4
+  num_gpus: 0
+  os: Windows
+  os_family: Windows
+  osfullname: Microsoft Windows Server 2008 R2 Enterprise
+  osmanufacturer: Microsoft Corporation
+  osrelease: 2008ServerR2
+  osversion: 6.1.7601
+  path: c:\salt\salt-2014.1.0-5-g32d3463.win-amd64;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;
+  productname: HVM domU
+  ps: tasklist.exe
+  pythonpath:
+      c:\salt\salt-2014.1.0-5-g32d3463.win-amd64\library.zip
+      c:\salt\salt-2014.1.0-5-g32d3463.win-amd64\esky-0.9.8-py2.7.egg
+      c:\salt\salt-2014.1.0-5-g32d3463.win-amd64\jinja2-2.7.1-py2.7.egg
+      c:\salt\salt-2014.1.0-5-g32d3463.win-amd64\markupsafe-0.18-py2.7.egg
+      c:\salt\salt-2014.1.0-5-g32d3463.win-amd64\msgpack_python-0.4.0-py2.7-win-amd64.egg
+      c:\salt\salt-2014.1.0-5-g32d3463.win-amd64\psutil-1.2.1-py2.7-win-amd64.egg
+      c:\salt\salt-2014.1.0-5-g32d3463.win-amd64\pyyaml-3.10-py2.7-win-amd64.egg
+      c:\salt\salt-2014.1.0-5-g32d3463.win-amd64\pyzmq-14.0.1-py2.7-win-amd64.egg
+      c:\salt\salt-2014.1.0-5-g32d3463.win-amd64\salt-2014.1.0_5_g32d3463-py2.7.egg
+      c:\salt\salt-2014.1.0-5-g32d3463.win-amd64\setuptools-1.1.6-py2.7.egg
+      c:\salt\salt-2014.1.0-5-g32d3463.win-amd64\wmi-1.4.9-py2.7.egg
+      c:\salt\salt-2014.1.0-5-g32d3463.win-amd64
+  pythonversion: 2.7.5.final.0
+  saltpath: c:\salt\salt-2014.1.0-5-g32d3463.win-amd64\salt-2014.1.0_5_g32d3463-py2.7.egg\salt
+  saltversion: 2014.1.0-5-g32d3463
+  saltversioninfo:
+      2014
+      1
+      0
+  server_id: 478856247
+  shell: /bin/sh
+  timezone: (UTC+08:00)北京，重庆，香港特别行政区，乌鲁木齐
+  windowsdomain: hdtr.com
+xs228:
+  biosreleasedate: 06/28/2013
+  biosversion: 3.0
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: 
+  external_ip:
+  fqdn: xs228
+  fqdn_ip4:
+      192.168.11.26
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xs228
+  hwaddr_interfaces: {'eth0': '00:25:90:d1:98:e0', 'bond0': '00:23:20:b0:a0:20', 'bond1': '00:23:20:e9:2a:58', 'vif2.1': 'fe:ff:ff:ff:ff:ff', 'vif2.0': 'fe:ff:ff:ff:ff:ff', 'xapi5': '00:25:90:d1:98:e0', 'lo': '00:00:00:00:00:00', 'xapi6': '00:25:90:d1:98:e0', 'xapi0': 'a0:36:9f:15:56:ac', 'xapi3': '00:23:20:b5:de:14', 'xapi2': '00:25:90:d1:98:e0', 'vif1.0': 'fe:ff:ff:ff:ff:ff', 'xapi4': '00:25:90:d1:98:e0', 'vif2.2': 'fe:ff:ff:ff:ff:ff', 'xapi9': '00:25:90:d1:98:e0', 'xapi12': '00:25:90:d1:98:e0', 'eth3': 'a0:36:9f:15:56:ae', 'eth2': 'a0:36:9f:15:56:ac', 'eth1': '00:25:90:d1:98:e1', 'xapi8': '00:25:90:d1:98:e0'}
+  id: xs228
+  ip_interfaces: {'eth0': [], 'bond0': [], 'bond1': [], 'vif2.1': [], 'vif2.0': [], 'xapi5': [], 'lo': ['127.0.0.1'], 'xapi6': [], 'xapi0': ['192.168.11.26'], 'xapi3': ['169.254.0.1'], 'xapi2': [], 'vif1.0': [], 'xapi4': [], 'vif2.2': [], 'xapi9': [], 'xapi12': [], 'eth3': [], 'eth2': [], 'eth1': [], 'xapi8': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.11.26
+  ipv6:
+      ::1
+      fe80::223:20ff:feb0:a020
+      fe80::223:20ff:feb5:de14
+      fe80::223:20ff:fee9:2a58
+      fe80::225:90ff:fed1:98e0
+      fe80::225:90ff:fed1:98e1
+      fe80::a236:9fff:fe15:56ac
+      fe80::a236:9fff:fe15:56ae
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xs228
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 750
+  nodename: xs228
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 1137514540
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen Dom0
+nagios:
+  biosreleasedate: 10/21/2011
+  biosversion: 1.9.0
+  cpu_flags: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm dca sse4_1 sse4_2 popcnt lahf_lm dts tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU           E5506  @ 2.13GHz
+  cpuarch: x86_64
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  external_ip:
+  fqdn: nagios01.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: nagios01
+  hwaddr_interfaces: {'lo': '00:00:00:00:00:00', 'em1': 'd4:ae:52:6f:9b:99', 'em2': 'd4:ae:52:6f:9b:9a'}
+  id: nagios
+  ip_interfaces: {'lo': ['127.0.0.1'], 'em1': ['192.168.8.12'], 'em2': []}
+  ipv4:
+      127.0.0.1
+      192.168.8.12
+  ipv6:
+  kernel: Linux
+  kernelrelease: 2.6.32-220.el6.x86_64
+  localhost: nagios01.gdcloud.com
+  lsb_distrib_codename: Final
+  lsb_distrib_id: CentOS
+  lsb_distrib_release: 6.2
+  manufacturer: Dell Inc.
+  master: salt
+  mem_total: 3815
+  nodename: nagios01.gdcloud.com
+  num_cpus: 4
+  num_gpus: 1
+  os: CentOS
+  os_family: RedHat
+  osarch: x86_64
+  oscodename: Final
+  osfinger: CentOS-6
+  osfullname: CentOS
+  osmajorrelease:
+      6
+      2
+  osrelease: 6.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: PowerEdge T410
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python2.6/site-packages/Mako-0.7.3-py2.6.egg
+      /usr/lib/python2.6/site-packages/MarkupSafe-0.15-py2.6.egg
+      /usr/lib/python2.6/site-packages/XenAPI-1.2-py2.6.egg
+      /usr/lib/python2.6/site-packages/prettytable-0.7.2-py2.6.egg
+      /usr/lib/python2.6/site-packages/Pygments-1.6-py2.6.egg
+      /usr/lib/python2.6/site-packages/Fabric-1.6.1-py2.6.egg
+      /usr/lib/python2.6/site-packages/paramiko-1.10.1-py2.6.egg
+      /usr/lib/python2.6/site-packages/pycrypto-2.6-py2.6-linux-x86_64.egg
+      /usr/lib/python2.6/site-packages/pip-1.3.1-py2.6.egg
+      /usr/lib/python2.6/site-packages/argparse-1.2.1-py2.6.egg
+      /usr/lib/python2.6/site-packages/pyipmi-0.11.0-py2.6.egg
+      /usr/lib/python2.6/site-packages/virtualenv-1.11.2-py2.6.egg
+      /usr/lib/python2.6/site-packages/Flask-0.10.1-py2.6.egg
+      /usr/lib/python2.6/site-packages/itsdangerous-0.23-py2.6.egg
+      /usr/lib/python2.6/site-packages/Jinja2-2.7.2-py2.6.egg
+      /usr/lib/python2.6/site-packages/Werkzeug-0.9.4-py2.6.egg
+      /usr/lib/python2.6/site-packages/ipaddress-1.0.6-py2.6.egg
+      /usr/lib/python2.6/site-packages/PyMySQL-0.6.1-py2.6.egg
+      /usr/lib64/python26.zip
+      /usr/lib64/python2.6
+      /usr/lib64/python2.6/plat-linux2
+      /usr/lib64/python2.6/lib-tk
+      /usr/lib64/python2.6/lib-old
+      /usr/lib64/python2.6/lib-dynload
+      /usr/lib64/python2.6/site-packages
+      /usr/lib64/python2.6/site-packages/gtk-2.0
+      /usr/lib/python2.6/site-packages
+      /usr/lib/python2.6/site-packages/setuptools-0.6c11-py2.6.egg-info
+  pythonversion: 2.6.6.final.0
+  roles: nagios
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 5S7X93X
+  server_id: 1396871055
+  shell: /bin/sh
+  virtual: physical
+netflow:
+  cpu_flags: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat clflush mmx fxsr sse sse2 syscall lm rep_good unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes hypervisor lahf_lm
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: x86_64
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: 
+  external_ip: 111.205.45.254
+  fqdn: netflow
+  fqdn_ip4:
+  fqdn_ip6:
+  gpus:
+      {'model': 'GD 5446', 'vendor': 'unknown'}
+  host: netflow
+  hwaddr_interfaces: {'lo': '00:00:00:00:00:00', 'eth0': '5a:f4:eb:9c:90:9c'}
+  id: netflow
+  ip_interfaces: {'lo': ['127.0.0.1'], 'eth0': ['192.168.12.6']}
+  ipv4:
+      127.0.0.1
+      192.168.12.6
+  ipv6:
+      ::1
+      fe80::58f4:ebff:fe9c:909c
+  kernel: Linux
+  kernelrelease: 2.6.32-220.el6.x86_64
+  localhost: netflow
+  lsb_distrib_codename: Final
+  lsb_distrib_id: CentOS
+  lsb_distrib_release: 6.2
+  master: salt
+  mem_total: 3825
+  nodename: netflow
+  num_cpus: 4
+  num_gpus: 1
+  os: CentOS
+  os_family: RedHat
+  osarch: x86_64
+  oscodename: Final
+  osfinger: CentOS-6
+  osfullname: CentOS
+  osmajorrelease:
+      6
+      2
+  osrelease: 6.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib64/python26.zip
+      /usr/lib64/python2.6
+      /usr/lib64/python2.6/plat-linux2
+      /usr/lib64/python2.6/lib-tk
+      /usr/lib64/python2.6/lib-old
+      /usr/lib64/python2.6/lib-dynload
+      /usr/lib64/python2.6/site-packages
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.6.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  server_id: 1128735834
+  shell: /bin/sh
+  virtual: xen
+  virtual_subtype: Xen PV DomU
+ntp01:
+  biosreleasedate: 04/24/2014
+  biosversion: 4.1.2
+  cpu_flags: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat clflush mmx fxsr sse sse2 syscall lm rep_good unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes hypervisor lahf_lm
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: x86_64
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  external_ip: 114.251.196.110
+  fqdn: ntp.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+      {'model': 'GD 5446', 'vendor': 'unknown'}
+  host: ntp
+  hwaddr_interfaces: {'lo': '00:00:00:00:00:00', 'eth0': '36:85:e4:8b:49:1d'}
+  id: ntp01
+  ip_interfaces: {'lo': ['127.0.0.1'], 'eth0': ['192.168.11.10']}
+  ipv4:
+      127.0.0.1
+      192.168.11.10
+  ipv6:
+      ::1
+      fe80::3485:e4ff:fe8b:491d
+  kernel: Linux
+  kernelrelease: 2.6.32-220.el6.x86_64
+  localhost: ntp.gdcloud.com
+  lsb_distrib_codename: Final
+  lsb_distrib_id: CentOS
+  lsb_distrib_release: 6.2
+  manufacturer: Xen
+  master: salt
+  mem_total: 991
+  nodename: ntp.gdcloud.com
+  num_cpus: 2
+  num_gpus: 1
+  os: CentOS
+  os_family: RedHat
+  osarch: x86_64
+  oscodename: Final
+  osfinger: CentOS-6
+  osfullname: CentOS
+  osmajorrelease:
+      6
+      2
+  osrelease: 6.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: HVM domU
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib64/python26.zip
+      /usr/lib64/python2.6
+      /usr/lib64/python2.6/plat-linux2
+      /usr/lib64/python2.6/lib-tk
+      /usr/lib64/python2.6/lib-old
+      /usr/lib64/python2.6/lib-dynload
+      /usr/lib64/python2.6/site-packages
+      /usr/lib/python2.6/site-packages
+      /usr/lib/python2.6/site-packages/setuptools-0.6c11-py2.6.egg-info
+  pythonversion: 2.6.6.final.0
+  roles: ntp-server
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 1018b3b6-3da9-9ef6-56c2-5400e0bc5f3e
+  server_id: 1994925182
+  shell: /bin/sh
+  virtual: xen
+  virtual_subtype: Xen PV DomU
+syslog:
+  cpu_flags: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat clflush mmx fxsr sse sse2 syscall lm rep_good unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes hypervisor lahf_lm
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: x86_64
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: 
+  external_ip: 111.205.45.254
+  fqdn: syslog
+  fqdn_ip4:
+      192.168.12.9
+  fqdn_ip6:
+  gpus:
+      {'model': 'GD 5446', 'vendor': 'unknown'}
+  host: syslog
+  hwaddr_interfaces: {'lo': '00:00:00:00:00:00', 'eth0': '26:5d:76:47:23:b5'}
+  id: syslog
+  ip_interfaces: {'lo': ['127.0.0.1'], 'eth0': ['192.168.12.9']}
+  ipv4:
+      127.0.0.1
+      192.168.12.9
+  ipv6:
+      ::1
+      fe80::245d:76ff:fe47:23b5
+  kernel: Linux
+  kernelrelease: 2.6.32-220.el6.x86_64
+  localhost: syslog
+  lsb_distrib_codename: Final
+  lsb_distrib_id: CentOS
+  lsb_distrib_release: 6.2
+  master: salt
+  mem_total: 3825
+  nodename: syslog
+  num_cpus: 4
+  num_gpus: 1
+  os: CentOS
+  os_family: RedHat
+  osarch: x86_64
+  oscodename: Final
+  osfinger: CentOS-6
+  osfullname: CentOS
+  osmajorrelease:
+      6
+      2
+  osrelease: 6.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib64/python26.zip
+      /usr/lib64/python2.6
+      /usr/lib64/python2.6/plat-linux2
+      /usr/lib64/python2.6/lib-tk
+      /usr/lib64/python2.6/lib-old
+      /usr/lib64/python2.6/lib-dynload
+      /usr/lib64/python2.6/site-packages
+      /usr/lib/python2.6/site-packages
+      /usr/lib/python2.6/site-packages/setuptools-0.6c11-py2.6.egg-info
+  pythonversion: 2.6.6.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  server_id: 1869312145
+  server_role: syslog
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen PV DomU
+xenserver-p1:
+  biosreleasedate: 06/20/2012
+  biosversion: 1.1
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: 
+  external_ip:
+  fqdn: xenserver-p1
+  fqdn_ip4:
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xenserver-p1
+  hwaddr_interfaces: {'vif6.0': 'fe:ff:ff:ff:ff:ff', 'bond0': '00:23:20:a3:21:56', 'bond1': '00:23:20:da:91:37', 'vif2.1': 'fe:ff:ff:ff:ff:ff', 'vif2.0': 'fe:ff:ff:ff:ff:ff', 'lo': '00:00:00:00:00:00', 'xapi1': '90:e2:ba:24:65:a8', 'xapi0': '00:25:90:78:05:e6', 'xapi2': '00:25:90:78:05:e6', 'vif1.0': 'fe:ff:ff:ff:ff:ff', 'vif1.1': 'fe:ff:ff:ff:ff:ff', 'eth3': '90:e2:ba:24:65:a9', 'eth2': '90:e2:ba:24:65:a8', 'eth1': '00:25:90:78:05:e7', 'eth0': '00:25:90:78:05:e6'}
+  id: xenserver-p1
+  ip_interfaces: {'vif6.0': [], 'bond0': [], 'bond1': [], 'vif2.1': [], 'vif2.0': [], 'lo': ['127.0.0.1'], 'xapi1': ['192.168.11.12'], 'xapi0': [], 'xapi2': [], 'vif1.0': [], 'vif1.1': [], 'eth3': [], 'eth2': [], 'eth1': [], 'eth0': []}
+  ipv4:
+      127.0.0.1
+      192.168.11.12
+  ipv6:
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xenserver-p1
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 747
+  nodename: xenserver-p1
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 1332499776
+  shell: /bin/sh
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xs235:
+  biosreleasedate: 06/28/2013
+  biosversion: 3.0
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  fqdn: xs235.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xs235
+  id: xs235
+  ip_interfaces: {'bond0': [], 'bond1': [], 'lo': ['127.0.0.1'], 'xapi7': [], 'xapi1': ['192.168.14.235'], 'xapi0': [], 'xapi2': ['169.254.0.1'], 'vif1.0': [], 'vif1.1': [], 'vif1.2': [], 'eth0': [], 'eth3': [], 'eth2': [], 'eth1': [], 'xapi8': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.14.235
+  ipv6:
+      ::1
+      fe80::223:20ff:fe8e:e6c9
+      fe80::223:20ff:fe96:fbb6
+      fe80::223:20ff:fec3:8ea2
+      fe80::225:90ff:fed1:9932
+      fe80::225:90ff:fed1:9933
+      fe80::92e2:baff:fe54:a38
+      fe80::92e2:baff:fe54:a39
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xs235.gdcloud.com
+  manufacturer: Supermicro
+  master: salt
+  mem_total: 753
+  nodename: xs235.gdcloud.com
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 0.17.5
+  saltversioninfo:
+      0
+      17
+      5
+  serialnumber: 0123456789
+  server_id: 1136514558
+  server_role: compute
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen Dom0
+nagios01:
+  biosreleasedate: 04/24/2014
+  biosversion: 4.1.2
+  cpu_flags: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat clflush mmx fxsr sse sse2 syscall lm rep_good unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes hypervisor lahf_lm
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: x86_64
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: hdtr.com
+  external_ip: 111.205.45.254
+  fqdn: nagios01.hdtr.com
+  fqdn_ip4:
+      192.168.11.9
+  fqdn_ip6:
+  gpus:
+      {'model': 'GD 5446', 'vendor': 'unknown'}
+  host: nagios01
+  hwaddr_interfaces: {'lo': '00:00:00:00:00:00', 'eth0': 'fa:92:5d:8e:81:c9'}
+  id: nagios01
+  ip_interfaces: {'lo': ['127.0.0.1'], 'eth0': ['192.168.11.9']}
+  ipv4:
+      127.0.0.1
+      192.168.11.9
+  ipv6:
+      ::1
+      fe80::f892:5dff:fe8e:81c9
+  kernel: Linux
+  kernelrelease: 2.6.32-220.el6.x86_64
+  localhost: nagios01
+  lsb_distrib_codename: Final
+  lsb_distrib_id: CentOS
+  lsb_distrib_release: 6.2
+  manufacturer: Xen
+  master: salt
+  mem_total: 7865
+  nodename: nagios01
+  num_cpus: 4
+  num_gpus: 1
+  os: CentOS
+  os_family: RedHat
+  osarch: x86_64
+  oscodename: Final
+  osfinger: CentOS-6
+  osfullname: CentOS
+  osmajorrelease:
+      6
+      2
+  osrelease: 6.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: HVM domU
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib64/python26.zip
+      /usr/lib64/python2.6
+      /usr/lib64/python2.6/plat-linux2
+      /usr/lib64/python2.6/lib-tk
+      /usr/lib64/python2.6/lib-old
+      /usr/lib64/python2.6/lib-dynload
+      /usr/lib64/python2.6/site-packages
+      /usr/lib/python2.6/site-packages
+      /usr/lib/python2.6/site-packages/setuptools-0.6c11-py2.6.egg-info
+  pythonversion: 2.6.6.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.3
+  saltversioninfo:
+      2014
+      1
+      3
+  serialnumber: 5d136a8f-44f9-d82e-1323-50593042518b
+  server_id: 1587149240
+  shell: /bin/sh
+  virtual: xen
+  virtual_subtype: Xen PV DomU
+  zmqversion: 3.2.4
+xen5.gdcloud.com:
+  biosreleasedate: 11/27/2012
+  biosversion: 1.1a
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  external_ip:
+  fqdn: xen5.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xen5
+  hwaddr_interfaces: {'vif26.0': 'fe:ff:ff:ff:ff:ff', 'bond0': '00:23:20:b4:46:5f', 'bond1': '00:23:20:a5:96:c9', 'eth3': '90:e2:ba:2b:b7:a1', 'vif14.2': 'fe:ff:ff:ff:ff:ff', 'vif48.0': 'fe:ff:ff:ff:ff:ff', 'vif8.1': 'fe:ff:ff:ff:ff:ff', 'vif8.0': 'fe:ff:ff:ff:ff:ff', 'vif8.2': 'fe:ff:ff:ff:ff:ff', 'vif4.0': 'fe:ff:ff:ff:ff:ff', 'vif7.0': 'fe:ff:ff:ff:ff:ff', 'vif14.1': 'fe:ff:ff:ff:ff:ff', 'eth4': 'fe:ff:ff:ff:ff:ff', 'vif5.0': 'fe:ff:ff:ff:ff:ff', 'eth2': '90:e2:ba:2b:b7:a0', 'eth1': '00:25:90:7d:c7:97', 'eth0': '00:25:90:7d:c7:96', 'lo': '00:00:00:00:00:00', 'xapi16': '00:25:90:7d:c7:96', 'xapi13': '00:25:90:7d:c7:96', 'xapi12': '00:25:90:7d:c7:96', 'vif1.0': 'fe:ff:ff:ff:ff:ff', 'vif40.0': 'fe:ff:ff:ff:ff:ff', 'vif14.0': 'fe:ff:ff:ff:ff:ff', 'vif0.0': 'fe:ff:ff:ff:ff:ff', 'xapi9': '00:25:90:7d:c7:96', 'xapi4': '00:25:90:7d:c7:96', 'xapi7': '00:25:90:7d:c7:96', 'xapi6': '00:25:90:7d:c7:96', 'xapi1': '00:25:90:7d:c7:96', 'xapi0': '00:23:20:fd:2d:af', 'xapi3': '90:e2:ba:2b:b7:a0', 'xapi2': '00:25:90:7d:c7:96', 'vif10.0': 'fe:ff:ff:ff:ff:ff', 'vif21.0': 'fe:ff:ff:ff:ff:ff', 'vif29.0': 'fe:ff:ff:ff:ff:ff', 'xapi24': '00:25:90:7d:c7:96', 'xapi25': '00:25:90:7d:c7:96', 'vif13.0': 'fe:ff:ff:ff:ff:ff', 'xapi14': '00:25:90:7d:c7:96'}
+  id: xen5.gdcloud.com
+  ip_interfaces: {'vif26.0': [], 'bond0': [], 'bond1': [], 'eth3': [], 'vif14.2': [], 'vif48.0': [], 'vif8.1': [], 'vif8.0': [], 'vif8.2': [], 'vif4.0': [], 'vif7.0': [], 'vif14.1': [], 'eth4': [], 'vif5.0': [], 'eth2': [], 'eth1': [], 'eth0': [], 'lo': ['127.0.0.1'], 'xapi16': [], 'xapi13': [], 'xapi12': [], 'vif1.0': [], 'vif40.0': [], 'vif14.0': [], 'vif0.0': [], 'xapi9': [], 'xapi4': [], 'xapi7': [], 'xapi6': [], 'xapi1': [], 'xapi0': ['169.254.0.1'], 'xapi3': ['192.168.11.18'], 'xapi2': [], 'vif10.0': [], 'vif21.0': [], 'vif29.0': [], 'xapi24': [], 'xapi25': [], 'vif13.0': [], 'xapi14': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.11.18
+  ipv6:
+      ::1
+      fe80::223:20ff:fea5:96c9
+      fe80::223:20ff:feb4:465f
+      fe80::223:20ff:fefd:2daf
+      fe80::225:90ff:fe7d:c796
+      fe80::225:90ff:fe7d:c797
+      fe80::92e2:baff:fe2b:b7a0
+      fe80::92e2:baff:fe2b:b7a1
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xen5.gdcloud.com
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 747
+  nodename: xen5.gdcloud.com
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 216215853
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xen51.gdcloud.com:
+  biosreleasedate: 06/20/2012
+  biosversion: 1.1
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  external_ip:
+  fqdn: xen51.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xen51
+  hwaddr_interfaces: {'vif18.0': 'fe:ff:ff:ff:ff:ff', 'bond0': '00:23:20:cb:62:ce', 'bond1': '00:23:20:e8:9b:d3', 'eth3': 'a0:36:9f:15:54:36', 'vif9.0': 'fe:ff:ff:ff:ff:ff', 'vif14.0': 'fe:ff:ff:ff:ff:ff', 'vif8.0': 'fe:ff:ff:ff:ff:ff', 'vif21.0': 'fe:ff:ff:ff:ff:ff', 'vif20.0': 'fe:ff:ff:ff:ff:ff', 'vif19.0': 'fe:ff:ff:ff:ff:ff', 'vif5.0': 'fe:ff:ff:ff:ff:ff', 'eth2': 'a0:36:9f:15:54:34', 'eth1': '00:25:90:77:93:9f', 'eth0': '00:25:90:77:93:9e', 'vif6.0': 'fe:ff:ff:ff:ff:ff', 'lo': '00:00:00:00:00:00', 'vif4.0': 'fe:ff:ff:ff:ff:ff', 'vif22.0': 'fe:ff:ff:ff:ff:ff', 'xapi4': '00:23:20:f6:1b:1c', 'xapi6': '00:25:90:77:93:9e', 'xapi1': 'a0:36:9f:15:54:34', 'xapi0': '00:25:90:77:93:9e', 'vif11.0': 'fe:ff:ff:ff:ff:ff', 'xapi29': '00:25:90:77:93:9e', 'vif3.0': 'fe:ff:ff:ff:ff:ff', 'vif2.2': 'fe:ff:ff:ff:ff:ff', 'vif2.1': 'fe:ff:ff:ff:ff:ff', 'vif2.0': 'fe:ff:ff:ff:ff:ff', 'vif12.0': 'fe:ff:ff:ff:ff:ff'}
+  id: xen51.gdcloud.com
+  ip_interfaces: {'vif18.0': [], 'bond0': [], 'bond1': [], 'eth3': [], 'vif9.0': [], 'vif14.0': [], 'vif8.0': [], 'vif21.0': [], 'vif20.0': [], 'vif19.0': [], 'vif5.0': [], 'eth2': [], 'eth1': [], 'eth0': [], 'vif6.0': [], 'lo': ['127.0.0.1'], 'vif4.0': [], 'vif22.0': [], 'xapi4': ['169.254.0.1'], 'xapi6': [], 'xapi1': ['192.168.13.12'], 'xapi0': [], 'vif11.0': [], 'xapi29': [], 'vif3.0': [], 'vif2.2': [], 'vif2.1': [], 'vif2.0': [], 'vif12.0': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.13.12
+  ipv6:
+      ::1
+      fe80::223:20ff:fecb:62ce
+      fe80::223:20ff:fee8:9bd3
+      fe80::223:20ff:fef6:1b1c
+      fe80::225:90ff:fe77:939e
+      fe80::225:90ff:fe77:939f
+      fe80::a236:9fff:fe15:5434
+      fe80::a236:9fff:fe15:5436
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xen51.gdcloud.com
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 2043
+  nodename: xen51.gdcloud.com
+  num_cpus: 6
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 1547265453
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xs232.gdcloud.com:
+  biosreleasedate: 11/27/2012
+  biosversion: 1.1a
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  external_ip:
+  fqdn: xs232.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xs232
+  hwaddr_interfaces: {'bond0': '00:23:20:d5:c0:a8', 'bond1': '00:23:20:a8:29:1b', 'lo': '00:00:00:00:00:00', 'xapi7': '00:25:90:a8:31:64', 'xapi1': '90:e2:ba:54:01:44', 'xapi0': '00:25:90:a8:31:64', 'xapi2': '00:23:20:89:1a:be', 'eth0': '00:25:90:a8:31:64', 'eth3': '90:e2:ba:54:01:45', 'eth2': '90:e2:ba:54:01:44', 'eth1': '00:25:90:a8:31:65', 'xapi8': '00:25:90:a8:31:64'}
+  id: xs232.gdcloud.com
+  ip_interfaces: {'bond0': [], 'bond1': [], 'lo': ['127.0.0.1'], 'xapi7': [], 'xapi1': ['192.168.14.232'], 'xapi0': [], 'xapi2': ['169.254.0.1'], 'eth0': [], 'eth3': [], 'eth2': [], 'eth1': [], 'xapi8': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.14.232
+  ipv6:
+      ::1
+      fe80::223:20ff:fe89:1abe
+      fe80::223:20ff:fea8:291b
+      fe80::223:20ff:fed5:c0a8
+      fe80::225:90ff:fea8:3164
+      fe80::225:90ff:fea8:3165
+      fe80::92e2:baff:fe54:144
+      fe80::92e2:baff:fe54:145
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xs232.gdcloud.com
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 756
+  nodename: xs232.gdcloud.com
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 758115158
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xs205:
+  biosreleasedate: 06/28/2013
+  biosversion: 3.0
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: 
+  fqdn: xs205
+  fqdn_ip4:
+      192.168.14.16
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xs205
+  hwaddr_interfaces: {'vif18.0': 'fe:ff:ff:ff:ff:ff', 'bond0': '00:23:20:ca:c5:cd', 'bond1': '00:23:20:f0:57:27', 'eth3': '90:e2:ba:84:03:4b', 'vif14.0': 'fe:ff:ff:ff:ff:ff', 'vif8.0': 'fe:ff:ff:ff:ff:ff', 'vif4.0': 'fe:ff:ff:ff:ff:ff', 'xapi13': '00:25:90:ac:4f:b4', 'vif15.0': 'fe:ff:ff:ff:ff:ff', 'eth4': 'fe:ff:ff:ff:ff:ff', 'vif5.0': 'fe:ff:ff:ff:ff:ff', 'eth2': '90:e2:ba:84:03:4a', 'eth1': '00:25:90:ac:4f:b5', 'eth0': '00:25:90:ac:4f:b4', 'vif6.0': 'fe:ff:ff:ff:ff:ff', 'xapi19': '00:25:90:ac:4f:b4', 'xapi18': '00:25:90:ac:4f:b4', 'xapi15': '00:25:90:ac:4f:b4', 'lo': '00:00:00:00:00:00', 'xapi17': '00:25:90:ac:4f:b4', 'xapi16': '00:25:90:ac:4f:b4', 'vif7.2': 'fe:ff:ff:ff:ff:ff', 'vif7.3': 'fe:ff:ff:ff:ff:ff', 'vif7.0': 'fe:ff:ff:ff:ff:ff', 'vif7.1': 'fe:ff:ff:ff:ff:ff', 'vif1.0': 'fe:ff:ff:ff:ff:ff', 'vif0.0': 'fe:ff:ff:ff:ff:ff', 'xapi9': '00:23:20:9e:e6:a1', 'xapi4': '00:25:90:ac:4f:b4', 'xapi1': '00:25:90:ac:4f:b4', 'xapi2': '90:e2:ba:84:03:4a', 'vif2.0': 'fe:ff:ff:ff:ff:ff', 'vif13.0': 'fe:ff:ff:ff:ff:ff', 'xapi14': '00:25:90:ac:4f:b4'}
+  id: xs205
+  ip_interfaces: {'vif18.0': [], 'bond0': [], 'bond1': [], 'eth3': [], 'vif14.0': [], 'vif8.0': [], 'vif4.0': [], 'xapi13': [], 'vif15.0': [], 'eth4': [], 'vif5.0': [], 'eth2': [], 'eth1': [], 'eth0': [], 'vif6.0': [], 'xapi19': [], 'xapi18': [], 'xapi15': [], 'lo': ['127.0.0.1'], 'xapi17': [], 'xapi16': [], 'vif7.2': [], 'vif7.3': [], 'vif7.0': [], 'vif7.1': [], 'vif1.0': [], 'vif0.0': [], 'xapi9': ['169.254.0.1'], 'xapi4': [], 'xapi1': [], 'xapi2': ['192.168.14.16'], 'vif2.0': [], 'vif13.0': [], 'xapi14': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.14.16
+  ipv6:
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xs205
+  manufacturer: Supermicro
+  master: salt
+  mem_total: 2043
+  nodename: xs205
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.7
+  saltversioninfo:
+      2014
+      1
+      7
+  serialnumber: 0123456789
+  server_id: 1135514555
+  shell: /bin/sh
+  virtual: xen
+  virtual_subtype: Xen Dom0
+  zmqversion: 2.1.9
+xs225:
+  biosreleasedate: 06/28/2013
+  biosversion: 3.0
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  fqdn: xs225.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xs225
+  id: xs225
+  ip_interfaces: {'eth0': [], 'vif6.0': [], 'bond0': [], 'bond1': [], 'vif2.1': [], 'vif2.0': [], 'lo': ['127.0.0.1'], 'xapi1': ['192.168.14.225'], 'xapi0': [], 'xapi8': [], 'xapi2': ['169.254.0.1'], 'vif4.0': [], 'vif0.0': [], 'xapi9': [], 'eth4': [], 'eth3': [], 'eth2': [], 'eth1': [], 'vif2.2': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.14.225
+  ipv6:
+      ::1
+      fe80::223:20ff:feb1:79f9
+      fe80::223:20ff:fed7:31c7
+      fe80::223:20ff:fee5:c1ed
+      fe80::225:90ff:fed1:991e
+      fe80::225:90ff:fed1:991f
+      fe80::a236:9fff:fe15:5c60
+      fe80::a236:9fff:fe15:5c62
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xs225.gdcloud.com
+  manufacturer: Supermicro
+  master: salt
+  mem_total: 747
+  nodename: xs225.gdcloud.com
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 0.17.5
+  saltversioninfo:
+      0
+      17
+      5
+  serialnumber: 0123456789
+  server_id: 1137514529
+  server_role: compute
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xen204.gdcloud.com:
+  biosreleasedate: 06/20/2012
+  biosversion: 1.1
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2650 0 @ 2.00GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  external_ip:
+  fqdn: xen204.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xen204
+  hwaddr_interfaces: {'bond0': '00:23:20:da:b2:15', 'bond1': '00:23:20:ee:6a:20', 'xapi15': '00:25:90:77:94:d2', 'xapi4': '00:25:90:77:94:d2', 'xapi17': '00:25:90:77:94:d2', 'xapi16': '00:25:90:77:94:d2', 'xapi1': '00:25:90:77:94:d2', 'xapi13': '00:25:90:77:94:d2', 'xapi2': '90:e2:ba:20:d6:7c', 'lo': '00:00:00:00:00:00', 'xapi14': '00:25:90:77:94:d2', 'xapi19': '00:25:90:77:94:d2', 'xapi9': '00:23:20:c8:ea:47', 'eth0': '00:25:90:77:94:d2', 'eth3': '90:e2:ba:20:d6:7d', 'eth2': '90:e2:ba:20:d6:7c', 'eth1': '00:25:90:77:94:d3', 'xapi18': '00:25:90:77:94:d2'}
+  id: xen204.gdcloud.com
+  ip_interfaces: {'bond0': [], 'bond1': [], 'xapi15': [], 'xapi4': [], 'xapi17': [], 'xapi16': [], 'xapi1': [], 'xapi13': [], 'xapi2': ['192.168.14.15'], 'lo': ['127.0.0.1'], 'xapi14': [], 'xapi19': [], 'xapi9': ['169.254.0.1'], 'eth0': [], 'eth3': [], 'eth2': [], 'eth1': [], 'xapi18': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.14.15
+  ipv6:
+      ::1
+      fe80::223:20ff:fec8:ea47
+      fe80::223:20ff:feda:b215
+      fe80::223:20ff:feee:6a20
+      fe80::225:90ff:fe77:94d2
+      fe80::225:90ff:fe77:94d3
+      fe80::92e2:baff:fe20:d67c
+      fe80::92e2:baff:fe20:d67d
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xen204.gdcloud.com
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 756
+  nodename: xen204.gdcloud.com
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 678858424
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xs231.gdcloud.com:
+  biosreleasedate: 11/27/2012
+  biosversion: 1.1a
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  external_ip:
+  fqdn: xs231.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xs231
+  hwaddr_interfaces: {'eth0': '00:25:90:a8:31:40', 'vif3.0': 'fe:ff:ff:ff:ff:ff', 'bond0': '00:23:20:ff:4d:08', 'bond1': '00:23:20:97:de:19', 'eth3': '90:e2:ba:54:09:15', 'lo': '00:00:00:00:00:00', 'xapi7': '00:25:90:a8:31:40', 'xapi1': '90:e2:ba:54:09:14', 'xapi0': '00:25:90:a8:31:40', 'xapi2': '00:23:20:8f:21:5f', 'vif1.0': 'fe:ff:ff:ff:ff:ff', 'vif0.0': 'fe:ff:ff:ff:ff:ff', 'eth4': 'fe:ff:ff:ff:ff:ff', 'vif5.0': 'fe:ff:ff:ff:ff:ff', 'eth2': '90:e2:ba:54:09:14', 'eth1': '00:25:90:a8:31:41', 'xapi8': '00:25:90:a8:31:40'}
+  id: xs231.gdcloud.com
+  ip_interfaces: {'eth0': [], 'vif3.0': [], 'bond0': [], 'bond1': [], 'eth3': [], 'lo': ['127.0.0.1'], 'xapi7': [], 'xapi1': ['192.168.14.231'], 'xapi0': [], 'xapi2': ['169.254.0.1'], 'vif1.0': [], 'vif0.0': [], 'eth4': [], 'vif5.0': [], 'eth2': [], 'eth1': [], 'xapi8': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.14.231
+  ipv6:
+      ::1
+      fe80::223:20ff:fe8f:215f
+      fe80::223:20ff:fe97:de19
+      fe80::223:20ff:feff:4d08
+      fe80::225:90ff:fea8:3140
+      fe80::225:90ff:fea8:3141
+      fe80::92e2:baff:fe54:914
+      fe80::92e2:baff:fe54:915
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xs231.gdcloud.com
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 750
+  nodename: xs231.gdcloud.com
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 1037405089
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xstest2:
+  biosreleasedate: 06/28/2013
+  biosversion: 3.0
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: 
+  external_ip:
+  fqdn: xstest2
+  fqdn_ip4:
+      192.168.201.2
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xstest2
+  hwaddr_interfaces: {'bond0': '00:23:20:d0:79:f9', 'bond1': '00:23:20:c5:46:e5', 'vif9.0': 'fe:ff:ff:ff:ff:ff', 'vif8.0': 'fe:ff:ff:ff:ff:ff', 'vif10.0': 'fe:ff:ff:ff:ff:ff', 'eth4': 'fe:ff:ff:ff:ff:ff', 'eth3': '90:e2:ba:84:00:f3', 'eth2': '90:e2:ba:84:00:f2', 'eth1': '00:25:90:ac:4c:2b', 'eth0': '00:25:90:ac:4c:2a', 'lo': '00:00:00:00:00:00', 'xapi10': '00:25:90:ac:4c:2a', 'vif7.0': 'fe:ff:ff:ff:ff:ff', 'xapi12': '00:25:90:ac:4c:2a', 'vif1.0': 'fe:ff:ff:ff:ff:ff', 'vif0.0': 'fe:ff:ff:ff:ff:ff', 'xapi1': '90:e2:ba:84:00:f2', 'xapi0': '00:25:90:ac:4c:2a', 'xapi3': '00:23:20:d8:43:4b', 'xapi2': '00:25:90:ac:4c:2a', 'tap10.0': 'fe:ff:ff:ff:ff:ff', 'vif2.0': 'fe:ff:ff:ff:ff:ff'}
+  id: xstest2
+  ip_interfaces: {'bond0': [], 'bond1': [], 'vif9.0': [], 'vif8.0': [], 'vif10.0': [], 'eth4': [], 'eth3': [], 'eth2': [], 'eth1': [], 'eth0': [], 'lo': ['127.0.0.1'], 'xapi10': [], 'vif7.0': [], 'xapi12': [], 'vif1.0': [], 'vif0.0': [], 'xapi1': ['192.168.201.2'], 'xapi0': [], 'xapi3': ['169.254.0.1'], 'xapi2': [], 'tap10.0': [], 'vif2.0': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.201.2
+  ipv6:
+      ::1
+      fe80::223:20ff:fec5:46e5
+      fe80::223:20ff:fed0:79f9
+      fe80::223:20ff:fed8:434b
+      fe80::225:90ff:feac:4c2a
+      fe80::225:90ff:feac:4c2b
+      fe80::92e2:baff:fe84:f2
+      fe80::92e2:baff:fe84:f3
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xstest2
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 2038
+  nodename: xstest2
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 360807468
+  shell: /bin/sh
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xen212.gdcloud.com:
+  biosreleasedate: 06/20/2012
+  biosversion: 1.1
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2650 0 @ 2.00GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  external_ip:
+  fqdn: xen212.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xen212
+  hwaddr_interfaces: {'bond0': '00:23:20:e7:6e:03', 'bond1': '00:23:20:a9:e2:6a', 'vif4.0': 'fe:ff:ff:ff:ff:ff', 'eth3': '90:e2:ba:20:d3:cd', 'eth2': '90:e2:ba:20:d3:cc', 'eth1': '00:25:90:77:93:a3', 'eth0': '00:25:90:77:93:a2', 'xapi14': '00:25:90:77:93:a2', 'xapi11': '00:25:90:77:93:a2', 'xapi10': '00:25:90:77:93:a2', 'xapi13': '00:25:90:77:93:a2', 'vif1.0': 'fe:ff:ff:ff:ff:ff', 'vif1.1': 'fe:ff:ff:ff:ff:ff', 'vif1.2': 'fe:ff:ff:ff:ff:ff', 'xapi5': '00:25:90:77:93:a2', 'xapi4': '00:25:90:77:93:a2', 'xapi7': '00:25:90:77:93:a2', 'xapi1': '00:25:90:77:93:a2', 'xapi3': '00:23:20:d7:62:ae', 'xapi2': '90:e2:ba:20:d3:cc', 'vif2.0': 'fe:ff:ff:ff:ff:ff', 'lo': '00:00:00:00:00:00'}
+  id: xen212.gdcloud.com
+  ip_interfaces: {'bond0': [], 'bond1': [], 'vif4.0': [], 'eth3': [], 'eth2': [], 'eth1': [], 'eth0': [], 'xapi14': [], 'xapi11': [], 'xapi10': [], 'xapi13': [], 'vif1.0': [], 'vif1.1': [], 'vif1.2': [], 'xapi5': [], 'xapi4': [], 'xapi7': [], 'xapi1': [], 'xapi3': ['169.254.0.1'], 'xapi2': ['192.168.14.22'], 'vif2.0': [], 'lo': ['127.0.0.1']}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.14.22
+  ipv6:
+      ::1
+      fe80::223:20ff:fea9:e26a
+      fe80::223:20ff:fed7:62ae
+      fe80::223:20ff:fee7:6e03
+      fe80::225:90ff:fe77:93a2
+      fe80::225:90ff:fe77:93a3
+      fe80::92e2:baff:fe20:d3cc
+      fe80::92e2:baff:fe20:d3cd
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xen212.gdcloud.com
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 750
+  nodename: xen212.gdcloud.com
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 396117125
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xs01:
+  biosreleasedate: 06/28/2013
+  biosversion: 3.0
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: 
+  external_ip:
+  fqdn: xs214
+  fqdn_ip4:
+      192.168.14.24
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xs214
+  hwaddr_interfaces: {'xapi1': '00:25:90:d1:98:20', 'vif3.0': 'fe:ff:ff:ff:ff:ff', 'bond0': '00:23:20:b1:31:88', 'bond1': '00:23:20:e5:14:76', 'eth3': '90:e2:ba:54:03:25', 'xapi5': '00:25:90:d1:98:20', 'xapi14': '00:25:90:d1:98:20', 'xapi7': '00:25:90:d1:98:20', 'xapi11': '00:25:90:d1:98:20', 'xapi10': '00:25:90:d1:98:20', 'xapi13': '00:25:90:d1:98:20', 'xapi2': '90:e2:ba:54:03:24', 'lo': '00:00:00:00:00:00', 'eth0': '00:25:90:d1:98:20', 'vif0.0': 'fe:ff:ff:ff:ff:ff', 'xapi4': '00:25:90:d1:98:20', 'eth4': 'fe:ff:ff:ff:ff:ff', 'xapi3': '00:23:20:e8:46:85', 'eth2': '90:e2:ba:54:03:24', 'eth1': '00:25:90:d1:98:21', 'vif14.0': 'fe:ff:ff:ff:ff:ff'}
+  id: xs01
+  ip_interfaces: {'xapi1': [], 'vif3.0': [], 'bond0': [], 'bond1': [], 'eth3': [], 'xapi5': [], 'xapi14': [], 'xapi7': [], 'xapi11': [], 'xapi10': [], 'xapi13': [], 'xapi2': ['192.168.14.24'], 'lo': ['127.0.0.1'], 'eth0': [], 'vif0.0': [], 'xapi4': [], 'eth4': [], 'xapi3': ['169.254.0.1'], 'eth2': [], 'eth1': [], 'vif14.0': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.14.24
+  ipv6:
+      ::1
+      fe80::223:20ff:feb1:3188
+      fe80::223:20ff:fee5:1476
+      fe80::223:20ff:fee8:4685
+      fe80::225:90ff:fed1:9820
+      fe80::225:90ff:fed1:9821
+      fe80::92e2:baff:fe54:324
+      fe80::92e2:baff:fe54:325
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xs214
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 750
+  nodename: xs214
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 1336263830
+  shell: /bin/sh
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xs52.gdcloud.com:
+  biosreleasedate: 06/20/2012
+  biosversion: 1.1
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  external_ip:
+  fqdn: xs52.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xs52
+  hwaddr_interfaces: {'bond0': '00:23:20:81:c9:2c', 'bond1': '00:23:20:bc:79:6f', 'eth3': 'a0:36:9f:15:54:c2', 'vif8.0': 'fe:ff:ff:ff:ff:ff', 'vif4.0': 'fe:ff:ff:ff:ff:ff', 'vif5.0': 'fe:ff:ff:ff:ff:ff', 'eth2': 'a0:36:9f:15:54:c0', 'eth1': '00:25:90:77:93:fd', 'eth0': '00:25:90:77:93:fc', 'vif6.0': 'fe:ff:ff:ff:ff:ff', 'lo': '00:00:00:00:00:00', 'vif7.0': 'fe:ff:ff:ff:ff:ff', 'xapi4': '00:23:20:d7:2c:ca', 'xapi1': 'a0:36:9f:15:54:c0', 'xapi0': '00:25:90:77:93:fc', 'tap8.0': 'fe:ff:ff:ff:ff:ff', 'vif10.0': 'fe:ff:ff:ff:ff:ff', 'vif11.0': 'fe:ff:ff:ff:ff:ff', 'xapi29': '00:25:90:77:93:fc', 'vif3.0': 'fe:ff:ff:ff:ff:ff', 'vif2.0': 'fe:ff:ff:ff:ff:ff', 'vif12.0': 'fe:ff:ff:ff:ff:ff', 'vif13.0': 'fe:ff:ff:ff:ff:ff'}
+  id: xs52.gdcloud.com
+  ip_interfaces: {'bond0': [], 'bond1': [], 'eth3': [], 'vif8.0': [], 'vif4.0': [], 'vif5.0': [], 'eth2': [], 'eth1': [], 'eth0': [], 'vif6.0': [], 'lo': ['127.0.0.1'], 'vif7.0': [], 'xapi4': ['169.254.0.1'], 'xapi1': ['192.168.13.13'], 'xapi0': [], 'tap8.0': [], 'vif10.0': [], 'vif11.0': [], 'xapi29': [], 'vif3.0': [], 'vif2.0': [], 'vif12.0': [], 'vif13.0': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.13.13
+  ipv6:
+      ::1
+      fe80::223:20ff:fe81:c92c
+      fe80::223:20ff:febc:796f
+      fe80::223:20ff:fed7:2cca
+      fe80::225:90ff:fe77:93fc
+      fe80::225:90ff:fe77:93fd
+      fe80::a236:9fff:fe15:54c0
+      fe80::a236:9fff:fe15:54c2
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xs52.gdcloud.com
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 750
+  nodename: xs52.gdcloud.com
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 1370585629
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xs227:
+  biosreleasedate: 06/28/2013
+  biosversion: 3.0
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: 
+  external_ip:
+  fqdn: xs227
+  fqdn_ip4:
+      192.168.11.25
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xs227
+  hwaddr_interfaces: {'bond0': '00:23:20:a5:e4:77', 'bond1': '00:23:20:9e:09:63', 'vif21.0': 'fe:ff:ff:ff:ff:ff', 'vif20.0': 'fe:ff:ff:ff:ff:ff', 'vif16.2': 'fe:ff:ff:ff:ff:ff', 'vif16.1': 'fe:ff:ff:ff:ff:ff', 'vif16.0': 'fe:ff:ff:ff:ff:ff', 'vif15.0': 'fe:ff:ff:ff:ff:ff', 'eth4': 'fe:ff:ff:ff:ff:ff', 'eth3': '90:e2:ba:54:08:ed', 'eth2': '90:e2:ba:54:08:ec', 'eth1': '00:25:90:d1:98:ab', 'eth0': '00:25:90:d1:98:aa', 'lo': '00:00:00:00:00:00', 'xapi12': '00:25:90:d1:98:aa', 'vif0.0': 'fe:ff:ff:ff:ff:ff', 'xapi9': '00:25:90:d1:98:aa', 'xapi8': '00:25:90:d1:98:aa', 'vif22.0': 'fe:ff:ff:ff:ff:ff', 'xapi5': '00:25:90:d1:98:aa', 'xapi4': '00:25:90:d1:98:aa', 'vif17.0': 'fe:ff:ff:ff:ff:ff', 'xapi6': '00:25:90:d1:98:aa', 'xapi0': '90:e2:ba:54:08:ec', 'xapi3': '00:23:20:b2:1f:c5', 'xapi2': '00:25:90:d1:98:aa', 'vif11.0': 'fe:ff:ff:ff:ff:ff', 'vif2.3': 'fe:ff:ff:ff:ff:ff', 'vif2.2': 'fe:ff:ff:ff:ff:ff', 'vif2.1': 'fe:ff:ff:ff:ff:ff', 'vif2.0': 'fe:ff:ff:ff:ff:ff'}
+  id: xs227
+  ip_interfaces: {'bond0': [], 'bond1': [], 'vif21.0': [], 'vif20.0': [], 'vif16.2': [], 'vif16.1': [], 'vif16.0': [], 'vif15.0': [], 'eth4': [], 'eth3': [], 'eth2': [], 'eth1': [], 'eth0': [], 'lo': ['127.0.0.1'], 'xapi12': [], 'vif0.0': [], 'xapi9': [], 'xapi8': [], 'vif22.0': [], 'xapi5': [], 'xapi4': [], 'vif17.0': [], 'xapi6': [], 'xapi0': ['192.168.11.25'], 'xapi3': ['169.254.0.1'], 'xapi2': [], 'vif11.0': [], 'vif2.3': [], 'vif2.2': [], 'vif2.1': [], 'vif2.0': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.11.25
+  ipv6:
+      ::1
+      fe80::223:20ff:fe9e:963
+      fe80::223:20ff:fea5:e477
+      fe80::223:20ff:feb2:1fc5
+      fe80::225:90ff:fed1:98aa
+      fe80::225:90ff:fed1:98ab
+      fe80::92e2:baff:fe54:8ec
+      fe80::92e2:baff:fe54:8ed
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xs227
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 745
+  nodename: xs227
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 1137514531
+  shell: /bin/sh
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xen202.gdcloud.com:
+  biosreleasedate: 06/20/2012
+  biosversion: 1.1
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  external_ip:
+  fqdn: xen202.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xen202
+  hwaddr_interfaces: {'vif18.1': 'fe:ff:ff:ff:ff:ff', 'vif18.0': 'fe:ff:ff:ff:ff:ff', 'vif18.2': 'fe:ff:ff:ff:ff:ff', 'bond0': '00:23:20:c6:46:c3', 'bond1': '00:23:20:82:ce:46', 'vif14.0': 'fe:ff:ff:ff:ff:ff', 'vif20.0': 'fe:ff:ff:ff:ff:ff', 'vif7.0': 'fe:ff:ff:ff:ff:ff', 'vif19.0': 'fe:ff:ff:ff:ff:ff', 'eth4': 'fe:ff:ff:ff:ff:ff', 'eth3': 'a0:36:9f:15:55:fe', 'eth2': 'a0:36:9f:15:55:fc', 'eth1': '00:25:90:a1:14:6d', 'eth0': '00:25:90:a1:14:6c', 'xapi19': '00:25:90:a1:14:6c', 'xapi18': '00:25:90:a1:14:6c', 'xapi15': '00:25:90:a1:14:6c', 'lo': '00:00:00:00:00:00', 'xapi17': '00:25:90:a1:14:6c', 'xapi16': '00:25:90:a1:14:6c', 'xapi13': '00:25:90:a1:14:6c', 'vif0.0': 'fe:ff:ff:ff:ff:ff', 'xapi9': '00:23:20:d4:e5:27', 'xapi4': '00:25:90:a1:14:6c', 'xapi1': '00:25:90:a1:14:6c', 'xapi2': 'a0:36:9f:15:55:fe', 'vif11.0': 'fe:ff:ff:ff:ff:ff', 'vif3.0': 'fe:ff:ff:ff:ff:ff', 'vif2.2': 'fe:ff:ff:ff:ff:ff', 'vif2.1': 'fe:ff:ff:ff:ff:ff', 'vif2.0': 'fe:ff:ff:ff:ff:ff', 'vif13.0': 'fe:ff:ff:ff:ff:ff', 'xapi14': '00:25:90:a1:14:6c'}
+  id: xen202.gdcloud.com
+  ip_interfaces: {'vif18.1': [], 'vif18.0': [], 'vif18.2': [], 'bond0': [], 'bond1': [], 'vif14.0': [], 'vif20.0': [], 'vif7.0': [], 'vif19.0': [], 'eth4': [], 'eth3': [], 'eth2': [], 'eth1': [], 'eth0': [], 'xapi19': [], 'xapi18': [], 'xapi15': [], 'lo': ['127.0.0.1'], 'xapi17': [], 'xapi16': [], 'xapi13': [], 'vif0.0': [], 'xapi9': ['169.254.0.1'], 'xapi4': [], 'xapi1': [], 'xapi2': ['192.168.14.13'], 'vif11.0': [], 'vif3.0': [], 'vif2.2': [], 'vif2.1': [], 'vif2.0': [], 'vif13.0': [], 'xapi14': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.14.13
+  ipv6:
+      ::1
+      fe80::223:20ff:fe82:ce46
+      fe80::223:20ff:fec6:46c3
+      fe80::223:20ff:fed4:e527
+      fe80::225:90ff:fea1:146c
+      fe80::225:90ff:fea1:146d
+      fe80::a236:9fff:fe15:55fc
+      fe80::a236:9fff:fe15:55fe
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xen202.gdcloud.com
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 747
+  nodename: xen202.gdcloud.com
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 856370182
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen Dom0
+racktables:
+  biosreleasedate: 04/24/2014
+  biosversion: 4.1.2
+  cpu_flags: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat clflush mmx fxsr sse sse2 syscall lm rep_good unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes hypervisor lahf_lm
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: x86_64
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: 
+  external_ip: 111.205.45.254
+  fqdn: racktables
+  fqdn_ip4:
+      192.168.11.7
+  fqdn_ip6:
+  gpus:
+      {'model': 'GD 5446', 'vendor': 'unknown'}
+  host: racktables
+  hwaddr_interfaces: {'lo': '00:00:00:00:00:00', 'eth0': 'd6:39:b0:b5:b5:f4'}
+  id: racktables
+  ip_interfaces: {'lo': ['127.0.0.1'], 'eth0': ['192.168.11.7']}
+  ipv4:
+      127.0.0.1
+      192.168.11.7
+  ipv6:
+      ::1
+      fe80::d439:b0ff:feb5:b5f4
+  kernel: Linux
+  kernelrelease: 2.6.32-220.el6.x86_64
+  localhost: racktables
+  lsb_distrib_codename: Final
+  lsb_distrib_id: CentOS
+  lsb_distrib_release: 6.2
+  manufacturer: Xen
+  master: salt
+  mem_total: 2001
+  nodename: racktables
+  num_cpus: 2
+  num_gpus: 1
+  os: CentOS
+  os_family: RedHat
+  osarch: x86_64
+  oscodename: Final
+  osfinger: CentOS-6
+  osfullname: CentOS
+  osmajorrelease:
+      6
+      2
+  osrelease: 6.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: HVM domU
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python2.6/site-packages/cloudmonkey-4.1.0_snapshot3-py2.6.egg
+      /usr/lib/python2.6/site-packages/prettytable-0.7.2-py2.6.egg
+      /usr/lib/python2.6/site-packages/Pygments-1.6-py2.6.egg
+      /usr/lib64/python26.zip
+      /usr/lib64/python2.6
+      /usr/lib64/python2.6/plat-linux2
+      /usr/lib64/python2.6/lib-tk
+      /usr/lib64/python2.6/lib-old
+      /usr/lib64/python2.6/lib-dynload
+      /usr/lib64/python2.6/site-packages
+      /usr/lib/python2.6/site-packages
+      /usr/lib/python2.6/site-packages/setuptools-0.6c11-py2.6.egg-info
+  pythonversion: 2.6.6.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: a33ad335-9ba7-1ec4-5c21-7f2f3f0e1031
+  server_id: 1418880948
+  shell: /bin/sh
+  virtual: xen
+  virtual_subtype: Xen PV DomU
+xen7.gdcloud.com:
+  biosreleasedate: 06/20/2012
+  biosversion: 1.1
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  external_ip:
+  fqdn: xen7.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xen7
+  hwaddr_interfaces: {'bond0': '00:23:20:a6:2f:88', 'bond1': '00:23:20:a8:35:85', 'vif4.1': 'fe:ff:ff:ff:ff:ff', 'vif4.0': 'fe:ff:ff:ff:ff:ff', 'vif4.2': 'fe:ff:ff:ff:ff:ff', 'vif46.0': 'fe:ff:ff:ff:ff:ff', 'eth4': 'fe:ff:ff:ff:ff:ff', 'eth3': 'a0:36:9f:15:61:22', 'eth2': 'a0:36:9f:15:61:20', 'eth1': '00:25:90:77:93:3b', 'eth0': '00:25:90:77:93:3a', 'vif42.0': 'fe:ff:ff:ff:ff:ff', 'lo': '00:00:00:00:00:00', 'xapi16': '00:25:90:77:93:3a', 'vif43.0': 'fe:ff:ff:ff:ff:ff', 'xapi13': '00:25:90:77:93:3a', 'xapi12': '00:25:90:77:93:3a', 'vif0.0': 'fe:ff:ff:ff:ff:ff', 'vif23.0': 'fe:ff:ff:ff:ff:ff', 'xapi9': '00:25:90:77:93:3a', 'xapi8': '00:25:90:77:93:3a', 'xapi7': '00:25:90:77:93:3a', 'xapi6': '00:25:90:77:93:3a', 'xapi1': '00:25:90:77:93:3a', 'xapi0': '00:23:20:c8:60:be', 'xapi3': 'a0:36:9f:15:61:22', 'xapi2': '00:25:90:77:93:3a', 'vif10.0': 'fe:ff:ff:ff:ff:ff', 'vif21.0': 'fe:ff:ff:ff:ff:ff', 'xapi24': '00:25:90:77:93:3a', 'xapi25': '00:25:90:77:93:3a', 'xapi14': '00:25:90:77:93:3a'}
+  id: xen7.gdcloud.com
+  ip_interfaces: {'bond0': [], 'bond1': [], 'vif4.1': [], 'vif4.0': [], 'vif4.2': [], 'vif46.0': [], 'eth4': [], 'eth3': [], 'eth2': [], 'eth1': [], 'eth0': [], 'vif42.0': [], 'lo': ['127.0.0.1'], 'xapi16': [], 'vif43.0': [], 'xapi13': [], 'xapi12': [], 'vif0.0': [], 'vif23.0': [], 'xapi9': [], 'xapi8': [], 'xapi7': [], 'xapi6': [], 'xapi1': [], 'xapi0': ['169.254.0.1'], 'xapi3': ['192.168.11.20'], 'xapi2': [], 'vif10.0': [], 'vif21.0': [], 'xapi24': [], 'xapi25': [], 'xapi14': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.11.20
+  ipv6:
+      ::1
+      fe80::223:20ff:fea6:2f88
+      fe80::223:20ff:fea8:3585
+      fe80::223:20ff:fec8:60be
+      fe80::225:90ff:fe77:933a
+      fe80::225:90ff:fe77:933b
+      fe80::a236:9fff:fe15:6120
+      fe80::a236:9fff:fe15:6122
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xen7.gdcloud.com
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 750
+  nodename: xen7.gdcloud.com
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 180668039
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xs236:
+  biosreleasedate: 06/28/2013
+  biosversion: 3.0
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  fqdn: xs236.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xs236
+  id: xs236
+  ip_interfaces: {'vif3.0': [], 'bond0': [], 'bond1': [], 'lo': ['127.0.0.1'], 'xapi7': [], 'xapi1': ['192.168.14.236'], 'xapi0': [], 'vif1.0': [], 'vif4.0': [], 'eth0': [], 'eth3': [], 'eth2': [], 'eth1': [], 'xapi8': []}
+  ipv4:
+      127.0.0.1
+      192.168.14.236
+  ipv6:
+      ::1
+      fe80::223:20ff:feba:d375
+      fe80::223:20ff:fed5:8f57
+      fe80::225:90ff:fed1:98f2
+      fe80::225:90ff:fed1:98f3
+      fe80::92e2:baff:fe54:16c
+      fe80::92e2:baff:fe54:16d
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xs236.gdcloud.com
+  manufacturer: Supermicro
+  master: salt
+  mem_total: 747
+  nodename: xs236.gdcloud.com
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 0.17.5
+  saltversioninfo:
+      0
+      17
+      5
+  serialnumber: 0123456789
+  server_id: 1136514557
+  server_role: compute
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xs02:
+  biosreleasedate: 06/28/2013
+  biosversion: 3.0
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: 
+  external_ip:
+  fqdn: xs02
+  fqdn_ip4:
+      192.168.11.19
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xs02
+  hwaddr_interfaces: {'vif12.0': 'fe:ff:ff:ff:ff:ff', 'bond0': '00:23:20:fe:97:f5', 'bond1': '00:23:20:84:6d:76', 'vif14.0': 'fe:ff:ff:ff:ff:ff', 'vif16.0': 'fe:ff:ff:ff:ff:ff', 'vif15.0': 'fe:ff:ff:ff:ff:ff', 'eth3': '90:e2:ba:54:00:f1', 'eth2': '90:e2:ba:54:00:f0', 'eth1': '00:25:90:d1:98:29', 'eth0': '00:25:90:d1:98:28', 'lo': '00:00:00:00:00:00', 'xapi16': '00:25:90:d1:98:28', 'vif43.0': 'fe:ff:ff:ff:ff:ff', 'xapi13': '00:25:90:d1:98:28', 'xapi12': '00:25:90:d1:98:28', 'vif1.0': 'fe:ff:ff:ff:ff:ff', 'xapi9': '00:25:90:d1:98:28', 'xapi8': '00:25:90:d1:98:28', 'xapi7': '00:25:90:d1:98:28', 'xapi6': '00:25:90:d1:98:28', 'xapi1': '00:25:90:d1:98:28', 'xapi0': '00:23:20:82:55:15', 'xapi3': '90:e2:ba:54:00:f0', 'xapi2': '00:25:90:d1:98:28', 'vif5.0': 'fe:ff:ff:ff:ff:ff', 'vif10.0': 'fe:ff:ff:ff:ff:ff', 'vif11.0': 'fe:ff:ff:ff:ff:ff', 'vif3.0': 'fe:ff:ff:ff:ff:ff', 'vif2.0': 'fe:ff:ff:ff:ff:ff', 'vif29.1': 'fe:ff:ff:ff:ff:ff', 'vif29.0': 'fe:ff:ff:ff:ff:ff', 'vif29.2': 'fe:ff:ff:ff:ff:ff', 'xapi24': '00:25:90:d1:98:28', 'xapi25': '00:25:90:d1:98:28', 'xapi14': '00:25:90:d1:98:28', 'vif25.0': 'fe:ff:ff:ff:ff:ff'}
+  id: xs02
+  ip_interfaces: {'vif12.0': [], 'bond0': [], 'bond1': [], 'vif14.0': [], 'vif16.0': [], 'vif15.0': [], 'eth3': [], 'eth2': [], 'eth1': [], 'eth0': [], 'lo': ['127.0.0.1'], 'xapi16': [], 'vif43.0': [], 'xapi13': [], 'xapi12': [], 'vif1.0': [], 'xapi9': [], 'xapi8': [], 'xapi7': [], 'xapi6': [], 'xapi1': [], 'xapi0': ['169.254.0.1'], 'xapi3': ['192.168.11.19'], 'xapi2': [], 'vif5.0': [], 'vif10.0': [], 'vif11.0': [], 'vif3.0': [], 'vif2.0': [], 'vif29.1': [], 'vif29.0': [], 'vif29.2': [], 'xapi24': [], 'xapi25': [], 'xapi14': [], 'vif25.0': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.11.19
+  ipv6:
+      ::1
+      fe80::223:20ff:fe82:5515
+      fe80::223:20ff:fe84:6d76
+      fe80::223:20ff:fefe:97f5
+      fe80::225:90ff:fed1:9828
+      fe80::225:90ff:fed1:9829
+      fe80::92e2:baff:fe54:f0
+      fe80::92e2:baff:fe54:f1
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xs02
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 750
+  nodename: xs02
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 1336263829
+  shell: /bin/sh
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xs222.gdcloud.coom:
+  biosreleasedate: 06/28/2013
+  biosversion: 3.0
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.coom
+  external_ip:
+  fqdn: xs222.gdcloud.coom
+  fqdn_ip4:
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xs222
+  hwaddr_interfaces: {'vif3.0': 'fe:ff:ff:ff:ff:ff', 'bond0': '00:23:20:e4:f1:21', 'bond1': '00:23:20:a5:6c:c9', 'vif2.0': 'fe:ff:ff:ff:ff:ff', 'lo': '00:00:00:00:00:00', 'xapi1': '90:e2:ba:54:08:3c', 'xapi0': '00:25:90:d1:98:26', 'xapi2': '00:23:20:a7:52:7e', 'vif15.0': 'fe:ff:ff:ff:ff:ff', 'xapi9': '00:25:90:d1:98:26', 'eth0': '00:25:90:d1:98:26', 'eth3': '90:e2:ba:54:08:3d', 'eth2': '90:e2:ba:54:08:3c', 'eth1': '00:25:90:d1:98:27', 'xapi8': '00:25:90:d1:98:26'}
+  id: xs222.gdcloud.coom
+  ip_interfaces: {'vif3.0': [], 'bond0': [], 'bond1': [], 'vif2.0': [], 'lo': ['127.0.0.1'], 'xapi1': ['192.168.14.222'], 'xapi0': [], 'xapi2': ['169.254.0.1'], 'vif15.0': [], 'xapi9': [], 'eth0': [], 'eth3': [], 'eth2': [], 'eth1': [], 'xapi8': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.14.222
+  ipv6:
+      ::1
+      fe80::223:20ff:fea5:6cc9
+      fe80::223:20ff:fea7:527e
+      fe80::223:20ff:fee4:f121
+      fe80::225:90ff:fed1:9826
+      fe80::225:90ff:fed1:9827
+      fe80::92e2:baff:fe54:83c
+      fe80::92e2:baff:fe54:83d
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xs222.gdcloud.coom
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 747
+  nodename: xs222.gdcloud.coom
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 142306797
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen Dom0
+wxp3:
+  biosversion: Revision: 1.221
+  cpu_model: x86 Family 6 Model 45 Stepping 7, GenuineIntel
+  cpuarch: x86
+  defaultencoding: cp936
+  defaultlanguage: zh_CN
+  domain: hdtr.com
+  fqdn: winxp3.hdtr.com
+  fqdn_ip4:
+      192.168.31.243
+  fqdn_ip6:
+  gpus:
+  host: winxp3
+  id: wxp3
+  ip_interfaces: {'Citrix PV Ethernet Adapter - \xe6\x95\xb0\xe6\x8d\xae\xe5\x8c\x85\xe8\xae\xa1\xe5\x88\x92\xe7\xa8\x8b\xe5\xba\x8f\xe5\xbe\xae\xe5\x9e\x8b\xe7\xab\xaf\xe5\x8f\xa3': ['192.168.31.243']}
+  ipv4:
+      192.168.31.243
+  ipv6:
+  kernel: Windows
+  kernelrelease: 5.1.2600
+  localhost: winxp3
+  manufacturer: Xen
+  master: salt
+  mem_total: 4092
+  nodename: winxp3
+  num_cpus: 2
+  num_gpus: 0
+  os: Windows
+  os_family: Windows
+  osfullname: Microsoft Windows XP Professional
+  osmanufacturer: Microsoft Corporation
+  osrelease: XP
+  osversion: 5.1.2600
+  path: c:\salt\salt-0.17.5-51-g508bed0.win32;C:\oracle\product\10.2.0\db_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\usr\bin
+  productname: HVM domU
+  ps: tasklist.exe
+  pythonpath:
+      c:\salt\salt-0.17.5-51-g508bed0.win32\library.zip
+      c:\salt\salt-0.17.5-51-g508bed0.win32\esky-0.9.8-py2.7.egg
+      c:\salt\salt-0.17.5-51-g508bed0.win32\jinja2-2.7.1-py2.7.egg
+      c:\salt\salt-0.17.5-51-g508bed0.win32\markupsafe-0.18-py2.7.egg
+      c:\salt\salt-0.17.5-51-g508bed0.win32\psutil-1.1.1-py2.7-win32.egg
+      c:\salt\salt-0.17.5-51-g508bed0.win32\pyyaml-3.10-py2.7-win32.egg
+      c:\salt\salt-0.17.5-51-g508bed0.win32\pyzmq-13.1.0-py2.7-win32.egg
+      c:\salt\salt-0.17.5-51-g508bed0.win32\salt-0.17.5_51_g508bed0-py2.7.egg
+      c:\salt\salt-0.17.5-51-g508bed0.win32\setuptools-1.1.6-py2.7.egg
+      c:\salt\salt-0.17.5-51-g508bed0.win32\wmi-1.4.9-py2.7-win32.egg
+      c:\salt\salt-0.17.5-51-g508bed0.win32
+  pythonversion: 2.7.5.final.0
+  saltpath: c:\salt\salt-0.17.5-51-g508bed0.win32\salt-0.17.5_51_g508bed0-py2.7.egg\salt
+  saltversion: 0.17.5-51-g508bed0
+  saltversioninfo:
+      0
+      17
+      5
+  server_id: 1504695938
+  shell: /bin/sh
+  timezone: None
+  virtual: Xen
+  virtual_subtype: HVM domU
+  windowsdomain: WORKGROUP
+r-2306-VM:
+  cpu_flags: fpu de tsc msr pae cx8 sep cmov pat clflush mmx fxsr sse sse2 ss ht nx constant_tsc up aperfmperf pni pclmulqdq ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: None
+  defaultlanguage: None
+  domain: 
+  fqdn: r-2306-VM
+  fqdn_ip4:
+      10.24.64.1
+  fqdn_ip6:
+  gpus:
+  host: r-2306-VM
+  hwaddr_interfaces: {'lo': '00:00:00:00:00:00', 'eth1': '0e:00:a9:fe:03:80', 'eth0': '06:89:10:00:07:f8'}
+  id: r-2306-VM
+  ip_interfaces: {'lo': ['127.0.0.1'], 'eth1': ['169.254.3.128'], 'eth0': ['10.24.64.1']}
+  ipv4:
+      10.24.64.1
+      127.0.0.1
+      169.254.3.128
+  ipv6:
+      ::1
+      fe80::489:10ff:fe00:7f8
+      fe80::c00:a9ff:fefe:380
+  kernel: Linux
+  kernelrelease: 2.6.32-5-686-bigmem
+  localhost: r-2306-VM
+  lsb_distrib_codename: squeeze
+  lsb_distrib_description: Debian GNU/Linux 6.0.4 (squeeze)
+  lsb_distrib_id: Debian
+  lsb_distrib_os: GNU/Linux
+  lsb_distrib_release: 6.0.4
+  master: salt
+  mem_total: 121
+  nodename: r-2306-VM
+  num_cpus: 1
+  num_gpus: 0
+  os: Debian
+  os_family: Debian
+  osarch: i386
+  oscodename: squeeze
+  osfullname: Debian
+  osrelease: 6.0.4
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  ps: ps -efHww
+  pythonpath:
+      /usr/bin
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/local/lib/python2.6/dist-packages
+      /usr/lib/python2.6/dist-packages
+      /usr/lib/pymodules/python2.6
+  pythonversion: 2.6.6.final.0
+  saltpath: /usr/lib/python2.6/dist-packages/salt
+  saltversion: 2014.1.10
+  saltversioninfo:
+      2014
+      1
+      10
+      0
+  server_id: 248647107
+  shell: /bin/sh
+  virtual: xen
+  virtual_subtype: Xen PV DomU
+  zmqversion: 3.2.3
+xstest1.gdcloud.com:
+  biosreleasedate: 06/20/2012
+  biosversion: 1.1
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  external_ip:
+  fqdn: xstest1.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xstest1
+  hwaddr_interfaces: {'bond0': '00:23:20:97:97:dd', 'bond1': '00:23:20:ca:18:94', 'vif43.0': 'fe:ff:ff:ff:ff:ff', 'vif84.0': 'fe:ff:ff:ff:ff:ff', 'vif80.0': 'fe:ff:ff:ff:ff:ff', 'vif15.0': 'fe:ff:ff:ff:ff:ff', 'vif39.0': 'fe:ff:ff:ff:ff:ff', 'eth4': 'fe:ff:ff:ff:ff:ff', 'eth3': 'a0:36:9f:15:62:92', 'eth2': 'a0:36:9f:15:62:90', 'eth1': '00:25:90:77:93:3d', 'vif85.0': 'fe:ff:ff:ff:ff:ff', 'lo': '00:00:00:00:00:00', 'xapi10': '00:25:90:77:93:3c', 'xapi12': '00:25:90:77:93:3c', 'vif40.0': 'fe:ff:ff:ff:ff:ff', 'vif0.0': 'fe:ff:ff:ff:ff:ff', 'xenbr4': 'fe:ff:ff:ff:ff:ff', 'eth0': '00:25:90:77:93:3c', 'xapi1': 'a0:36:9f:15:62:90', 'xapi0': '00:25:90:77:93:3c', 'xapi3': '00:23:20:c6:15:b0', 'xapi2': '00:25:90:77:93:3c', 'vif10.0': 'fe:ff:ff:ff:ff:ff', 'vif77.0': 'fe:ff:ff:ff:ff:ff', 'vif2.2': 'fe:ff:ff:ff:ff:ff', 'vif2.1': 'fe:ff:ff:ff:ff:ff', 'vif2.0': 'fe:ff:ff:ff:ff:ff', 'vif78.0': 'fe:ff:ff:ff:ff:ff', 'vif71.0': 'fe:ff:ff:ff:ff:ff', 'vif74.0': 'fe:ff:ff:ff:ff:ff'}
+  id: xstest1.gdcloud.com
+  ip_interfaces: {'bond0': [], 'bond1': [], 'vif43.0': [], 'vif84.0': [], 'vif80.0': [], 'vif15.0': [], 'vif39.0': [], 'eth4': [], 'eth3': [], 'eth2': [], 'eth1': [], 'vif85.0': [], 'lo': ['127.0.0.1'], 'xapi10': [], 'xapi12': [], 'vif40.0': [], 'vif0.0': [], 'xenbr4': [], 'eth0': [], 'xapi1': ['192.168.201.1'], 'xapi0': [], 'xapi3': ['169.254.0.1'], 'xapi2': [], 'vif10.0': [], 'vif77.0': [], 'vif2.2': [], 'vif2.1': [], 'vif2.0': [], 'vif78.0': [], 'vif71.0': [], 'vif74.0': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.201.1
+  ipv6:
+      ::1
+      fe80::223:20ff:fe97:97dd
+      fe80::223:20ff:fec6:15b0
+      fe80::223:20ff:feca:1894
+      fe80::225:90ff:fe77:933c
+      fe80::225:90ff:fe77:933d
+      fe80::a236:9fff:fe15:6290
+      fe80::a236:9fff:fe15:6292
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xstest1.gdcloud.com
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 745
+  nodename: xstest1.gdcloud.com
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+      /usr/lib/python2.6/site-packages/setuptools-0.6c11-py2.6.egg-info
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 1010148112
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xen203.gdcloud.com:
+  biosreleasedate: 06/20/2012
+  biosversion: 1.1
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2650 0 @ 2.00GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  external_ip:
+  fqdn: xen203.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xen203
+  hwaddr_interfaces: {'vif3.0': 'fe:ff:ff:ff:ff:ff', 'bond0': '00:23:20:e2:bb:b3', 'bond1': '00:23:20:e4:7d:ef', 'xapi15': '00:25:90:77:94:3a', 'lo': '00:00:00:00:00:00', 'xapi16': '00:25:90:77:94:3a', 'xapi1': '00:25:90:77:94:3a', 'xapi13': '00:25:90:77:94:3a', 'xapi2': '90:e2:ba:19:f1:dd', 'xapi14': '00:25:90:77:94:3a', 'xapi19': '00:25:90:77:94:3a', 'xapi9': '00:23:20:e7:97:8f', 'eth0': '00:25:90:77:94:3a', 'eth3': '90:e2:ba:19:f1:dd', 'eth2': '90:e2:ba:19:f1:dc', 'eth1': '00:25:90:77:94:3b', 'xapi18': '00:25:90:77:94:3a'}
+  id: xen203.gdcloud.com
+  ip_interfaces: {'vif3.0': [], 'bond0': [], 'bond1': [], 'xapi15': [], 'lo': ['127.0.0.1'], 'xapi16': [], 'xapi1': [], 'xapi13': [], 'xapi2': ['192.168.14.14'], 'xapi14': [], 'xapi19': [], 'xapi9': ['169.254.0.1'], 'eth0': [], 'eth3': [], 'eth2': [], 'eth1': [], 'xapi18': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.14.14
+  ipv6:
+      ::1
+      fe80::223:20ff:fee2:bbb3
+      fe80::223:20ff:fee4:7def
+      fe80::223:20ff:fee7:978f
+      fe80::225:90ff:fe77:943a
+      fe80::225:90ff:fe77:943b
+      fe80::92e2:baff:fe19:f1dc
+      fe80::92e2:baff:fe19:f1dd
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xen203.gdcloud.com
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 750
+  nodename: xen203.gdcloud.com
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 1753450611
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xs229:
+  biosreleasedate: 06/20/2012
+  biosversion: 1.1
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: 
+  external_ip:
+  fqdn: xs229
+  fqdn_ip4:
+      192.168.11.27
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xs229
+  hwaddr_interfaces: {'bond0': '00:23:20:c7:2e:8b', 'bond1': '00:23:20:8e:c1:53', 'eth3': '90:e2:ba:20:d8:35', 'vif5.2': 'fe:ff:ff:ff:ff:ff', 'eth4': 'fe:ff:ff:ff:ff:ff', 'vif5.0': 'fe:ff:ff:ff:ff:ff', 'eth2': '90:e2:ba:20:d8:34', 'eth1': '00:25:90:73:ae:ff', 'eth0': '00:25:90:73:ae:fe', 'lo': '00:00:00:00:00:00', 'xapi12': '00:25:90:73:ae:fe', 'vif0.0': 'fe:ff:ff:ff:ff:ff', 'xapi9': '00:25:90:73:ae:fe', 'xapi8': '00:25:90:73:ae:fe', 'xapi5': '00:25:90:73:ae:fe', 'xapi4': '00:25:90:73:ae:fe', 'xapi6': '00:25:90:73:ae:fe', 'xapi0': '90:e2:ba:20:d8:35', 'xapi3': '00:23:20:95:31:4d', 'xapi2': '00:25:90:73:ae:fe', 'vif12.1': 'fe:ff:ff:ff:ff:ff', 'vif12.0': 'fe:ff:ff:ff:ff:ff', 'vif13.0': 'fe:ff:ff:ff:ff:ff', 'vif5.1': 'fe:ff:ff:ff:ff:ff'}
+  id: xs229
+  ip_interfaces: {'bond0': [], 'bond1': [], 'eth3': [], 'vif5.2': [], 'eth4': [], 'vif5.0': [], 'eth2': [], 'eth1': [], 'eth0': [], 'lo': ['127.0.0.1'], 'xapi12': [], 'vif0.0': [], 'xapi9': [], 'xapi8': [], 'xapi5': [], 'xapi4': [], 'xapi6': [], 'xapi0': ['192.168.11.27'], 'xapi3': ['169.254.0.1'], 'xapi2': [], 'vif12.1': [], 'vif12.0': [], 'vif13.0': [], 'vif5.1': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.11.27
+  ipv6:
+      ::1
+      fe80::223:20ff:fe8e:c153
+      fe80::223:20ff:fe95:314d
+      fe80::223:20ff:fec7:2e8b
+      fe80::225:90ff:fe73:aefe
+      fe80::225:90ff:fe73:aeff
+      fe80::92e2:baff:fe20:d834
+      fe80::92e2:baff:fe20:d835
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xs229
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 2043
+  nodename: xs229
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 1137514541
+  shell: /bin/sh
+  virtual: xen
+  virtual_subtype: Xen Dom0
+squid:
+  cpu_flags: fpu de tsc msr pae cx8 sep cmov pat clflush mmx fxsr sse sse2 ss ht syscall nx lm constant_tsc rep_good aperfmperf pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes hypervisor lahf_lm ida arat
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: x86_64
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: 
+  external_ip: 111.205.45.254
+  fqdn: squid
+  fqdn_ip4:
+      192.168.31.246
+  fqdn_ip6:
+  gpus:
+  host: squid
+  hwaddr_interfaces: {'lo': '00:00:00:00:00:00', 'eth0': 'fe:4a:7b:42:90:8b'}
+  id: squid
+  ip_interfaces: {'lo': ['127.0.0.1'], 'eth0': ['192.168.31.246']}
+  ipv4:
+      127.0.0.1
+      192.168.31.246
+  ipv6:
+      ::1
+      fe80::fc4a:7bff:fe42:908b
+  kernel: Linux
+  kernelrelease: 2.6.32-54-server
+  localhost: squid
+  lsb_distrib_codename: lucid
+  lsb_distrib_description: Ubuntu 10.04 LTS
+  lsb_distrib_id: Ubuntu
+  lsb_distrib_release: 10.04
+  master: salt
+  mem_total: 2000
+  nodename: squid
+  num_cpus: 2
+  num_gpus: 0
+  os: Ubuntu
+  os_family: Debian
+  osarch: amd64
+  oscodename: lucid
+  osfinger: Ubuntu-10.04
+  osfullname: Ubuntu
+  osrelease: 10.04
+  path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+  ps: ps -efHww
+  pythonpath:
+      /usr/bin
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/dist-packages
+      /usr/lib/pymodules/python2.6
+      /usr/lib/pymodules/python2.6/gtk-2.0
+      /usr/local/lib/python2.6/dist-packages
+  pythonversion: 2.6.5.final.0
+  saltpath: /usr/lib/pymodules/python2.6/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  server_id: 1036672395
+  shell: /bin/bash
+  test: None
+  virtual: xen
+  virtual_subtype: Xen PV DomU
+xs234.gdcloud.com:
+  biosreleasedate: 11/27/2012
+  biosversion: 1.1a
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  external_ip:
+  fqdn: xs234.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xs234
+  hwaddr_interfaces: {'eth0': '00:25:90:a8:31:44', 'vif3.0': 'fe:ff:ff:ff:ff:ff', 'bond0': '00:23:20:c6:a1:2c', 'bond1': '00:23:20:9f:20:55', 'vif2.0': 'fe:ff:ff:ff:ff:ff', 'lo': '00:00:00:00:00:00', 'xapi7': '00:25:90:a8:31:44', 'xapi1': '90:e2:ba:54:07:00', 'xapi0': '00:25:90:a8:31:44', 'xapi2': '00:23:20:fe:cc:9b', 'vif0.0': 'fe:ff:ff:ff:ff:ff', 'eth4': 'fe:ff:ff:ff:ff:ff', 'eth3': '90:e2:ba:54:07:01', 'eth2': '90:e2:ba:54:07:00', 'eth1': '00:25:90:a8:31:45', 'xapi8': '00:25:90:a8:31:44'}
+  id: xs234.gdcloud.com
+  ip_interfaces: {'eth0': [], 'vif3.0': [], 'bond0': [], 'bond1': [], 'vif2.0': [], 'lo': ['127.0.0.1'], 'xapi7': [], 'xapi1': ['192.168.14.234'], 'xapi0': [], 'xapi2': ['169.254.0.1'], 'vif0.0': [], 'eth4': [], 'eth3': [], 'eth2': [], 'eth1': [], 'xapi8': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.14.234
+  ipv6:
+      ::1
+      fe80::223:20ff:fe9f:2055
+      fe80::223:20ff:fec6:a12c
+      fe80::223:20ff:fefe:cc9b
+      fe80::225:90ff:fea8:3144
+      fe80::225:90ff:fea8:3145
+      fe80::92e2:baff:fe54:700
+      fe80::92e2:baff:fe54:701
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xs234.gdcloud.com
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 747
+  nodename: xs234.gdcloud.com
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 606097816
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xs08:
+  biosreleasedate: 06/28/2013
+  biosversion: 3.0
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: 
+  external_ip:
+  fqdn: xs08
+  fqdn_ip4:
+      192.168.11.17
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xs08
+  hwaddr_interfaces: {'bond0': '00:23:20:c4:3a:18', 'bond1': '00:23:20:ac:5b:04', 'vif4.0': 'fe:ff:ff:ff:ff:ff', 'xapi13': '00:25:90:ac:4b:e0', 'eth3': '90:e2:ba:84:02:cd', 'eth2': '90:e2:ba:84:02:cc', 'eth1': '00:25:90:ac:4b:e1', 'eth0': '00:25:90:ac:4b:e0', 'vif6.0': 'fe:ff:ff:ff:ff:ff', 'xapi14': '00:25:90:ac:4b:e0', 'xapi16': '00:25:90:ac:4b:e0', 'vif7.0': 'fe:ff:ff:ff:ff:ff', 'xapi12': '00:25:90:ac:4b:e0', 'vif1.0': 'fe:ff:ff:ff:ff:ff', 'xapi9': '00:25:90:ac:4b:e0', 'xapi8': '00:25:90:ac:4b:e0', 'xapi4': '00:25:90:ac:4b:e0', 'xapi6': '00:25:90:ac:4b:e0', 'xapi1': '00:25:90:ac:4b:e0', 'xapi0': '00:23:20:c0:4e:09', 'xapi3': '90:e2:ba:84:02:cc', 'xapi2': '00:25:90:ac:4b:e0', 'vif5.0': 'fe:ff:ff:ff:ff:ff', 'xapi28': '00:25:90:ac:4b:e0', 'vif3.0': 'fe:ff:ff:ff:ff:ff', 'vif2.0': 'fe:ff:ff:ff:ff:ff', 'xapi24': '00:25:90:ac:4b:e0', 'xapi25': '00:25:90:ac:4b:e0', 'lo': '00:00:00:00:00:00'}
+  id: xs08
+  ip_interfaces: {'bond0': [], 'bond1': [], 'vif4.0': [], 'xapi13': [], 'eth3': [], 'eth2': [], 'eth1': [], 'eth0': [], 'vif6.0': [], 'xapi14': [], 'xapi16': [], 'vif7.0': [], 'xapi12': [], 'vif1.0': [], 'xapi9': [], 'xapi8': [], 'xapi4': [], 'xapi6': [], 'xapi1': [], 'xapi0': ['169.254.0.1'], 'xapi3': ['192.168.11.17'], 'xapi2': [], 'vif5.0': [], 'xapi28': [], 'vif3.0': [], 'vif2.0': [], 'xapi24': [], 'xapi25': [], 'lo': ['127.0.0.1']}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.11.17
+  ipv6:
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xs08
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 747
+  nodename: xs08
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 1336263839
+  shell: /bin/sh
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xs54:
+  biosreleasedate: 06/28/2013
+  biosversion: 3.0
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: 
+  external_ip:
+  fqdn: xs54
+  fqdn_ip4:
+      192.168.13.16
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xs54
+  hwaddr_interfaces: {'xapi29': '00:25:90:ac:4f:c2', 'vif3.0': 'fe:ff:ff:ff:ff:ff', 'bond0': '00:23:20:95:a5:b6', 'bond1': '00:23:20:ab:58:18', 'eth3': '90:e2:ba:84:03:b9', 'vif2.0': 'fe:ff:ff:ff:ff:ff', 'lo': '00:00:00:00:00:00', 'xapi1': '90:e2:ba:84:03:b8', 'xapi0': '00:25:90:ac:4f:c2', 'vif8.0': 'fe:ff:ff:ff:ff:ff', 'vif1.0': 'fe:ff:ff:ff:ff:ff', 'vif4.0': 'fe:ff:ff:ff:ff:ff', 'xapi4': '00:23:20:ba:95:9c', 'vif5.0': 'fe:ff:ff:ff:ff:ff', 'eth2': '90:e2:ba:84:03:b8', 'eth1': '00:25:90:ac:4f:c3', 'eth0': '00:25:90:ac:4f:c2'}
+  id: xs54
+  ip_interfaces: {'xapi29': [], 'vif3.0': [], 'bond0': [], 'bond1': [], 'eth3': [], 'vif2.0': [], 'lo': ['127.0.0.1'], 'xapi1': ['192.168.13.16'], 'xapi0': [], 'vif8.0': [], 'vif1.0': [], 'vif4.0': [], 'xapi4': ['169.254.0.1'], 'vif5.0': [], 'eth2': [], 'eth1': [], 'eth0': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.13.16
+  ipv6:
+      ::1
+      fe80::223:20ff:fe95:a5b6
+      fe80::223:20ff:feab:5818
+      fe80::223:20ff:feba:959c
+      fe80::225:90ff:feac:4fc2
+      fe80::225:90ff:feac:4fc3
+      fe80::92e2:baff:fe84:3b8
+      fe80::92e2:baff:fe84:3b9
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xs54
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 2046
+  nodename: xs54
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 1339263836
+  shell: /bin/sh
+  virtual: xen
+  virtual_subtype: Xen Dom0
+pxe:
+  cpu_flags: fpu de tsc msr pae cx8 cmov pat clflush mmx fxsr sse sse2 ss ht syscall nx lm rep_good aperfmperf unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes hypervisor lahf_lm ida arat epb pln pts dts
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: x86_64
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: 
+  fqdn: pxe
+  fqdn_ip4:
+      192.168.11.8
+  fqdn_ip6:
+  gpus:
+  host: pxe
+  hwaddr_interfaces: {'lo': '00:00:00:00:00:00', 'eth1': '5a:27:a8:a5:24:89', 'eth0': '8a:bd:c2:3a:f8:1f'}
+  id: pxe
+  ip_interfaces: {'lo': ['127.0.0.1'], 'eth1': [], 'eth0': ['192.168.11.8']}
+  ipv4:
+      127.0.0.1
+      192.168.11.8
+  ipv6:
+      ::1
+      fe80::88bd:c2ff:fe3a:f81f
+  kernel: Linux
+  kernelrelease: 2.6.32-220.el6.x86_64
+  localhost: pxe
+  lsb_distrib_codename: Final
+  lsb_distrib_id: CentOS
+  lsb_distrib_release: 6.2
+  master: salt
+  mem_total: 992
+  nodename: pxe
+  num_cpus: 2
+  num_gpus: 0
+  os: CentOS
+  os_family: RedHat
+  osarch: x86_64
+  oscodename: Final
+  osfinger: CentOS-6
+  osfullname: CentOS
+  osmajorrelease:
+      6
+      2
+  osrelease: 6.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib64/python26.zip
+      /usr/lib64/python2.6
+      /usr/lib64/python2.6/plat-linux2
+      /usr/lib64/python2.6/lib-tk
+      /usr/lib64/python2.6/lib-old
+      /usr/lib64/python2.6/lib-dynload
+      /usr/lib64/python2.6/site-packages
+      /usr/lib/python2.6/site-packages
+      /usr/lib/python2.6/site-packages/setuptools-0.6c11-py2.6.egg-info
+  pythonversion: 2.6.6.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.5
+  saltversioninfo:
+      2014
+      1
+      5
+  server_id: 615676190
+  shell: /bin/sh
+  virtual: physical
+  zmqversion: 3.2.4
+dns01:
+  cpu_flags: fpu de tsc msr pae cx8 cmov pat clflush mmx fxsr sse sse2 ss ht syscall nx lm up rep_good aperfmperf unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes hypervisor lahf_lm ida arat epb pln pts dts
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: x86_64
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: hdtr.com
+  external_ip: 111.205.45.254
+  fqdn: dns01.hdtr.com
+  fqdn_ip4:
+      192.168.12.30
+  fqdn_ip6:
+  gpus:
+  host: dns01
+  hwaddr_interfaces: {'lo': '00:00:00:00:00:00', 'eth0': 'b2:69:0e:3c:e2:ea'}
+  id: dns01
+  ip_interfaces: {'lo': ['127.0.0.1'], 'eth0': ['192.168.12.30']}
+  ipv4:
+      127.0.0.1
+      192.168.12.30
+  ipv6:
+      ::1
+      fe80::b069:eff:fe3c:e2ea
+  kernel: Linux
+  kernelrelease: 2.6.32-220.el6.x86_64
+  localhost: dns01
+  lsb_distrib_codename: Final
+  lsb_distrib_id: CentOS
+  lsb_distrib_release: 6.2
+  master: salt
+  mem_total: 992
+  nodename: dns01
+  num_cpus: 1
+  num_gpus: 0
+  os: CentOS
+  os_family: RedHat
+  osarch: x86_64
+  oscodename: Final
+  osfinger: CentOS-6
+  osfullname: CentOS
+  osmajorrelease:
+      6
+      2
+  osrelease: 6.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib64/python26.zip
+      /usr/lib64/python2.6
+      /usr/lib64/python2.6/plat-linux2
+      /usr/lib64/python2.6/lib-tk
+      /usr/lib64/python2.6/lib-old
+      /usr/lib64/python2.6/lib-dynload
+      /usr/lib64/python2.6/site-packages
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.6.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  server_id: 641878713
+  shell: /bin/sh
+  test: None
+  virtual: xen
+  virtual_subtype: Xen PV DomU
+csm02:
+  cpu_flags: fpu de tsc msr pae cx8 cmov pat clflush mmx fxsr sse sse2 ss ht syscall nx lm rep_good aperfmperf unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes hypervisor lahf_lm ida arat epb pln pts dts
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: x86_64
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: 
+  external_ip:
+  fqdn: master-2
+  fqdn_ip4:
+  fqdn_ip6:
+  gpus:
+  host: master-2
+  hwaddr_interfaces: {'lo': '00:00:00:00:00:00', 'eth0': 'd2:e7:5d:53:1c:85'}
+  id: csm02
+  ip_interfaces: {'lo': ['127.0.0.1'], 'eth0': ['192.168.11.3']}
+  ipv4:
+      127.0.0.1
+      192.168.11.3
+  ipv6:
+  kernel: Linux
+  kernelrelease: 2.6.32-220.el6.x86_64
+  localhost: master-2
+  lsb_distrib_codename: Final
+  lsb_distrib_id: CentOS
+  lsb_distrib_release: 6.2
+  master: salt
+  mem_total: 3881
+  nodename: master-2
+  num_cpus: 4
+  num_gpus: 0
+  os: CentOS
+  os_family: RedHat
+  osarch: x86_64
+  oscodename: Final
+  osfinger: CentOS-6
+  osfullname: CentOS
+  osmajorrelease:
+      6
+      2
+  osrelease: 6.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib64/python26.zip
+      /usr/lib64/python2.6
+      /usr/lib64/python2.6/plat-linux2
+      /usr/lib64/python2.6/lib-tk
+      /usr/lib64/python2.6/lib-old
+      /usr/lib64/python2.6/lib-dynload
+      /usr/lib64/python2.6/site-packages
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.6.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  server_id: 988283708
+  shell: /bin/sh
+  test: None
+  virtual: xen
+  virtual_subtype: Xen PV DomU
+wxp3:
+  biosversion: Revision: 1.221
+  cpu_model: x86 Family 6 Model 45 Stepping 7, GenuineIntel
+  cpuarch: x86
+  defaultencoding: cp936
+  defaultlanguage: zh_CN
+  domain: 
+  fqdn: winxp3
+  fqdn_ip4:
+      192.168.12.63
+  fqdn_ip6:
+  gpus:
+  host: winxp3
+  id: wxp3
+  ip_interfaces: {'Citrix PV Ethernet Adapter - \xe6\x95\xb0\xe6\x8d\xae\xe5\x8c\x85\xe8\xae\xa1\xe5\x88\x92\xe7\xa8\x8b\xe5\xba\x8f\xe5\xbe\xae\xe5\x9e\x8b\xe7\xab\xaf\xe5\x8f\xa3': ['192.168.12.63']}
+  ipv4:
+      192.168.12.63
+  ipv6:
+  kernel: Windows
+  kernelrelease: 5.1.2600
+  localhost: winxp3
+  manufacturer: Xen
+  master: salt
+  mem_total: 4092
+  nodename: winxp3
+  num_cpus: 2
+  num_gpus: 0
+  os: Windows
+  os_family: Windows
+  osfullname: Microsoft Windows XP Professional
+  osmanufacturer: Microsoft Corporation
+  osrelease: XP
+  osversion: 5.1.2600
+  path: c:\salt\salt-0.17.5-51-g508bed0.win32;C:\Program Files\Common Files\NetSarang;C:\oracle\product\10.2.0\db_1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\usr\bin
+  productname: HVM domU
+  ps: tasklist.exe
+  pythonpath:
+      c:\salt\salt-0.17.5-51-g508bed0.win32\library.zip
+      c:\salt\salt-0.17.5-51-g508bed0.win32\esky-0.9.8-py2.7.egg
+      c:\salt\salt-0.17.5-51-g508bed0.win32\jinja2-2.7.1-py2.7.egg
+      c:\salt\salt-0.17.5-51-g508bed0.win32\markupsafe-0.18-py2.7.egg
+      c:\salt\salt-0.17.5-51-g508bed0.win32\psutil-1.1.1-py2.7-win32.egg
+      c:\salt\salt-0.17.5-51-g508bed0.win32\pyyaml-3.10-py2.7-win32.egg
+      c:\salt\salt-0.17.5-51-g508bed0.win32\pyzmq-13.1.0-py2.7-win32.egg
+      c:\salt\salt-0.17.5-51-g508bed0.win32\salt-0.17.5_51_g508bed0-py2.7.egg
+      c:\salt\salt-0.17.5-51-g508bed0.win32\setuptools-1.1.6-py2.7.egg
+      c:\salt\salt-0.17.5-51-g508bed0.win32\wmi-1.4.9-py2.7-win32.egg
+      c:\salt\salt-0.17.5-51-g508bed0.win32
+  pythonversion: 2.7.5.final.0
+  saltpath: c:\salt\salt-0.17.5-51-g508bed0.win32\salt-0.17.5_51_g508bed0-py2.7.egg\salt
+  saltversion: 0.17.5-51-g508bed0
+  saltversioninfo:
+      0
+      17
+      5
+  server_id: 1504695938
+  shell: /bin/sh
+  timezone: None
+  virtual: Xen
+  virtual_subtype: HVM domU
+  windowsdomain: WORKGROUP
+csdb-slave:
+  cpu_flags: fpu de tsc msr pae cx8 cmov pat clflush mmx fxsr sse sse2 ss ht syscall nx lm rep_good aperfmperf unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes hypervisor lahf_lm ida arat epb pln pts dts
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: x86_64
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  external_ip:
+  fqdn: DB-2.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+  host: DB-2
+  hwaddr_interfaces: {'lo': '00:00:00:00:00:00', 'eth0': '7a:62:c2:86:63:38'}
+  id: csdb-slave
+  ip_interfaces: {'lo': ['127.0.0.1'], 'eth0': ['192.168.11.5']}
+  ipv4:
+      127.0.0.1
+      192.168.11.5
+  ipv6:
+  kernel: Linux
+  kernelrelease: 2.6.32-220.el6.x86_64
+  localhost: DB-2.gdcloud.com
+  lsb_distrib_codename: Final
+  lsb_distrib_id: CentOS
+  lsb_distrib_release: 6.2
+  master: salt
+  mem_total: 3881
+  nodename: DB-2.gdcloud.com
+  num_cpus: 4
+  num_gpus: 0
+  os: CentOS
+  os_family: RedHat
+  osarch: x86_64
+  oscodename: Final
+  osfinger: CentOS-6
+  osfullname: CentOS
+  osmajorrelease:
+      6
+      2
+  osrelease: 6.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib64/python26.zip
+      /usr/lib64/python2.6
+      /usr/lib64/python2.6/plat-linux2
+      /usr/lib64/python2.6/lib-tk
+      /usr/lib64/python2.6/lib-old
+      /usr/lib64/python2.6/lib-dynload
+      /usr/lib64/python2.6/site-packages
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.6.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  server_id: 399802844
+  shell: /bin/sh
+  test: None
+  virtual: xen
+  virtual_subtype: Xen PV DomU
+xen211.gdcloud.com:
+  biosreleasedate: 06/20/2012
+  biosversion: 1.1
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2650 0 @ 2.00GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  external_ip:
+  fqdn: xen211.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xen211
+  hwaddr_interfaces: {'bond0': '00:23:20:b9:76:97', 'bond1': '00:23:20:a6:66:8a', 'eth3': '90:e2:ba:20:d4:f1', 'eth2': '90:e2:ba:20:d4:f0', 'eth1': '00:25:90:77:93:eb', 'eth0': '00:25:90:77:93:ea', 'vif6.0': 'fe:ff:ff:ff:ff:ff', 'lo': '00:00:00:00:00:00', 'xapi11': '00:25:90:77:93:ea', 'xapi10': '00:25:90:77:93:ea', 'xapi13': '00:25:90:77:93:ea', 'vif1.0': 'fe:ff:ff:ff:ff:ff', 'vif1.1': 'fe:ff:ff:ff:ff:ff', 'vif1.2': 'fe:ff:ff:ff:ff:ff', 'xapi5': '00:25:90:77:93:ea', 'xapi4': '00:25:90:77:93:ea', 'xapi7': '00:25:90:77:93:ea', 'xapi1': '00:25:90:77:93:ea', 'xapi3': '00:23:20:e7:79:0e', 'xapi2': '90:e2:ba:20:d4:f0', 'vif3.0': 'fe:ff:ff:ff:ff:ff', 'vif2.2': 'fe:ff:ff:ff:ff:ff', 'vif2.1': 'fe:ff:ff:ff:ff:ff', 'vif2.0': 'fe:ff:ff:ff:ff:ff', 'xapi14': '00:25:90:77:93:ea'}
+  id: xen211.gdcloud.com
+  ip_interfaces: {'bond0': [], 'bond1': [], 'eth3': [], 'eth2': [], 'eth1': [], 'eth0': [], 'vif6.0': [], 'lo': ['127.0.0.1'], 'xapi11': [], 'xapi10': [], 'xapi13': [], 'vif1.0': [], 'vif1.1': [], 'vif1.2': [], 'xapi5': [], 'xapi4': [], 'xapi7': [], 'xapi1': [], 'xapi3': ['169.254.0.1'], 'xapi2': ['192.168.14.21'], 'vif3.0': [], 'vif2.2': [], 'vif2.1': [], 'vif2.0': [], 'xapi14': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.14.21
+  ipv6:
+      ::1
+      fe80::223:20ff:fea6:668a
+      fe80::223:20ff:feb9:7697
+      fe80::223:20ff:fee7:790e
+      fe80::225:90ff:fe77:93ea
+      fe80::225:90ff:fe77:93eb
+      fe80::92e2:baff:fe20:d4f0
+      fe80::92e2:baff:fe20:d4f1
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xen211.gdcloud.com
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 750
+  nodename: xen211.gdcloud.com
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 1945991058
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen Dom0
+dns02:
+  cpu_flags: fpu de tsc msr pae cx8 cmov pat clflush mmx fxsr sse sse2 ss ht syscall nx lm rep_good aperfmperf unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes hypervisor lahf_lm ida arat epb pln pts dts
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: x86_64
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: 
+  external_ip: 106.120.237.254
+  fqdn: dns02
+  fqdn_ip4:
+      192.168.12.31
+  fqdn_ip6:
+  gpus:
+  host: dns02
+  hwaddr_interfaces: {'lo': '00:00:00:00:00:00', 'eth0': '92:ad:b6:7e:39:be'}
+  id: dns02
+  ip_interfaces: {'lo': ['127.0.0.1'], 'eth0': ['192.168.12.31', '192.168.12.10']}
+  ipv4:
+      127.0.0.1
+      192.168.12.10
+      192.168.12.31
+  ipv6:
+      ::1
+      fe80::90ad:b6ff:fe7e:39be
+  kernel: Linux
+  kernelrelease: 2.6.32-220.el6.x86_64
+  localhost: dns02
+  lsb_distrib_codename: Final
+  lsb_distrib_id: CentOS
+  lsb_distrib_release: 6.2
+  master: salt
+  mem_total: 992
+  nodename: dns02
+  num_cpus: 2
+  num_gpus: 0
+  os: CentOS
+  os_family: RedHat
+  osarch: x86_64
+  oscodename: Final
+  osfinger: CentOS-6
+  osfullname: CentOS
+  osmajorrelease:
+      6
+      2
+  osrelease: 6.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib64/python26.zip
+      /usr/lib64/python2.6
+      /usr/lib64/python2.6/plat-linux2
+      /usr/lib64/python2.6/lib-tk
+      /usr/lib64/python2.6/lib-old
+      /usr/lib64/python2.6/lib-dynload
+      /usr/lib64/python2.6/site-packages
+      /usr/lib/python2.6/site-packages
+      /usr/lib/python2.6/site-packages/setuptools-0.6c11-py2.6.egg-info
+  pythonversion: 2.6.6.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  server_id: 641878714
+  shell: /bin/sh
+  test: None
+  virtual: xen
+  virtual_subtype: Xen PV DomU
+xs03:
+  biosreleasedate: 06/20/2012
+  biosversion: 1.1
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: 
+  external_ip:
+  fqdn: xs03
+  fqdn_ip4:
+      192.168.11.14
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xs03
+  hwaddr_interfaces: {'vif26.0': 'fe:ff:ff:ff:ff:ff', 'bond0': '00:23:20:cf:26:ed', 'bond1': '00:23:20:f5:af:f0', 'vif14.0': 'fe:ff:ff:ff:ff:ff', 'vif8.0': 'fe:ff:ff:ff:ff:ff', 'vif4.0': 'fe:ff:ff:ff:ff:ff', 'vif20.0': 'fe:ff:ff:ff:ff:ff', 'vif15.0': 'fe:ff:ff:ff:ff:ff', 'vif55.0': 'fe:ff:ff:ff:ff:ff', 'eth4': 'fe:ff:ff:ff:ff:ff', 'eth3': '90:e2:ba:24:66:85', 'eth2': '90:e2:ba:24:66:84', 'eth1': '00:25:90:77:f5:8b', 'eth0': '00:25:90:77:f5:8a', 'lo': '00:00:00:00:00:00', 'xapi16': '00:25:90:77:f5:8a', 'xapi12': '00:25:90:77:f5:8a', 'vif1.0': 'fe:ff:ff:ff:ff:ff', 'vif1.1': 'fe:ff:ff:ff:ff:ff', 'vif1.2': 'fe:ff:ff:ff:ff:ff', 'vif0.0': 'fe:ff:ff:ff:ff:ff', 'xapi9': '00:25:90:77:f5:8a', 'xapi8': '00:25:90:77:f5:8a', 'tap55.0': 'fe:ff:ff:ff:ff:ff', 'xapi4': '00:25:90:77:f5:8a', 'xapi7': '00:25:90:77:f5:8a', 'xapi6': '00:25:90:77:f5:8a', 'xapi1': '00:25:90:77:f5:8a', 'xapi0': '00:23:20:82:ee:8c', 'xapi3': '90:e2:ba:24:66:84', 'xapi2': '00:25:90:77:f5:8a', 'vif11.0': 'fe:ff:ff:ff:ff:ff', 'xapi24': '00:25:90:77:f5:8a', 'xapi25': '00:25:90:77:f5:8a', 'vif13.0': 'fe:ff:ff:ff:ff:ff', 'vif56.0': 'fe:ff:ff:ff:ff:ff', 'xapi14': '00:25:90:77:f5:8a', 'vif25.0': 'fe:ff:ff:ff:ff:ff'}
+  id: xs03
+  ip_interfaces: {'vif26.0': [], 'bond0': [], 'bond1': [], 'vif14.0': [], 'vif8.0': [], 'vif4.0': [], 'vif20.0': [], 'vif15.0': [], 'vif55.0': [], 'eth4': [], 'eth3': [], 'eth2': [], 'eth1': [], 'eth0': [], 'lo': ['127.0.0.1'], 'xapi16': [], 'xapi12': [], 'vif1.0': [], 'vif1.1': [], 'vif1.2': [], 'vif0.0': [], 'xapi9': [], 'xapi8': [], 'tap55.0': [], 'xapi4': [], 'xapi7': [], 'xapi6': [], 'xapi1': [], 'xapi0': ['169.254.0.1'], 'xapi3': ['192.168.11.14'], 'xapi2': [], 'vif11.0': [], 'xapi24': [], 'xapi25': [], 'vif13.0': [], 'vif56.0': [], 'xapi14': [], 'vif25.0': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.11.14
+  ipv6:
+      ::1
+      fe80::223:20ff:fecf:26ed
+      fe80::223:20ff:fef5:aff0
+      fe80::223:20ff:fefe:e20a
+      fe80::225:90ff:fe77:f58a
+      fe80::225:90ff:fe77:f58b
+      fe80::92e2:baff:fe24:6684
+      fe80::92e2:baff:fe24:6685
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xs03
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 2043
+  nodename: xs03
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 1336263828
+  shell: /bin/sh
+  virtual: xen
+  virtual_subtype: Xen Dom0
+i-7-1293-VM:
+  biosreleasedate: 04/24/2014
+  biosversion: 4.1.2
+  cpu_flags: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat clflush mmx fxsr sse sse2 syscall rdtscp lm constant_tsc rep_good pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes hypervisor lahf_lm
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: x86_64
+  defaultencoding: None
+  defaultlanguage: None
+  domain: 
+  fqdn: BAOSHAN-LOCALPRED
+  fqdn_ip4:
+      10.1.1.100
+  fqdn_ip6:
+  gpus:
+      {'model': 'GD 5446', 'vendor': 'unknown'}
+  host: BAOSHAN-LOCALPRED
+  hwaddr_interfaces: {'lo': '00:00:00:00:00:00', 'eth0': '02:00:7c:8b:00:22'}
+  id: i-7-1293-VM
+  ip_interfaces: {'lo': ['127.0.0.1'], 'eth0': ['10.1.1.100']}
+  ipv4:
+      10.1.1.100
+      127.0.0.1
+  ipv6:
+      ::1
+      fe80::7cff:fe8b:22
+  kernel: Linux
+  kernelrelease: 2.6.32-21-server
+  localhost: BAOSHAN-LOCALPRED
+  lsb_distrib_codename: lucid
+  lsb_distrib_description: Ubuntu 10.04 LTS
+  lsb_distrib_id: Ubuntu
+  lsb_distrib_release: 10.04
+  manufacturer: Xen
+  master: salt.hdtr.com
+  mem_total: 7901
+  nodename: BAOSHAN-LOCALPRED
+  num_cpus: 4
+  num_gpus: 1
+  os: Ubuntu
+  os_family: Debian
+  osarch: amd64
+  oscodename: lucid
+  osfinger: Ubuntu-10.04
+  osfullname: Ubuntu
+  osrelease: 10.04
+  path: /usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/bin
+  productname: HVM domU
+  ps: ps -efHww
+  pythonpath:
+      /usr/bin
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/dist-packages
+      /usr/lib/pymodules/python2.6
+      /usr/lib/pymodules/python2.6/gtk-2.0
+      /usr/local/lib/python2.6/dist-packages
+  pythonversion: 2.6.5.final.0
+  saltpath: /usr/lib/pymodules/python2.6/salt
+  saltversion: 2014.1.10
+  saltversioninfo:
+      2014
+      1
+      10
+      0
+  serialnumber: c5f61203-fef3-8cc7-3c79-02fb18b55290
+  server_id: 1894061804
+  shell: /bin/sh
+  virtual: physical
+  zmqversion: 3.2.2
+csdb-master:
+  cpu_flags: fpu de tsc msr pae cx8 cmov pat clflush mmx fxsr sse sse2 ss ht syscall nx lm rep_good aperfmperf unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes hypervisor lahf_lm ida arat epb pln pts dts
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: x86_64
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  external_ip:
+  fqdn: DB-1.gdcloud.com
+  fqdn_ip4:
+      192.168.11.4
+  fqdn_ip6:
+  gpus:
+  host: DB-1
+  hwaddr_interfaces: {'lo': '00:00:00:00:00:00', 'eth1': 'ee:1e:13:89:cc:f7', 'eth0': '26:f9:ed:06:3e:99'}
+  id: csdb-master
+  ip_interfaces: {'lo': ['127.0.0.1'], 'eth1': ['192.168.11.4'], 'eth0': []}
+  ipv4:
+      127.0.0.1
+      192.168.11.4
+  ipv6:
+  kernel: Linux
+  kernelrelease: 2.6.32-220.el6.x86_64
+  localhost: DB-1.gdcloud.com
+  lsb_distrib_codename: Final
+  lsb_distrib_id: CentOS
+  lsb_distrib_release: 6.2
+  master: salt
+  mem_total: 3881
+  nodename: DB-1.gdcloud.com
+  num_cpus: 4
+  num_gpus: 0
+  os: CentOS
+  os_family: RedHat
+  osarch: x86_64
+  oscodename: Final
+  osfinger: CentOS-6
+  osfullname: CentOS
+  osmajorrelease:
+      6
+      2
+  osrelease: 6.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python2.6/site-packages/cloudmonkey-4.1.0_snapshot3-py2.6.egg
+      /usr/lib/python2.6/site-packages/prettytable-0.7.2-py2.6.egg
+      /usr/lib/python2.6/site-packages/Pygments-1.6-py2.6.egg
+      /usr/lib64/python26.zip
+      /usr/lib64/python2.6
+      /usr/lib64/python2.6/plat-linux2
+      /usr/lib64/python2.6/lib-tk
+      /usr/lib64/python2.6/lib-old
+      /usr/lib64/python2.6/lib-dynload
+      /usr/lib64/python2.6/site-packages
+      /usr/lib/python2.6/site-packages
+      /usr/lib/python2.6/site-packages/setuptools-0.6c11-py2.6.egg-info
+  pythonversion: 2.6.6.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  server_id: 1771405256
+  shell: /bin/sh
+  test: None
+  virtual: xen
+  virtual_subtype: Xen PV DomU
+csm01:
+  cpu_flags: fpu de tsc msr pae cx8 cmov pat clflush mmx fxsr sse sse2 ss ht syscall nx lm rep_good aperfmperf unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes hypervisor lahf_lm ida arat epb pln pts dts
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: x86_64
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  external_ip: 114.251.196.110
+  fqdn: Master-1-1.gdcloud.com
+  fqdn_ip4:
+      192.168.11.2
+  fqdn_ip6:
+  gpus:
+  host: Master-1-1
+  hwaddr_interfaces: {'lo': '00:00:00:00:00:00', 'eth1': '2e:fd:70:b9:a8:09', 'eth0': 'f2:bf:c0:fe:9c:27'}
+  id: csm01
+  ip_interfaces: {'lo': ['127.0.0.1'], 'eth1': ['192.168.11.2'], 'eth0': []}
+  ipv4:
+      127.0.0.1
+      192.168.11.2
+  ipv6:
+  kernel: Linux
+  kernelrelease: 2.6.32-220.el6.x86_64
+  localhost: Master-1-1.gdcloud.com
+  lsb_distrib_codename: Final
+  lsb_distrib_id: CentOS
+  lsb_distrib_release: 6.2
+  master: salt
+  mem_total: 7744
+  nodename: Master-1-1.gdcloud.com
+  num_cpus: 12
+  num_gpus: 0
+  os: CentOS
+  os_family: RedHat
+  osarch: x86_64
+  oscodename: Final
+  osfinger: CentOS-6
+  osfullname: CentOS
+  osmajorrelease:
+      6
+      2
+  osrelease: 6.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python2.6/site-packages/cloudmonkey-4.1.0_snapshot3-py2.6.egg
+      /usr/lib/python2.6/site-packages/prettytable-0.7.2-py2.6.egg
+      /usr/lib/python2.6/site-packages/Pygments-1.6-py2.6.egg
+      /usr/lib64/python26.zip
+      /usr/lib64/python2.6
+      /usr/lib64/python2.6/plat-linux2
+      /usr/lib64/python2.6/lib-tk
+      /usr/lib64/python2.6/lib-old
+      /usr/lib64/python2.6/lib-dynload
+      /usr/lib64/python2.6/site-packages
+      /usr/lib64/python2.6/site-packages/PIL
+      /usr/lib/python2.6/site-packages
+      /usr/lib/python2.6/site-packages/setuptools-0.6c11-py2.6.egg-info
+  pythonversion: 2.6.6.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  server_id: 988283711
+  shell: /bin/sh
+  test: None
+  virtual: xen
+  virtual_subtype: Xen PV DomU
+bqj-nagios01:
+  cpu_flags: fpu de tsc msr pae cx8 cmov pat clflush mmx fxsr sse sse2 ss ht syscall nx lm rep_good aperfmperf unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes hypervisor lahf_lm ida arat epb pln pts dts
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: x86_64
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: 
+  external_ip: 1.202.251.202
+  fqdn: bqj-nagios01
+  fqdn_ip4:
+  fqdn_ip6:
+  gpus:
+  host: bqj-nagios01
+  hwaddr_interfaces: {'lo': '00:00:00:00:00:00', 'eth1': 'ce:ac:23:03:40:ef', 'eth0': '5e:96:12:d8:9c:60'}
+  id: bqj-nagios01
+  ip_interfaces: {'lo': ['127.0.0.1'], 'eth1': ['10.121.3.251'], 'eth0': ['172.31.3.200']}
+  ipv4:
+      10.121.3.251
+      127.0.0.1
+      172.31.3.200
+  ipv6:
+      ::1
+      fe80::5c96:12ff:fed8:9c60
+      fe80::ccac:23ff:fe03:40ef
+  kernel: Linux
+  kernelrelease: 2.6.32-220.el6.x86_64
+  localhost: bqj-nagios01
+  lsb_distrib_codename: Final
+  lsb_distrib_id: CentOS
+  lsb_distrib_release: 6.2
+  master: salt
+  mem_total: 7840
+  nodename: bqj-nagios01
+  num_cpus: 4
+  num_gpus: 0
+  os: CentOS
+  os_family: RedHat
+  osarch: x86_64
+  oscodename: Final
+  osfinger: CentOS-6
+  osfullname: CentOS
+  osmajorrelease:
+      6
+      2
+  osrelease: 6.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib64/python26.zip
+      /usr/lib64/python2.6
+      /usr/lib64/python2.6/plat-linux2
+      /usr/lib64/python2.6/lib-tk
+      /usr/lib64/python2.6/lib-old
+      /usr/lib64/python2.6/lib-dynload
+      /usr/lib64/python2.6/site-packages
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.6.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  server_id: 900056860
+  shell: /bin/sh
+  virtual: xen
+  virtual_subtype: Xen PV DomU
+nagios02:
+  cpu_flags: fpu de tsc msr pae cx8 cmov pat clflush mmx fxsr sse sse2 ss ht syscall nx lm rep_good aperfmperf unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes hypervisor lahf_lm ida arat epb pln pts dts
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: x86_64
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: hdtr.com
+  external_ip:
+  fqdn: nagios02.hdtr.com
+  fqdn_ip4:
+      192.168.31.247
+  fqdn_ip6:
+  gpus:
+  host: nagios02
+  hwaddr_interfaces: {'lo': '00:00:00:00:00:00', 'eth0': '8e:35:c9:33:04:ff'}
+  id: nagios02
+  ip_interfaces: {'lo': ['127.0.0.1'], 'eth0': ['192.168.31.247']}
+  ipv4:
+      127.0.0.1
+      192.168.31.247
+  ipv6:
+      ::1
+      fe80::8c35:c9ff:fe33:4ff
+  kernel: Linux
+  kernelrelease: 2.6.32-220.el6.x86_64
+  localhost: nagios02
+  lsb_distrib_codename: Final
+  lsb_distrib_id: CentOS
+  lsb_distrib_release: 6.2
+  master: salt
+  mem_total: 1998
+  nodename: nagios02
+  num_cpus: 2
+  num_gpus: 0
+  os: CentOS
+  os_family: RedHat
+  osarch: x86_64
+  oscodename: Final
+  osfinger: CentOS-6
+  osfullname: CentOS
+  osmajorrelease:
+      6
+      2
+  osrelease: 6.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python2.6/site-packages/argparse-1.2.1-py2.6.egg
+      /usr/lib64/python26.zip
+      /usr/lib64/python2.6
+      /usr/lib64/python2.6/plat-linux2
+      /usr/lib64/python2.6/lib-tk
+      /usr/lib64/python2.6/lib-old
+      /usr/lib64/python2.6/lib-dynload
+      /usr/lib64/python2.6/site-packages
+      /usr/lib/python2.6/site-packages
+      /usr/lib/python2.6/site-packages/setuptools-0.6c11-py2.6.egg-info
+  pythonversion: 2.6.6.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  server_id: 1587149243
+  shell: /bin/sh
+  test: None
+  virtual: xen
+  virtual_subtype: Xen PV DomU
+xs201:
+  biosreleasedate: 11/27/2012
+  biosversion: 1.1a
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: 
+  external_ip:
+  fqdn: xs201
+  fqdn_ip4:
+      192.168.14.12
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xs201
+  hwaddr_interfaces: {'bond0': '00:23:20:b7:cf:93', 'bond1': '00:23:20:ae:da:29', 'eth3': 'a0:36:9f:15:53:72', 'vif8.1': 'fe:ff:ff:ff:ff:ff', 'vif8.0': 'fe:ff:ff:ff:ff:ff', 'vif8.2': 'fe:ff:ff:ff:ff:ff', 'vif21.0': 'fe:ff:ff:ff:ff:ff', 'xapi13': '00:25:90:77:93:38', 'vif39.0': 'fe:ff:ff:ff:ff:ff', 'vif5.0': 'fe:ff:ff:ff:ff:ff', 'eth2': 'a0:36:9f:15:53:70', 'eth1': '00:25:90:77:93:39', 'eth0': '00:25:90:77:93:38', 'vif6.0': 'fe:ff:ff:ff:ff:ff', 'xapi19': '00:25:90:77:93:38', 'xapi18': '00:25:90:77:93:38', 'xapi15': '00:25:90:77:93:38', 'lo': '00:00:00:00:00:00', 'xapi17': '00:25:90:77:93:38', 'xapi16': '00:25:90:77:93:38', 'vif7.0': 'fe:ff:ff:ff:ff:ff', 'xapi9': '00:23:20:b9:d9:6d', 'xapi4': '00:25:90:77:93:38', 'xapi1': '00:25:90:77:93:38', 'xapi2': 'a0:36:9f:15:53:70', 'vif3.0': 'fe:ff:ff:ff:ff:ff', 'vif2.0': 'fe:ff:ff:ff:ff:ff', 'xapi14': '00:25:90:77:93:38'}
+  id: xs201
+  ip_interfaces: {'bond0': [], 'bond1': [], 'eth3': [], 'vif8.1': [], 'vif8.0': [], 'vif8.2': [], 'vif21.0': [], 'xapi13': [], 'vif39.0': [], 'vif5.0': [], 'eth2': [], 'eth1': [], 'eth0': [], 'vif6.0': [], 'xapi19': [], 'xapi18': [], 'xapi15': [], 'lo': ['127.0.0.1'], 'xapi17': [], 'xapi16': [], 'vif7.0': [], 'xapi9': ['169.254.0.1'], 'xapi4': [], 'xapi1': [], 'xapi2': ['192.168.14.12'], 'vif3.0': [], 'vif2.0': [], 'xapi14': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.14.12
+  ipv6:
+      ::1
+      fe80::223:20ff:feae:da29
+      fe80::223:20ff:feb7:cf93
+      fe80::223:20ff:feb9:d96d
+      fe80::225:90ff:fe77:9338
+      fe80::225:90ff:fe77:9339
+      fe80::a236:9fff:fe15:5370
+      fe80::a236:9fff:fe15:5372
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xs201
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 745
+  nodename: xs201
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 1135514559
+  shell: /bin/sh
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xs04:
+  biosreleasedate: 06/20/2012
+  biosversion: 1.1
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: 
+  external_ip:
+  fqdn: xs04
+  fqdn_ip4:
+      192.168.11.15
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xs04
+  hwaddr_interfaces: {'vif34.0': 'fe:ff:ff:ff:ff:ff', 'bond0': '00:23:20:c1:f3:70', 'bond1': '00:23:20:9b:14:89', 'vif35.0': 'fe:ff:ff:ff:ff:ff', 'vif9.0': 'fe:ff:ff:ff:ff:ff', 'vif8.0': 'fe:ff:ff:ff:ff:ff', 'eth4': 'fe:ff:ff:ff:ff:ff', 'vif5.0': 'fe:ff:ff:ff:ff:ff', 'eth2': '90:e2:ba:24:68:08', 'eth1': '00:25:90:77:f5:7f', 'eth0': '00:25:90:77:f5:7e', 'tap35.0': 'fe:ff:ff:ff:ff:ff', 'lo': '00:00:00:00:00:00', 'xapi16': '00:25:90:77:f5:7e', 'xapi13': '00:25:90:77:f5:7e', 'xapi12': '00:25:90:77:f5:7e', 'vif33.0': 'fe:ff:ff:ff:ff:ff', 'vif0.0': 'fe:ff:ff:ff:ff:ff', 'xapi9': '00:25:90:77:f5:7e', 'xapi8': '00:25:90:77:f5:7e', 'xapi4': '00:25:90:77:f5:7e', 'xapi7': '00:25:90:77:f5:7e', 'xapi6': '00:25:90:77:f5:7e', 'xapi1': '00:25:90:77:f5:7e', 'xapi0': '00:23:20:c7:62:57', 'xapi3': '90:e2:ba:24:68:09', 'xapi2': '00:25:90:77:f5:7e', 'vif10.0': 'fe:ff:ff:ff:ff:ff', 'vif11.0': 'fe:ff:ff:ff:ff:ff', 'xapi28': '00:25:90:77:f5:7e', 'vif3.0': 'fe:ff:ff:ff:ff:ff', 'vif2.0': 'fe:ff:ff:ff:ff:ff', 'xapi24': '00:25:90:77:f5:7e', 'xapi25': '00:25:90:77:f5:7e', 'eth3': '90:e2:ba:24:68:09', 'xapi14': '00:25:90:77:f5:7e'}
+  id: xs04
+  ip_interfaces: {'vif34.0': [], 'bond0': [], 'bond1': [], 'vif35.0': [], 'vif9.0': [], 'vif8.0': [], 'eth4': [], 'vif5.0': [], 'eth2': [], 'eth1': [], 'eth0': [], 'tap35.0': [], 'lo': ['127.0.0.1'], 'xapi16': [], 'xapi13': [], 'xapi12': [], 'vif33.0': [], 'vif0.0': [], 'xapi9': [], 'xapi8': [], 'xapi4': [], 'xapi7': [], 'xapi6': [], 'xapi1': [], 'xapi0': ['169.254.0.1'], 'xapi3': ['192.168.11.15'], 'xapi2': [], 'vif10.0': [], 'vif11.0': [], 'xapi28': [], 'vif3.0': [], 'vif2.0': [], 'xapi24': [], 'xapi25': [], 'eth3': [], 'xapi14': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.11.15
+  ipv6:
+      ::1
+      fe80::223:20ff:fe9b:1489
+      fe80::223:20ff:fec1:f370
+      fe80::223:20ff:fec7:6257
+      fe80::225:90ff:fe77:f57e
+      fe80::225:90ff:fe77:f57f
+      fe80::92e2:baff:fe24:6808
+      fe80::92e2:baff:fe24:6809
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xs04
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 2046
+  nodename: xs04
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 1336263827
+  shell: /bin/sh
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xs221.gdcloud.com:
+  biosreleasedate: 06/28/2013
+  biosversion: 3.0
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  external_ip:
+  fqdn: xs221.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xs221
+  hwaddr_interfaces: {'eth0': '00:25:90:d1:90:be', 'vif3.0': 'fe:ff:ff:ff:ff:ff', 'bond0': '00:23:20:a4:91:a0', 'bond1': '00:23:20:ce:a6:37', 'lo': '00:00:00:00:00:00', 'xapi1': '90:e2:ba:54:01:18', 'xapi0': '00:25:90:d1:90:be', 'vif7.0': 'fe:ff:ff:ff:ff:ff', 'xapi2': '00:23:20:cb:40:60', 'vif1.0': 'fe:ff:ff:ff:ff:ff', 'vif0.0': 'fe:ff:ff:ff:ff:ff', 'xapi9': '00:25:90:d1:90:be', 'eth4': 'fe:ff:ff:ff:ff:ff', 'eth3': '90:e2:ba:54:01:19', 'eth2': '90:e2:ba:54:01:18', 'eth1': '00:25:90:d1:90:bf', 'xapi8': '00:25:90:d1:90:be'}
+  id: xs221.gdcloud.com
+  ip_interfaces: {'eth0': [], 'vif3.0': [], 'bond0': [], 'bond1': [], 'lo': ['127.0.0.1'], 'xapi1': ['192.168.14.221'], 'xapi0': [], 'vif7.0': [], 'xapi2': ['169.254.0.1'], 'vif1.0': [], 'vif0.0': [], 'xapi9': [], 'eth4': [], 'eth3': [], 'eth2': [], 'eth1': [], 'xapi8': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.14.221
+  ipv6:
+      ::1
+      fe80::223:20ff:fea4:91a0
+      fe80::223:20ff:fecb:4060
+      fe80::223:20ff:fece:a637
+      fe80::225:90ff:fed1:90be
+      fe80::225:90ff:fed1:90bf
+      fe80::92e2:baff:fe54:118
+      fe80::92e2:baff:fe54:119
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xs221.gdcloud.com
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 747
+  nodename: xs221.gdcloud.com
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 256969098
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen Dom0
+backup01:
+  biosreleasedate: 04/24/2014
+  biosversion: 4.1.2
+  cpu_flags: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat clflush mmx fxsr sse sse2 syscall lm rep_good unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes hypervisor lahf_lm
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: x86_64
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: 
+  external_ip: 111.205.45.254
+  fqdn: backup01
+  fqdn_ip4:
+      192.168.12.1
+  fqdn_ip6:
+  gpus:
+      {'model': 'GD 5446', 'vendor': 'unknown'}
+  host: backup01
+  hwaddr_interfaces: {'lo': '00:00:00:00:00:00', 'eth0': '52:b3:6b:b5:78:55'}
+  id: backup01
+  ip_interfaces: {'lo': ['127.0.0.1'], 'eth0': ['192.168.12.1']}
+  ipv4:
+      127.0.0.1
+      192.168.12.1
+  ipv6:
+  kernel: Linux
+  kernelrelease: 2.6.32-431.5.1.el6.x86_64
+  localhost: backup01
+  lsb_distrib_codename: Final
+  lsb_distrib_id: CentOS
+  lsb_distrib_release: 6.5
+  manufacturer: Xen
+  master: salt
+  mem_total: 3825
+  nginx: None
+  nodename: backup01
+  num_cpus: 4
+  num_gpus: 1
+  os: CentOS
+  os_family: RedHat
+  osarch: x86_64
+  oscodename: Final
+  osfinger: CentOS-6
+  osfullname: CentOS
+  osmajorrelease:
+      6
+      5
+  osrelease: 6.5
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: HVM domU
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib64/python26.zip
+      /usr/lib64/python2.6
+      /usr/lib64/python2.6/plat-linux2
+      /usr/lib64/python2.6/lib-tk
+      /usr/lib64/python2.6/lib-old
+      /usr/lib64/python2.6/lib-dynload
+      /usr/lib64/python2.6/site-packages
+      /usr/lib/python2.6/site-packages
+      /usr/lib/python2.6/site-packages/setuptools-0.6c11-py2.6.egg-info
+  pythonversion: 2.6.6.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 570b9dfa-0bc2-0907-5777-c0ab5749327d
+  server_id: 1473794467
+  shell: /bin/sh
+  test: None
+  virtual: xen
+  virtual_subtype: Xen PV DomU
+wiki:
+  cpu_flags: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat clflush mmx fxsr sse sse2 syscall lm rep_good unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes hypervisor lahf_lm
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: x86_64
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: 
+  fqdn: wiki
+  fqdn_ip4:
+      192.168.12.3
+  fqdn_ip6:
+  gpus:
+      {'model': 'GD 5446', 'vendor': 'unknown'}
+  host: wiki
+  hwaddr_interfaces: {'lo': '00:00:00:00:00:00', 'eth0': 'aa:0e:1f:83:fd:3b'}
+  id: wiki
+  ip_interfaces: {'lo': ['127.0.0.1'], 'eth0': ['192.168.12.3']}
+  ipv4:
+      127.0.0.1
+      192.168.12.3
+  ipv6:
+      ::1
+      fe80::a80e:1fff:fe83:fd3b
+  kernel: Linux
+  kernelrelease: 2.6.32-220.el6.x86_64
+  localhost: wiki
+  lsb_distrib_codename: Final
+  lsb_distrib_id: CentOS
+  lsb_distrib_release: 6.2
+  master: salt
+  mem_total: 3825
+  nodename: wiki
+  num_cpus: 2
+  num_gpus: 1
+  os: CentOS
+  os_family: RedHat
+  osarch: x86_64
+  oscodename: Final
+  osfinger: CentOS-6
+  osfullname: CentOS
+  osmajorrelease:
+      6
+      2
+  osrelease: 6.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib64/python26.zip
+      /usr/lib64/python2.6
+      /usr/lib64/python2.6/plat-linux2
+      /usr/lib64/python2.6/lib-tk
+      /usr/lib64/python2.6/lib-old
+      /usr/lib64/python2.6/lib-dynload
+      /usr/lib64/python2.6/site-packages
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.6.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.7
+  saltversioninfo:
+      2014
+      1
+      7
+  server_id: 846253184
+  shell: /bin/sh
+  virtual: xen
+  virtual_subtype: Xen PV DomU
+  zmqversion: 3.2.2
+xs224.gdcloud.com:
+  biosreleasedate: 06/28/2013
+  biosversion: 3.0
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  external_ip:
+  fqdn: xs224.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xs224
+  hwaddr_interfaces: {'eth0': '00:25:90:d1:98:1e', 'eth4': 'fe:ff:ff:ff:ff:ff', 'bond0': '00:23:20:f5:57:5b', 'bond1': '00:23:20:d0:34:a8', 'lo': '00:00:00:00:00:00', 'xapi1': '90:e2:ba:54:00:e4', 'vif8.0': 'fe:ff:ff:ff:ff:ff', 'xapi0': '00:25:90:d1:98:1e', 'vif1.0': 'fe:ff:ff:ff:ff:ff', 'vif0.0': 'fe:ff:ff:ff:ff:ff', 'xapi9': '00:25:90:d1:98:1e', 'xapi2': '00:23:20:e9:7b:02', 'eth3': '90:e2:ba:54:00:e5', 'eth2': '90:e2:ba:54:00:e4', 'eth1': '00:25:90:d1:98:1f', 'xapi8': '00:25:90:d1:98:1e'}
+  id: xs224.gdcloud.com
+  ip_interfaces: {'eth0': [], 'eth4': [], 'bond0': [], 'bond1': [], 'lo': ['127.0.0.1'], 'xapi1': ['192.168.14.224'], 'vif8.0': [], 'xapi0': [], 'vif1.0': [], 'vif0.0': [], 'xapi9': [], 'xapi2': ['169.254.0.1'], 'eth3': [], 'eth2': [], 'eth1': [], 'xapi8': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.14.224
+  ipv6:
+      ::1
+      fe80::223:20ff:fed0:34a8
+      fe80::223:20ff:fee9:7b02
+      fe80::223:20ff:fef5:575b
+      fe80::225:90ff:fed1:981e
+      fe80::225:90ff:fed1:981f
+      fe80::92e2:baff:fe54:e4
+      fe80::92e2:baff:fe54:e5
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xs224.gdcloud.com
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 747
+  nodename: xs224.gdcloud.com
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 293609611
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xs226.gdcloud.com:
+  biosreleasedate: 06/28/2013
+  biosversion: 3.0
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  external_ip:
+  fqdn: xs226.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xs226
+  hwaddr_interfaces: {'xapi29': '00:25:90:d1:98:ac', 'vif6.0': 'fe:ff:ff:ff:ff:ff', 'bond0': '00:23:20:87:67:3e', 'bond1': '00:23:20:8d:1f:1c', 'eth3': 'a0:36:9f:15:62:a6', 'vif2.0': 'fe:ff:ff:ff:ff:ff', 'lo': '00:00:00:00:00:00', 'xapi1': 'a0:36:9f:15:62:a4', 'xapi0': '00:25:90:d1:98:ac', 'vif7.0': 'fe:ff:ff:ff:ff:ff', 'vif8.0': 'fe:ff:ff:ff:ff:ff', 'vif1.0': 'fe:ff:ff:ff:ff:ff', 'vif4.0': 'fe:ff:ff:ff:ff:ff', 'vif5.0': 'fe:ff:ff:ff:ff:ff', 'xapi4': '00:23:20:b5:89:09', 'vif11.0': 'fe:ff:ff:ff:ff:ff', 'eth2': 'a0:36:9f:15:62:a4', 'eth1': '00:25:90:d1:98:ad', 'eth0': '00:25:90:d1:98:ac'}
+  id: xs226.gdcloud.com
+  ip_interfaces: {'xapi29': [], 'vif6.0': [], 'bond0': [], 'bond1': [], 'eth3': [], 'vif2.0': [], 'lo': ['127.0.0.1'], 'xapi1': ['192.168.13.15'], 'xapi0': [], 'vif7.0': [], 'vif8.0': [], 'vif1.0': [], 'vif4.0': [], 'vif5.0': [], 'xapi4': ['169.254.0.1'], 'vif11.0': [], 'eth2': [], 'eth1': [], 'eth0': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.13.15
+  ipv6:
+      ::1
+      fe80::223:20ff:fe87:673e
+      fe80::223:20ff:fe89:e84a
+      fe80::223:20ff:fe8d:1f1c
+      fe80::225:90ff:fed1:98ac
+      fe80::225:90ff:fed1:98ad
+      fe80::a236:9fff:fe15:62a4
+      fe80::a236:9fff:fe15:62a6
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xs226.gdcloud.com
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 750
+  nodename: xs226.gdcloud.com
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 452214985
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xs233.gdcloud.com:
+  biosreleasedate: 11/27/2012
+  biosversion: 1.1a
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  external_ip:
+  fqdn: xs233.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xs233
+  hwaddr_interfaces: {'vif6.0': 'fe:ff:ff:ff:ff:ff', 'bond0': '00:23:20:89:2f:84', 'bond1': '00:23:20:9b:89:c7', 'eth3': '90:e2:ba:54:07:75', 'vif2.0': 'fe:ff:ff:ff:ff:ff', 'lo': '00:00:00:00:00:00', 'xapi7': '00:25:90:a8:31:2e', 'xapi1': '90:e2:ba:54:07:74', 'xapi0': '00:25:90:a8:31:2e', 'xapi2': '00:23:20:92:52:aa', 'vif4.0': 'fe:ff:ff:ff:ff:ff', 'eth0': '00:25:90:a8:31:2e', 'vif5.0': 'fe:ff:ff:ff:ff:ff', 'eth2': '90:e2:ba:54:07:74', 'eth1': '00:25:90:a8:31:2f', 'xapi8': '00:25:90:a8:31:2e'}
+  id: xs233.gdcloud.com
+  ip_interfaces: {'vif6.0': [], 'bond0': [], 'bond1': [], 'eth3': [], 'vif2.0': [], 'lo': ['127.0.0.1'], 'xapi7': [], 'xapi1': ['192.168.14.233'], 'xapi0': [], 'xapi2': ['169.254.0.1'], 'vif4.0': [], 'eth0': [], 'vif5.0': [], 'eth2': [], 'eth1': [], 'xapi8': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.14.233
+  ipv6:
+      ::1
+      fe80::223:20ff:fe89:2f84
+      fe80::223:20ff:fe92:52aa
+      fe80::223:20ff:fe9b:89c7
+      fe80::225:90ff:fea8:312e
+      fe80::225:90ff:fea8:312f
+      fe80::92e2:baff:fe54:774
+      fe80::92e2:baff:fe54:775
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xs233.gdcloud.com
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 747
+  nodename: xs233.gdcloud.com
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 269322051
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xs06.gdcloud.com:
+  biosreleasedate: 02/16/2012
+  biosversion: 1.0b
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  external_ip:
+  fqdn: xs06.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xs06
+  hwaddr_interfaces: {'vif26.0': 'fe:ff:ff:ff:ff:ff', 'bond0': '00:23:20:b6:7c:29', 'bond1': '00:23:20:be:c1:bd', 'vif19.2': 'fe:ff:ff:ff:ff:ff', 'vif9.0': 'fe:ff:ff:ff:ff:ff', 'vif21.0': 'fe:ff:ff:ff:ff:ff', 'vif23.0': 'fe:ff:ff:ff:ff:ff', 'vif20.0': 'fe:ff:ff:ff:ff:ff', 'vif7.0': 'fe:ff:ff:ff:ff:ff', 'vif15.0': 'fe:ff:ff:ff:ff:ff', 'vif19.0': 'fe:ff:ff:ff:ff:ff', 'eth4': 'fe:ff:ff:ff:ff:ff', 'eth3': '90:e2:ba:24:63:21', 'eth2': '90:e2:ba:24:63:20', 'eth1': '00:25:90:73:ae:9b', 'vif14.0': 'fe:ff:ff:ff:ff:ff', 'vif6.0': 'fe:ff:ff:ff:ff:ff', 'lo': '00:00:00:00:00:00', 'xapi16': '00:25:90:73:ae:9a', 'xapi13': '00:25:90:73:ae:9a', 'xapi12': '00:25:90:73:ae:9a', 'vif33.0': 'fe:ff:ff:ff:ff:ff', 'vif0.0': 'fe:ff:ff:ff:ff:ff', 'eth0': '00:25:90:73:ae:9a', 'vif31.2': 'fe:ff:ff:ff:ff:ff', 'vif31.0': 'fe:ff:ff:ff:ff:ff', 'vif31.1': 'fe:ff:ff:ff:ff:ff', 'xapi9': '00:25:90:73:ae:9a', 'xapi8': '00:25:90:73:ae:9a', 'vif22.0': 'fe:ff:ff:ff:ff:ff', 'xapi7': '00:25:90:73:ae:9a', 'xapi6': '00:25:90:73:ae:9a', 'xapi1': '00:25:90:73:ae:9a', 'xapi0': '00:23:20:81:71:9e', 'xapi3': '90:e2:ba:24:63:20', 'xapi2': '00:25:90:73:ae:9a', 'vif30.0': 'fe:ff:ff:ff:ff:ff', 'vif11.0': 'fe:ff:ff:ff:ff:ff', 'vif19.1': 'fe:ff:ff:ff:ff:ff', 'vif29.0': 'fe:ff:ff:ff:ff:ff', 'xapi24': '00:25:90:73:ae:9a', 'xapi25': '00:25:90:73:ae:9a', 'xapi14': '00:25:90:73:ae:9a', 'vif25.0': 'fe:ff:ff:ff:ff:ff'}
+  id: xs06.gdcloud.com
+  ip_interfaces: {'vif26.0': [], 'bond0': [], 'bond1': [], 'vif19.2': [], 'vif9.0': [], 'vif21.0': [], 'vif23.0': [], 'vif20.0': [], 'vif7.0': [], 'vif15.0': [], 'vif19.0': [], 'eth4': [], 'eth3': [], 'eth2': [], 'eth1': [], 'vif14.0': [], 'vif6.0': [], 'lo': ['127.0.0.1'], 'xapi16': [], 'xapi13': [], 'xapi12': [], 'vif33.0': [], 'vif0.0': [], 'eth0': [], 'vif31.2': [], 'vif31.0': [], 'vif31.1': [], 'xapi9': [], 'xapi8': [], 'vif22.0': [], 'xapi7': [], 'xapi6': [], 'xapi1': [], 'xapi0': ['169.254.0.1'], 'xapi3': ['192.168.11.16'], 'xapi2': [], 'vif30.0': [], 'vif11.0': [], 'vif19.1': [], 'vif29.0': [], 'xapi24': [], 'xapi25': [], 'xapi14': [], 'vif25.0': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.11.16
+  ipv6:
+      ::1
+      fe80::223:20ff:fe96:1f72
+      fe80::223:20ff:feb6:7c29
+      fe80::223:20ff:febe:c1bd
+      fe80::225:90ff:fe73:ae9a
+      fe80::225:90ff:fe73:ae9b
+      fe80::92e2:baff:fe24:6320
+      fe80::92e2:baff:fe24:6321
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xs06.gdcloud.com
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 750
+  nodename: xs06.gdcloud.com
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 1150133434
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xs223.gdcloud.com:
+  biosreleasedate: 06/28/2013
+  biosversion: 3.0
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  external_ip:
+  fqdn: xs223.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xs223
+  hwaddr_interfaces: {'vif3.0': 'fe:ff:ff:ff:ff:ff', 'bond0': '00:23:20:a7:b2:05', 'bond1': '00:23:20:81:2a:df', 'lo': '00:00:00:00:00:00', 'xapi1': '90:e2:ba:54:02:64', 'xapi0': '00:25:90:d1:98:22', 'xapi2': '00:23:20:db:0c:fe', 'vif1.0': 'fe:ff:ff:ff:ff:ff', 'vif0.0': 'fe:ff:ff:ff:ff:ff', 'xapi9': '00:25:90:d1:98:22', 'eth4': 'fe:ff:ff:ff:ff:ff', 'eth3': '90:e2:ba:54:02:65', 'eth2': '90:e2:ba:54:02:64', 'eth1': '00:25:90:d1:98:23', 'eth0': '00:25:90:d1:98:22'}
+  id: xs223.gdcloud.com
+  ip_interfaces: {'vif3.0': [], 'bond0': [], 'bond1': [], 'lo': ['127.0.0.1'], 'xapi1': ['192.168.14.223'], 'xapi0': [], 'xapi2': ['169.254.0.1'], 'vif1.0': [], 'vif0.0': [], 'xapi9': [], 'eth4': [], 'eth3': [], 'eth2': [], 'eth1': [], 'eth0': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.14.223
+  ipv6:
+      ::1
+      fe80::223:20ff:fe81:2adf
+      fe80::223:20ff:fea7:b205
+      fe80::223:20ff:fedb:cfe
+      fe80::225:90ff:fed1:9822
+      fe80::225:90ff:fed1:9823
+      fe80::92e2:baff:fe54:264
+      fe80::92e2:baff:fe54:265
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xs223.gdcloud.com
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 747
+  nodename: xs223.gdcloud.com
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 989117568
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen Dom0
+ftp01:
+  biosreleasedate: 04/24/2014
+  biosversion: 4.1.2
+  cpu_flags: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat clflush mmx fxsr sse sse2 syscall lm rep_good unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes hypervisor lahf_lm
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: x86_64
+  defaultencoding: ISO8859-1
+  defaultlanguage: en_US
+  domain: 
+  external_ip:
+  fqdn: ftp01
+  fqdn_ip4:
+      192.168.31.245
+  fqdn_ip6:
+  gpus:
+      {'model': 'GD 5446', 'vendor': 'unknown'}
+  host: ftp01
+  hwaddr_interfaces: {'lo': '00:00:00:00:00:00', 'eth0': '56:26:46:f5:00:d4'}
+  id: ftp01
+  ip_interfaces: {'lo': ['127.0.0.1'], 'eth0': ['192.168.31.245']}
+  ipv4:
+      127.0.0.1
+      192.168.31.245
+  ipv6:
+      ::1
+      fe80::5426:46ff:fef5:d4
+  kernel: Linux
+  kernelrelease: 2.6.32-431.5.1.el6.x86_64
+  localhost: ftp01
+  lsb_distrib_codename: Final
+  lsb_distrib_id: CentOS
+  lsb_distrib_release: 6.5
+  manufacturer: Xen
+  master: salt
+  mem_total: 3825
+  nodename: ftp01
+  num_cpus: 4
+  num_gpus: 1
+  os: CentOS
+  os_family: RedHat
+  osarch: x86_64
+  oscodename: Final
+  osfinger: CentOS-6
+  osfullname: CentOS
+  osmajorrelease:
+      6
+      5
+  osrelease: 6.5
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: HVM domU
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib64/python26.zip
+      /usr/lib64/python2.6
+      /usr/lib64/python2.6/plat-linux2
+      /usr/lib64/python2.6/lib-tk
+      /usr/lib64/python2.6/lib-old
+      /usr/lib64/python2.6/lib-dynload
+      /usr/lib64/python2.6/site-packages
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.6.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 90814db0-95ee-0241-5f18-21308fb842d5
+  server_id: 742305462
+  shell: /bin/sh
+  test: None
+  virtual: xen
+  virtual_subtype: Xen PV DomU
+xen213.gdcloud.com:
+  biosreleasedate: 06/20/2012
+  biosversion: 1.1
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  external_ip:
+  fqdn: xen213.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xen213
+  hwaddr_interfaces: {'bond0': '00:23:20:f2:d9:01', 'bond1': '00:23:20:b8:77:7e', 'vif8.0': 'fe:ff:ff:ff:ff:ff', 'vif16.0': 'fe:ff:ff:ff:ff:ff', 'eth3': 'a0:36:9f:15:53:6e', 'eth2': 'a0:36:9f:15:53:6c', 'eth1': '00:25:90:77:93:e3', 'eth0': '00:25:90:77:93:e2', 'lo': '00:00:00:00:00:00', 'xapi11': '00:25:90:77:93:e2', 'xapi13': '00:25:90:77:93:e2', 'vif1.0': 'fe:ff:ff:ff:ff:ff', 'xapi5': '00:25:90:77:93:e2', 'xapi4': '00:25:90:77:93:e2', 'xapi7': '00:25:90:77:93:e2', 'xapi1': '00:25:90:77:93:e2', 'xapi3': '00:23:20:bb:8b:a2', 'xapi2': 'a0:36:9f:15:53:6e', 'vif3.0': 'fe:ff:ff:ff:ff:ff', 'vif2.0': 'fe:ff:ff:ff:ff:ff', 'vif12.0': 'fe:ff:ff:ff:ff:ff', 'vif13.0': 'fe:ff:ff:ff:ff:ff', 'xapi14': '00:25:90:77:93:e2'}
+  id: xen213.gdcloud.com
+  ip_interfaces: {'bond0': [], 'bond1': [], 'vif8.0': [], 'vif16.0': [], 'eth3': [], 'eth2': [], 'eth1': [], 'eth0': [], 'lo': ['127.0.0.1'], 'xapi11': [], 'xapi13': [], 'vif1.0': [], 'xapi5': [], 'xapi4': [], 'xapi7': [], 'xapi1': [], 'xapi3': ['169.254.0.1'], 'xapi2': ['192.168.14.23'], 'vif3.0': [], 'vif2.0': [], 'vif12.0': [], 'vif13.0': [], 'xapi14': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.14.23
+  ipv6:
+      ::1
+      fe80::223:20ff:feb8:777e
+      fe80::223:20ff:febb:8ba2
+      fe80::223:20ff:fef2:d901
+      fe80::225:90ff:fe77:93e2
+      fe80::225:90ff:fe77:93e3
+      fe80::a236:9fff:fe15:536c
+      fe80::a236:9fff:fe15:536e
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xen213.gdcloud.com
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 747
+  nodename: xen213.gdcloud.com
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 432721456
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xen53.gdcloud.com:
+  biosreleasedate: 06/20/2012
+  biosversion: 1.1
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: gdcloud.com
+  external_ip:
+  fqdn: xen53.gdcloud.com
+  fqdn_ip4:
+      206.161.217.36
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xen53
+  hwaddr_interfaces: {'bond0': '00:23:20:d5:7e:5e', 'bond1': '00:23:20:ee:f9:b1', 'vif14.2': 'fe:ff:ff:ff:ff:ff', 'vif9.0': 'fe:ff:ff:ff:ff:ff', 'vif14.0': 'fe:ff:ff:ff:ff:ff', 'vif8.0': 'fe:ff:ff:ff:ff:ff', 'vif4.0': 'fe:ff:ff:ff:ff:ff', 'xapi32': '00:25:90:77:93:4e', 'vif16.0': 'fe:ff:ff:ff:ff:ff', 'vif14.1': 'fe:ff:ff:ff:ff:ff', 'eth3': 'a0:36:9f:15:56:ee', 'eth2': 'a0:36:9f:15:56:ec', 'eth1': '00:25:90:77:93:4f', 'eth0': '00:25:90:77:93:4e', 'vif6.0': 'fe:ff:ff:ff:ff:ff', 'lo': '00:00:00:00:00:00', 'vif7.0': 'fe:ff:ff:ff:ff:ff', 'vif1.0': 'fe:ff:ff:ff:ff:ff', 'xapi4': '00:23:20:9a:3e:f9', 'xapi6': '00:25:90:77:93:4e', 'xapi1': 'a0:36:9f:15:56:ec', 'xapi0': '00:25:90:77:93:4e', 'vif10.0': 'fe:ff:ff:ff:ff:ff', 'xapi29': '00:25:90:77:93:4e', 'vif3.0': 'fe:ff:ff:ff:ff:ff', 'vif2.0': 'fe:ff:ff:ff:ff:ff', 'vif13.0': 'fe:ff:ff:ff:ff:ff'}
+  id: xen53.gdcloud.com
+  ip_interfaces: {'bond0': [], 'bond1': [], 'vif14.2': [], 'vif9.0': [], 'vif14.0': [], 'vif8.0': [], 'vif4.0': [], 'xapi32': [], 'vif16.0': [], 'vif14.1': [], 'eth3': [], 'eth2': [], 'eth1': [], 'eth0': [], 'vif6.0': [], 'lo': ['127.0.0.1'], 'vif7.0': [], 'vif1.0': [], 'xapi4': ['169.254.0.1'], 'xapi6': [], 'xapi1': ['192.168.13.14'], 'xapi0': [], 'vif10.0': [], 'xapi29': [], 'vif3.0': [], 'vif2.0': [], 'vif13.0': []}
+  ipv4:
+      127.0.0.1
+      169.254.0.1
+      192.168.13.14
+  ipv6:
+      ::1
+      fe80::223:20ff:fe9a:3ef9
+      fe80::223:20ff:fed5:7e5e
+      fe80::223:20ff:feee:f9b1
+      fe80::225:90ff:fe77:934e
+      fe80::225:90ff:fe77:934f
+      fe80::a236:9fff:fe15:56ec
+      fe80::a236:9fff:fe15:56ee
+      fe80::fcff:ffff:feff:ffff
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xen53.gdcloud.com
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 2041
+  nodename: xen53.gdcloud.com
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 565529087
+  shell: /bin/sh
+  version: XenServer
+  virtual: xen
+  virtual_subtype: Xen Dom0
+xenserver-p2:
+  biosreleasedate: 06/20/2012
+  biosversion: 1.1
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: 
+  external_ip:
+  fqdn: xenserver-p2
+  fqdn_ip4:
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xenserver-p2
+  hwaddr_interfaces: {'bond0': '00:23:20:b4:35:8b', 'bond1': '00:23:20:bb:d1:81', 'eth3': '90:e2:ba:20:15:a9', 'vif9.0': 'fe:ff:ff:ff:ff:ff', 'vif14.0': 'fe:ff:ff:ff:ff:ff', 'vif8.0': 'fe:ff:ff:ff:ff:ff', 'vif4.0': 'fe:ff:ff:ff:ff:ff', 'vif84.0': 'fe:ff:ff:ff:ff:ff', 'vif16.0': 'fe:ff:ff:ff:ff:ff', 'vif15.0': 'fe:ff:ff:ff:ff:ff', 'vif207.0': 'fe:ff:ff:ff:ff:ff', 'vif5.0': 'fe:ff:ff:ff:ff:ff', 'eth2': '90:e2:ba:20:15:a8', 'eth1': '00:25:90:77:f5:75', 'eth0': '00:25:90:77:f5:74', 'vif217.1': 'fe:ff:ff:ff:ff:ff', 'vif217.0': 'fe:ff:ff:ff:ff:ff', 'vif217.2': 'fe:ff:ff:ff:ff:ff', 'lo': '00:00:00:00:00:00', 'tap207.0': 'fe:ff:ff:ff:ff:ff', 'vif1.0': 'fe:ff:ff:ff:ff:ff', 'vif211.0': 'fe:ff:ff:ff:ff:ff', 'vif32.0': 'fe:ff:ff:ff:ff:ff', 'vif213.0': 'fe:ff:ff:ff:ff:ff', 'vif31.0': 'fe:ff:ff:ff:ff:ff', 'vif17.1': 'fe:ff:ff:ff:ff:ff', 'xapi5': '00:25:90:77:f5:74', 'xapi4': '90:e2:ba:24:66:c0', 'xapi6': '00:25:90:77:f5:74', 'xapi1': '90:e2:ba:24:66:c0', 'tap31.0': 'fe:ff:ff:ff:ff:ff', 'xapi3': '00:25:90:77:f5:74', 'xapi0': '90:e2:ba:24:66:c0', 'vif93.0': 'fe:ff:ff:ff:ff:ff', 'xapi2': '90:e2:ba:24:66:c0', 'vif3.0': 'fe:ff:ff:ff:ff:ff', 'vif94.0': 'fe:ff:ff:ff:ff:ff', 'vif2.0': 'fe:ff:ff:ff:ff:ff', 'vif214.0': 'fe:ff:ff:ff:ff:ff', 'vif209.0': 'fe:ff:ff:ff:ff:ff', 'vif141.0': 'fe:ff:ff:ff:ff:ff', 'vif216.1': 'fe:ff:ff:ff:ff:ff', 'vif12.1': 'fe:ff:ff:ff:ff:ff'}
+  id: xenserver-p2
+  ip_interfaces: {'bond0': [], 'bond1': [], 'eth3': [], 'vif9.0': [], 'vif14.0': [], 'vif8.0': [], 'vif4.0': [], 'vif84.0': [], 'vif16.0': [], 'vif15.0': [], 'vif207.0': [], 'vif5.0': [], 'eth2': [], 'eth1': [], 'eth0': [], 'vif217.1': [], 'vif217.0': [], 'vif217.2': [], 'lo': ['127.0.0.1'], 'tap207.0': [], 'vif1.0': [], 'vif211.0': [], 'vif32.0': [], 'vif213.0': [], 'vif31.0': [], 'vif17.1': [], 'xapi5': [], 'xapi4': ['192.168.11.13'], 'xapi6': [], 'xapi1': [], 'tap31.0': [], 'xapi3': [], 'xapi0': [], 'vif93.0': [], 'xapi2': [], 'vif3.0': [], 'vif94.0': [], 'vif2.0': [], 'vif214.0': [], 'vif209.0': [], 'vif141.0': [], 'vif216.1': [], 'vif12.1': []}
+  ipv4:
+      127.0.0.1
+      192.168.11.13
+  ipv6:
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.619.170711xen
+  localhost: xenserver-p2
+  manufacturer: Supermicro
+  master: salt.hdtr.com
+  mem_total: 742
+  nodename: xenserver-p2
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+      /usr/lib/python2.6/site-packages/setuptools-0.6c11-py2.6.egg-info
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 1332499779
+  shell: /bin/sh
+  virtual: xen
+  virtual_subtype: Xen Dom0
