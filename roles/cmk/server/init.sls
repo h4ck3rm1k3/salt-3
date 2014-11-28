@@ -1,5 +1,8 @@
-freeipmi:
+ipmi-pkgs:
   pkg.installed
+    - pkgs:
+      - freeipmi
+      - ipmitool
 
 rmcpping:
   file.managed:

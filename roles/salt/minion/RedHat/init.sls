@@ -11,3 +11,9 @@ salt-minion:
     - pkgs:
       - salt-minion
       - python-msgpack
+  service:
+    - running
+    - enable: True
+    - reload: True
+    - require:
+      - pkg: salt-minion
