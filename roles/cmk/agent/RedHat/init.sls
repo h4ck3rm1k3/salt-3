@@ -1,4 +1,4 @@
-{% if grains['osrelease'].startswith('5') %}
+{% if grains['os'] == 'XenServer' %}
 
 python-hashlib:
   pkg.installed
@@ -17,10 +17,10 @@ mk_agent:
 mk_agent-plugins:
   pkg.latest:
     - pkgs:
-      - check_mk-agent-logwatch
       - mtr
       - pynag
       - nagios-plugins-ping
+      - nagios-plugins-dns
       - nagios-plugins-setuid
     - require:
       - pkg: check_mk-agent
