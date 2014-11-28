@@ -1,0 +1,6 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+10.24.64.82 ysh-hadoop1
+10.24.64.81 ysh-hadoop2
+10.24.64.82 ysh-hadoop3
+10.24.64.80 ysh-hadoop4

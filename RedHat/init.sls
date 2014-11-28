@@ -1,6 +1,7 @@
 include:
   - .yum
   - .repos
+  - ipmi
 
 sshd_config:
   cmd.run:

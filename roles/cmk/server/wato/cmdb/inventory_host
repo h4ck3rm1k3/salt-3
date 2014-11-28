@@ -1,0 +1,39 @@
+networks = [
+  '192.168.11.0/32',
+  '192.168.12.0/32',
+  '192.168.13.0/32',
+   '',
+]
+
+def scan_networks():
+  start_cidr = '192.168.0.0/0'
+  cidrs = range(0,32)
+  networks = [] 
+  for cidr in cidrs:
+    gw = 
+    ping = 
+    if ping:
+      networks.append(gw)
+  return networks
+    
+def scan_hosts(network):
+  hosts = [
+    {
+      'ip': {
+        'ping': True,
+        'snmp': True
+        'tcp': ['6556', '22'],
+    }
+  ]
+  for host in ips:
+    host_exists = snmp_ping_tcp(host)
+    if host_exits:
+      hosts.append(host)
+  return hosts 
+
+snmp_com = {
+  'default': 'snmp-com-ro',
+  'stor01': 'snmp4stor01',
+  'stor02': 'snmp4stor02',
+  'stor03': 'snmp4stor03',
+}
