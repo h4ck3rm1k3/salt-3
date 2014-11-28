@@ -1,0 +1,16 @@
+ysh-hadoop1:
+  host: 10.24.64.80
+  user: root
+  passwd: gdcloud!.2014
+ysh-hadoop2:
+  host: 10.24.64.81
+  user: root
+  passwd: gdcloud!.2014
+ysh-hadoop3:
+  host: 10.24.64.81
+  user: root
+  passwd: gdcloud!.2014
+ysh-hadoop4:
+  host: 10.24.64.83
+  user: root
+  passwd: gdcloud!.2014
