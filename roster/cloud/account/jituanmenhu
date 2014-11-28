@@ -1,0 +1,4 @@
+rhel-63-64-desktop:
+  host: 10.24.64.78
+  user: root
+  passwd: gdcloud!.2013

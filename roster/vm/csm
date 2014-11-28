@@ -1,0 +1,16 @@
+csm01:
+  host: 192.168.11.2
+  user: root
+  passwd: t1an*8renm11
+csm02:
+  host: 192.168.11.3
+  user: root
+  passwd: t1an*8renm11
+csdb-master:
+  host: 192.168.11.3
+  user: root
+  passwd: t1an*8rendb
+csdb-slave:
+  host: 192.168.11.4
+  user: root
+  passwd: t1an*8rendb
