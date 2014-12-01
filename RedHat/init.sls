@@ -33,6 +33,11 @@ crond:
   service:
     - running
     - enable: True
+  pkg.installed:
+    - name: time
 
-time:
-  pkg.installed
+cpanm:
+  file.managed:
+    - name: /usr/bin/cpanm
+    - source: salt://RedHat/cpanm
+    - mode: 0755
