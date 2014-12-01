@@ -4,10 +4,10 @@
 # not tested for nfs3
 
 # verify if there are exports defined in your local /etc/exports
-if [ -r /etc/exports ]; then 
+if [ -r /etc/exports ]; then
     EXPORTS=$(grep -v -e ^# -e ^$ /etc/exports)
 fi
-pgrep portmap 1>/dev/null && pgrep rpc.mountd 1>/dev/null && DAEMONS="ok"
+pgrep '(portmap|rpcbind)' >/dev/null && pgrep rpc.mountd >/dev/null && DAEMONS="ok"
 
 # any exports or have running daemons? then look for registered exports
 if [[ $EXPORTS ]]; then
@@ -15,4 +15,4 @@ if [[ $EXPORTS ]]; then
     if [[ $DAEMONS ]]; then
         waitmax 3 showmount --no-headers -e
     fi
-fi 
+fi

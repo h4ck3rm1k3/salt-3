@@ -27,7 +27,7 @@
 
 # Get list of all running databases
 SIDS=$(UNIX95=true ps ax -o args | sed -n '/^\(ora\|xe\)_pmon_\([^ ]*\)/s//\2/p')
-if [ -z "$SIDS" ] ; then 
+if [ -z "$SIDS" ] ; then
     # If on this system we've already found a database
     if [ -e "$MK_CONFDIR/mk_oracle.found" ] ; then
         echo '<<<oracle_version>>>'
@@ -53,7 +53,7 @@ then
 fi
 
 # You can specify a list of SIDs to monitor. Those databases will
-# only be handled, if they are found running, though! 
+# only be handled, if they are found running, though!
 #
 #   ONLY_SIDS="XE HIRN SEPP"
 #
@@ -100,11 +100,11 @@ for SID in $SIDS; do
 	    if  [ "$S" = "$SID" ] ; then
 	        SKIP=
 		break
-            fi 
+            fi
         done
 	if [ "$SKIP" ] ; then continue ; fi
     fi
-        
+
     EXCLUDE=EXCLUDE_$SID
     EXCLUDE=${!EXCLUDE}
     # SID filtered totally?
@@ -131,11 +131,11 @@ for SID in $SIDS; do
     fi
 
     # If the cache file exists, output it, regardless of its age. If it's outdated
-    # then it will be recreated *asynchronously*. It's new contents will not 
+    # then it will be recreated *asynchronously*. It's new contents will not
     # be available here anyway.
     if [ -s "$CACHE_FILE" ] ; then cat "$CACHE_FILE" ; fi
 
-    # When the cache file is not valid, we recreated it, but only if there is not    
+    # When the cache file is not valid, we recreated it, but only if there is not
     # yet a background process from a previous check still doing this! We see this
     # because of the existance of the .new file
     # When the cache is old and there is no *new file present, then start a query
@@ -166,6 +166,33 @@ for SID in $SIDS; do
                 echo \"select count(1) from v\\\$loghist where first_time > sysdate - 1/24;\" | sqlplus \"$SID\"
             fi
 
+            if [ '$EXCLUDE' = '${EXCLUDE/jobs/}' ]; then
+                echo '<<<oracle_jobs>>>'
+                sqlplus "$SID" <<EOF
+                SELECT j.OWNER, j.JOB_NAME, j.STATE,
+                (TRUNC(sysdate) + j.LAST_RUN_DURATION - TRUNC(sysdate)) * 86400 AS LAST_RUN_DURATION,
+                j.RUN_COUNT, j.ENABLED, NVL(j.NEXT_RUN_DATE, to_date('1970-01-01', 'YYYY-mm-dd')),
+                NVL(j.SCHEDULE_NAME, '-'), d.STATUS
+                FROM dba_scheduler_jobs j, dba_scheduler_job_run_details d
+                WHERE d.owner=j.OWNER AND d.JOB_NAME=j.JOB_NAME
+                    AND d.LOG_ID=(SELECT max(LOG_ID) FROM dba_scheduler_job_run_details dd
+                                  WHERE dd.owner=j.OWNER and dd.JOB_NAME=j.JOB_NAME);
+EOF
+            fi
+
+            if [ '$EXCLUDE' = '${EXCLUDE/rman_backups/}' ]; then
+                echo '<<<oracle_rman_backups>>>'
+                sqlplus "$SID" <<EOF
+                SELECT b.COMMAND_ID, a.STATUS,
+                to_char(a.START_TIME, 'YYYY-mm-dd_HH24:MI:SS') AS START_TIME,
+                to_char(a.END_TIME, 'YYYY-mm-dd_HH24:MI:SS') AS END_TIME, b.INPUT_TYPE
+                FROM SYS.V_\\\$RMAN_BACKUP_JOB_DETAILS a,
+                (SELECT input_type, max(command_id) as command_id
+                 FROM SYS.V_\\\$RMAN_BACKUP_JOB_DETAILS WHERE STATUS<>'RUNNING' GROUP BY input_type) b
+                WHERE a.COMMAND_ID = b.COMMAND_ID;
+EOF
+            fi
+
             if [ '$EXCLUDE' = '${EXCLUDE/tablespaces/}' ]; then
                 echo '<<<oracle_tablespaces>>>'
                 sqlplus "$SID" <<EOF | sed 's/READ ONLY/READONLY/g'
@@ -189,7 +216,7 @@ for SID in $SIDS; do
                 f.autoextensible, f.blocks, f.maxblocks, f.user_blocks, f.increment_by,
                 'TEMP', t.block_size, t.status;
 EOF
-            fi 
+            fi
             } > $CACHE_FILE.new && mv $CACHE_FILE.new $CACHE_FILE || rm -f $CACHE_FILE*
         "
     fi

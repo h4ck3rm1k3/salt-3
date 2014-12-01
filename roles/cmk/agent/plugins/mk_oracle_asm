@@ -23,11 +23,16 @@
 # to the Free Software Foundation, Inc., 51 Franklin St,  Fifth Floor,
 # Boston, MA 02110-1301 USA.
 
-BASE_PATH=/var/spool/sylo
+# Check_MK agent plugin for monitoring ORACLE ASM
 
-if [ -f "$BASE_PATH/silo.hint" ]; then
-  echo "<<<sylo>>>"
-  stat --printf "%Y " "$BASE_PATH/silo.hint"
-  cat "$BASE_PATH/silo.hint"
-  echo
+if [ ! -e $MK_CONFDIR/asmcmd.sh ]; then
+    echo "$MK_CONFDIR/asmcmd.sh does not exist." >&2
+    exit 1
 fi
+
+function asmcmd () {
+    $MK_CONFDIR/asmcmd.sh $@
+}
+
+echo "<<<oracle_asm_diskgroup>>>"
+asmcmd lsdg | grep -v State | grep -v "The Oracle"

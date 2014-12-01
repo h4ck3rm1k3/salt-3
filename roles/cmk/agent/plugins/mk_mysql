@@ -24,10 +24,6 @@
 # to the Free Software Foundation, Inc., 51 Franklin St,  Fifth Floor,
 # Boston, MA 02110-1301 USA.
 
-if ! test -e $MK_CONFDIR/mysql.cfg;then
-    exit
-fi
-
 if which mysqladmin > /dev/null
 then
   # Check if mysqld is running and root password setup
@@ -35,5 +31,13 @@ then
   mysqladmin --defaults-extra-file=$MK_CONFDIR/mysql.cfg ping 2>&1
 
   mysql --defaults-extra-file=$MK_CONFDIR/mysql.cfg -sN \
-     -e "select '<<<mysql>>>' ; show global status; show global variables; select '<<<mysql_capacity>>>' ; SELECT table_schema, sum( data_length + index_length ), sum( data_free )  FROM information_schema.TABLES GROUP BY table_schema;"
+     -e "select '<<<mysql>>>' ;
+         show global status ; show global variables ;
+
+         select '<<<mysql_capacity>>>' ;
+         SELECT table_schema, sum(data_length + index_length), sum(data_free)
+         FROM information_schema.TABLES GROUP BY table_schema"
+
+  mysql --defaults-extra-file=$MK_CONFDIR/mysql.cfg -s \
+     -e "SELECT '<<<mysql_slave>>>' ; show slave status\G"
 fi
