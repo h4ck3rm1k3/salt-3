@@ -14,6 +14,4 @@ def xs_host():
   grains['xs_host'] = hosts[this_host]
   grains['xs_pool'] = session.xenapi.pool.get_all_records()
   session.xenapi.logout()
-#  pp = pprint.PrettyPrinter()
-#  pp.pprint(grains['xs_pool'])
   return grains
