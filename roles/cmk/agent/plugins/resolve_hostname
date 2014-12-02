@@ -3,7 +3,7 @@
 # address using the local resolver of the system this script is
 # running on.
 
-HOSTADDRESS=mathias-kettner.de
+HOSTADDRESS=salt
 
 OUTPUT=$(nslookup $HOSTADDRESS 2>&1)
 RC=$?

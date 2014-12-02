@@ -3,6 +3,7 @@ ipmi-pkgs:
     - pkgs:
       - freeipmi
       - ipmitool
+      - bind-utils
 
 rmcpping:
   file.managed:

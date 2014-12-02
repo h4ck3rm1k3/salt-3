@@ -9,8 +9,11 @@ xinetd:
     - running
     - enable: True
 
-freeipmi:
-  pkg.installed
+cmk_plugin-deps:
+  pkg.installed:
+    - names:
+      - freeipmi
+      - bind-utils
 
 local_checks:
   file.recurse:
@@ -31,14 +34,24 @@ mkdir /etc/check_mk:
     - unless: test -d /etc/check_mk
     - stateful: True
 
-/etc/check_mk/mrpe.cfg:
+cmk_agent-mrpe:
+  pkg.installed:
+    - name: nagios-plugins-dns
   file.managed:
+    - name: /etc/check_mk/mrpe.cfg
     - source: salt://cmk/agent/mrpe.cfg.jinja
     - template: jinja
     - file_mode: 644
+    - require:
+      - pkg: nagios-plugins-dns
 
-/etc/check_mk/logwatch.cfg:
+cmk_agent-logwatch:
+  pkg.installed:
+    - name: check_mk-agent-logwatch
   file.managed:
+    - name: /etc/check_mk/logwatch.cfg
     - source: salt://cmk/agent/logwatch.cfg.jinja
     - template: jinja
     - file_mode: 644
+    - require:
+      - pkg: check_mk-agent-logwatch

@@ -1,0 +1,180 @@
+xs02:
+  host: 192.168.11.19
+  user: root
+  passwd: Tianren.481~m
+xs03:
+  host: 192.168.11.14
+  user: root
+  passwd: Tianren.481~m
+xs04:
+  host: 192.168.11.15
+  user: root
+  passwd: Tianren.481~m
+xs05:
+  host: 192.168.11.18
+  user: root
+  passwd: Tianren.481~m
+xs06:
+  host: 192.168.11.16
+  user: root
+  passwd: Tianren.481~m
+xs07:
+  host: 192.168.11.20
+  user: root
+  passwd: Tianren.481~m
+xs08:
+  host: 192.168.11.17
+  user: root
+  passwd: Tianren.481~m
+xs227:
+  host: 192.168.11.25
+  user: root
+  passwd: Tianren.112~m
+xs228:
+  host: 192.168.11.26
+  user: root
+  passwd: Tianren.112~m
+xs229:
+  host: 192.168.11.27
+  user: root
+  passwd: Tianren.112~m
+xs51:
+  host: 192.168.13.12
+  user: root
+  passwd: Tianren.131~m
+xs52:
+  host: 192.168.13.13
+  user: root
+  passwd: Tianren.131~m
+xs53:
+  host: 192.168.13.14
+  user: root
+  passwd: Tianren.131~m
+xs226:
+  host: 192.168.13.15
+  user: root
+  passwd: Tianren.131~m
+xs54:
+  host: 192.168.13.16
+  user: root
+  passwd: Tianren.131~m
+xs201:
+  host: 192.168.14.12
+  user: root
+  passwd: Tianren.141~m
+xs202:
+  host: 192.168.14.13
+  user: root
+  passwd: Tianren.141~m
+xs203:
+  host: 192.168.14.14
+  user: root
+  passwd: Tianren.141~m
+xs204:
+  host: 192.168.14.15
+  user: root
+  passwd: Tianren.141~m
+xs205:
+  host: 192.168.14.16
+  user: root
+  passwd: Tianren.141~m
+xs211:
+  host: 192.168.14.21
+  user: root
+  passwd: Tianren.142~m
+xs212:
+  host: 192.168.14.22
+  user: root
+  passwd: Tianren.142~m
+xs213:
+  host: 192.168.14.23
+  user: root
+  passwd: Tianren.142~m
+xs214:
+  host: 192.168.14.24
+  user: root
+  passwd: Tianren.142~m
+xs221:
+  host: 192.168.14.221
+  user: root
+  passwd: Tianren.143~m
+xs222:
+  host: 192.168.14.222
+  user: root
+  passwd: Tianren.143~m
+xs223:
+  host: 192.168.14.223
+  user: root
+  passwd: Tianren.143~m
+xs224:
+  host: 192.168.14.224
+  user: root
+  passwd: Tianren.143~m
+xs225:
+  host: 192.168.14.225
+  user: root
+  passwd: Tianren.143~m
+xs231:
+  host: 192.168.14.231
+  user: root
+  passwd: Tianren.144~m
+xs232:
+  host: 192.168.14.232
+  user: root
+  passwd: Tianren.144~m
+xs233:
+  host: 192.168.14.233
+  user: root
+  passwd: Tianren.144~m
+xs234:
+  host: 192.168.14.234
+  user: root
+  passwd: Tianren.144~m
+xs235:
+  host: 192.168.14.235
+  user: root
+  passwd: Tianren.144~m
+xs236:
+  host: 192.168.14.236
+  user: root
+  passwd: Tianren.144~m
+xs241:
+  host: 192.168.14.241
+  user: root
+  passwd: Tianren.145~m
+xs242:
+  host: 192.168.14.242
+  user: root
+  passwd: Tianren.145~m
+xs243:
+  host: 192.168.14.243
+  user: root
+  passwd: Tianren.145~m
+xs244:
+  host: 192.168.14.244
+  user: root
+  passwd: Tianren.145~m
+xstest1:
+  host: 192.168.201.1
+  user: root
+  passwd: Tianren.2011~m
+xstest2:
+  host: 192.168.201.2
+  user: root
+  passwd: Tianren.2011~m
+z4p1c1h1:
+  host: 192.168.15.1
+  user: root
+  passwd: Tianren.151~m
+z4p1c1h2:
+  host: 192.168.15.2
+  user: root
+  passwd: Tianren.151~m
+z4p1c1h3:
+  host: 192.168.15.3
+  user: root
+  passwd: Tianren.151~m
+z4p1c1h4:
+  host: 192.168.15.4
+  user: root
+  passwd: Tianren.151~m
