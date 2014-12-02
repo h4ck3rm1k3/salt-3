@@ -1,7 +1,0 @@
-########################################################
-# This command is run just before the install finishes, but when there is
-# still a usable /target directory. You can chroot to /target and use it
-# directly, or use the apt-install and in-target commands to easily install
-# packages and run commands in the target system.
-########################################################
-#d-i preseed/late_command string true

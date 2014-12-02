@@ -1,2 +1,0 @@
-http://dev.mlsdigital.net/posts/SaltStackBeyondJinjaStates/
-http://docs.saltstack.com/en/latest/topics/tutorials/pillar.html

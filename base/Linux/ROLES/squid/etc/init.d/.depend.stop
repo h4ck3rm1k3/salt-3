@@ -1,8 +1,0 @@
-TARGETS = wpa-ifupdown urandom rsync squid apt-cacher-ng sendsigs umountnfs.sh networking umountfs umountroot halt reboot
-sendsigs: wpa-ifupdown apt-cacher-ng urandom squid
-umountnfs.sh: sendsigs wpa-ifupdown apt-cacher-ng urandom squid
-networking: umountnfs.sh wpa-ifupdown apt-cacher-ng
-umountfs: umountnfs.sh wpa-ifupdown apt-cacher-ng networking urandom squid
-umountroot: umountfs
-halt: umountroot
-reboot: umountroot

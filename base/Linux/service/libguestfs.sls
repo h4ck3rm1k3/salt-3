@@ -1,2 +1,0 @@
-libguestfs:
-  pkg.installed

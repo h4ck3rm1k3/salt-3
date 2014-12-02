@@ -1,7 +1,0 @@
-#/bin/sh
-
-if which virt-what >/dev/null 2>&1; then
-    echo "<<<virt_info>>>"
-    type=$(virt-what)
-    echo $type
-fi

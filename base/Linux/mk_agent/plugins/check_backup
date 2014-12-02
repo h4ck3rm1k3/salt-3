@@ -1,5 +1,0 @@
-#!/bin/bash
-#realtime backup job use Intrusive + send_nsca
-#check_active_backup use logwatch
-#logwatch.cfg + backup_script
-#check_config_state use snmp

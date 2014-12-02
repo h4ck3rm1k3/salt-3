@@ -1,2 +1,0 @@
-gr \\ /                     # Convert backslashes to slashes
-rg ([A-Z]) \L\1             # lowercase names

@@ -1,8 +1,0 @@
-#
-# OpenVAS rules
-#
-
-# Syntax : accept|reject address/netmask
-
-# Accept to test anything : 
-default accept

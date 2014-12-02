@@ -1,5 +1,0 @@
-[check_mk]
-name= check_mk
-baseurl=http://ftp01/repo/check_mk
-enabled=1
-gpgcheck=0

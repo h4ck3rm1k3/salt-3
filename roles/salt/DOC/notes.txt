@@ -1,6 +1,0 @@
-sed -i '/10.24.64.57/d' ~/.ssh/known_hosts
-/etc/salt/roster:
-password
-openssh-server
-tcp port 22
-firewall

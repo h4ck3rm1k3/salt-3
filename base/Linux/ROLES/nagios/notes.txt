@@ -1,4 +1,0 @@
-yum install mail postfix -y
-/var/log/maillog
-chkconfig --add postfix
-service postfix start

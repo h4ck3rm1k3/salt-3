@@ -1,1 +1,0 @@
-host_contactgroups = [( 'test', ['/' + FOLDER_PATH + '/+'], ALL_HOSTS, {'comment': u'Put all hosts into the contact group "test"'} ),] + host_contactgroups

@@ -1,4 +1,0 @@
-salt
-====
-
-saltstack study

@@ -1,4 +1,0 @@
-pxe
-===
-
-pxe server example

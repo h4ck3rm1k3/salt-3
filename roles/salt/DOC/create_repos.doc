@@ -1,3 +1,0 @@
-#http://blog.csdn.net/fzhmoive/article/details/18217835
-#http://troubleshootingrange.blogspot.com/2012/09/hosting-simple-apt-repository-on-centos.html
-vim: g/^deb.*$/s/us.archive.ubuntu/mirrors.sohu/

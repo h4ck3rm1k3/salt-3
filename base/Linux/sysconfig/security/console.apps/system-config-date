@@ -1,3 +1,0 @@
-. config-util
-PROGRAM=/usr/share/system-config-date/system-config-date.py
-SESSION=true

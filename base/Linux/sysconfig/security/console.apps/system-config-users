@@ -1,3 +1,0 @@
-. config-util
-PROGRAM=/usr/share/system-config-users/system-config-users
-SESSION=true

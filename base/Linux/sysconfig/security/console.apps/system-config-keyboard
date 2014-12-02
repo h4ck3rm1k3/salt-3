@@ -1,3 +1,0 @@
-. config-util
-PROGRAM=/usr/sbin/system-config-keyboard
-SESSION=true

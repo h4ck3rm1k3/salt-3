@@ -1,9 +1,0 @@
-#
-# for allowing access to gnome-terminal
-#
-
-  #include <abstractions/gnome>
-
-  # do not use ux or Ux here. Use at a minimum ix
-  /usr/bin/gnome-terminal ix,
-

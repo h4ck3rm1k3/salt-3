@@ -1,8 +1,0 @@
-Alias /squid-report /var/www/squidanalyzer
-        <Directory /var/www/squidanalyzer>
-            Options -Indexes FollowSymLinks MultiViews
-            AllowOverride None
-            Order allow,deny
-#            Deny from all
-            Allow from all
-        </Directory>

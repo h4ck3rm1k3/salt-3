@@ -1,5 +1,0 @@
-[misc]
-name= misc
-baseurl=http://ftp01/repo/misc
-enabled=1
-gpgcheck=0

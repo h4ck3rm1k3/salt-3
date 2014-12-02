@@ -1,6 +1,0 @@
-#/bin/sh
-
-if which lscpu >/dev/null 2>&1; then
-    echo "<<<cpu_info>>>"
-	lscpu
-fi

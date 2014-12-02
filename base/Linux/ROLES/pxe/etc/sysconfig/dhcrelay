@@ -1,6 +1,0 @@
-# Command line options here
-DHCRELAYARGS=""
-# DHCPv4 only
-INTERFACES=""
-# DHCPv4 only
-DHCPSERVERS=""

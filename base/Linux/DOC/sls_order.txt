@@ -1,3 +1,0 @@
-http://www.saltstat.es/posts/dependencygraph.html
-http://docs.saltstack.com/en/latest/ref/states/ordering.html
-http://www.shencan.net/index.php/2013/09/01/vagrant%E4%B8%80-%E5%88%9D%E4%BD%93%E9%AA%8C/

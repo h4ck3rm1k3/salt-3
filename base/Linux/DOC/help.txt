@@ -1,2 +1,0 @@
-geather_all_minions_info:
-  http://blog.halfss.com/blog/2013/06/15/saltxiang-guan-shi-yong/

@@ -1,1 +1,0 @@
-BOOT_IMAGE=/vmlinuz-2.6.32-38-server root=/dev/mapper/localpred--01-root ro initrd=http://10.24.4.4/os/linux/ubuntu/x86_64/10.04/install/netboot/ubuntu-installer/amd64/initrd.gz quiet

@@ -1,2 +1,0 @@
-http://www.cszhi.com/20120527/nagios-nsca.html
-echo "salt;NSCA;0;testOK"| send_nsca -H nagios01 -d ";" -c ./send_nsca.cfg

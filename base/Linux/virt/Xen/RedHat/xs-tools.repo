@@ -1,5 +1,0 @@
-[xs-tools]
-name= xs-tools
-baseurl=http://ftp01/repo/xs-tools
-enabled=1
-gpgcheck=0

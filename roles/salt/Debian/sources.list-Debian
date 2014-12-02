@@ -1,3 +1,0 @@
-deb http://mirrors.sohu.com/debian/ {{ grains['oscodename'] }} main non-free
-deb-src http://mirrors.sohu.com/debian/ {{ grains['oscodename'] }} main non-free
-deb http://mirrors.sohu.com/debian-backports {{ grains['oscodename'] }}-backports main contrib non-free

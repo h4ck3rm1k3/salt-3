@@ -1,3 +1,0 @@
-{'attributes': {'contactgroups': (True, ['isinternal'])},
- 'num_hosts': 16,
- 'title': u'isinternal'}
