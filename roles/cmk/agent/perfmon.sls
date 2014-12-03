@@ -1,7 +1,6 @@
 perfmon-utils:
   pkg.latest:
     - names:
-      - freeipmi
       - nfs-utils
       - dstat
       - hping3
@@ -10,8 +9,10 @@ perfmon-utils:
       - iotop
       - iftop
       - innotop
+      - lsof
+      - curl
       - sos
-      - dmidecode
+      - tcping
       - agedu
       - ncdu
       - pciutils

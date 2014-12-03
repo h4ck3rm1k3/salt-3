@@ -11,11 +11,7 @@ sshd_config:
     - name: sed -r -i '/UseDNS|GSSAPIAuthentication/s/yes/no/' /etc/ssh/sshd_config
     - stateful: True
     
-basic_utils:
-  pkg.installed:
-    - names:
-      - iptstate
-
+{% if not grains['os'] == 'XenServer' %}
 iptables:
   service:
     - dead

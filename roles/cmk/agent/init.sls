@@ -1,6 +1,7 @@
 include:
-   - .{{ grains['os_family'] }}
-   - .perfmon
+{% if grains['os_family'] == 'RedHat' %}
+  - RedHat
+{% endif %}
 
 xinetd:
   pkg:
@@ -10,8 +11,9 @@ xinetd:
     - enable: True
 
 cmk_plugin-deps:
-  pkg.installed:
+  pkg.latest:
     - names:
+      - dmidecode
       - freeipmi
       - bind-utils
 

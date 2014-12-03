@@ -1,8 +1,6 @@
 {% if grains['os'] == 'XenServer' %}
-
 python-hashlib:
   pkg.installed
-
 {% endif %}
 
 mk_agent:
@@ -12,7 +10,7 @@ mk_agent:
       - check_mk-agent
   file.managed:
     - name: /etc/yum.repos.d/cmk.repo
-    - source: salt://cmk/agent/{{ grains['os_family'] }}/cmk.repo
+    - source: salt://cmk/agent/cmk.repo
 
 mk_agent-plugins:
   pkg.latest:
