@@ -1,0 +1,67 @@
+#####################################################
+# GLOBAL SETTINGS
+#####################################################
+worker_threads: 20
+enable_gpu_grains: False
+auto_accept: True
+file_recv: True
+#saved to /var/cache/salt/master/minions/minion-id/files
+ipv6: False
+
+file_roots:
+  base:
+    - /srv/salt
+    - /srv/salt/roles
+
+salt-ssh:
+  config_dir: /srv/salt/roster
+  max_prox: 30
+
+pillar_roots:
+  base:
+    - /srv/salt/pillar
+#####################################################
+# GLOBAL SETTINGS
+#####################################################
+nodegroups:
+  ops: 'L@pxe,ntp,syslog,mail01,netflow,squid,ftp01,backup01'
+  nagios: 'L@nagios01,nagios02'
+  dns: 'L@dns01,dns02'
+  csm: 'L@csm01,csm02'
+  xsm: 'L@xsm01,xsm02'
+  csdb: 'L@csdb-master,csdb-slave'
+  test: 'L@salt-test'
+#bqj-nagios01
+#ldap
+#
+#halite:
+# level: 'debug'
+# server: 'cherrypy'
+# host: '0.0.0.0'
+# port: '8888'
+# cors: False
+# tls: True
+
+##############################################
+# salt-webui settings
+##############################################
+#rest_cherrypy:
+# host: 0.0.0.0
+# port: 8081
+# debug: true
+# disable_ssl: True
+# static: /var/www/halite/halite
+# app: /var/www/halite/halite/index.html
+
+#external_auth:
+#  pam:
+#    test:
+#       - test.ping
+#    salt:
+#       - '*'
+#    dev:
+#      - 'dev*':
+#        - test.ping
+#    prod:
+#      - 'prod*':
+#        - test.ping
