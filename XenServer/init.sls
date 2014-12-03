@@ -15,7 +15,6 @@ python26-pkgs:
   pkg.installed:
     - names:
       - python-setuptools
-      - python26-distribute
 
 enable_pxe:
   file.managed:
