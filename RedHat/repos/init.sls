@@ -1,3 +1,6 @@
+scl-utils:
+  pkg.installed
+
 yum_repos:
   file.recurse:
     - name: /etc/yum.repos.d

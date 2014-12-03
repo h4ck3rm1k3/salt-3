@@ -1,6 +1,22 @@
 include:
   - RedHat
 
+cloud-supp:
+  file.managed:
+    - name: /tmp/xenserver-cloud-supp.iso
+    - source: salt://XenServer/files/xenserver-cloud-supp.iso
+  cmd.run:
+    - name: xe-install-supplemental-pack /tmp/xenserver-cloud-supp.iso > /dev/null
+    - stateful: True
+    - require:
+      - file: /tmp/xenserver-cloud-supp.iso
+
+python26-pkgs:
+  pkg.installed:
+    - names:
+      - python-setuptools
+      - python26-distribute
+
 enable_pxe:
   file.managed:
     - name: /usr/sbin/bootutil32
