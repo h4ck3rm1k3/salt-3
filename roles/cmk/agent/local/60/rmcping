@@ -16,12 +16,12 @@ fi
 
 IPMI_IP=$(ipmitool lan print |egrep '^IP Address *:' | cut -d ':' -f2 |  sed -n 's/\s*//gp')
 if [ -z $IPMI_IP ];then
-    echo "3 IPMI.IP IP=$IPMI_IP;-;-;-; UNKNOWN - IPMI.IP LOST"
+    echo "3 ipmi.ip ip=$IPMI_IP;;;; UNKNOWN - ipmi.ip lost"
 fi
 
 COUNT=3
 if rmcpping -c $COUNT $IPMI_IP > /dev/null;then
-    echo "0 IPMI.IP IP=$IPMI_IP;-;-;-; OK - IPMI.IP: $IPMI_IP"
+    echo "0 ipmi.ip ip=$IPMI_IP;;;; OK - IP Address: $IPMI_IP"
 else
-    echo "2 IPMI.IP IP=$IPMI_IP;-;-;-; UNKNOWN - IPMI.IP: $IPMI_IP Unreacheable"
+    echo "2 ipmi.ip ip=$IPMI_IP;;;; UNKNOWN - IP Address: $IPMI_IP Unreacheable"
 fi
