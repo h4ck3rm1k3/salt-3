@@ -7,7 +7,7 @@ salt-master:
   file:
     - managed
     - name: /etc/salt/master
-    - source: salt://salt/master.conf.jinja
+    - source: salt://salt/master.conf
     - template: jinja
     - require:
       - pkg: salt-master
