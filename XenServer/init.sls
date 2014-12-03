@@ -2,26 +2,30 @@ include:
   - RedHat
 
 cloud-supp:
-  file.managed:
+  file:
+    - managed
     - name: /tmp/xenserver-cloud-supp.iso
     - source: salt://XenServer/files/xenserver-cloud-supp.iso
-  cmd.run:
+  cmd:
+    - run
     - name: echo Y | xe-install-supplemental-pack /tmp/xenserver-cloud-supp.iso > /dev/null
     - stateful: True
     - require:
       - file: /tmp/xenserver-cloud-supp.iso
 
-python26-pkgs:
+python26-deps:
   pkg.installed:
-    - names:
+    - name:
       - python-setuptools
 
 enable_pxe:
-  file.managed:
+  file:
+    - managed
     - name: /usr/sbin/bootutil32
     - source: salt://XenServer/files/bootutil32
     - mode: 0755
-  cmd.run:
+  cmd:
+    - run:
     - name: bootutil32 -STE -ALL > /dev/null
     - stateful: True
 
@@ -55,10 +59,12 @@ disable_boot_splash:
 
 {% if not grains['osrelease'].startswith('6.2') %}
 add_license:
-  file.managed:
+  file:
+    - managed
     - name: /tmp/xs602.xslic
     - source: salt://XenServer/files/xs602.xslic
-  cmd.run:
+  cmd:
+    - run
     - name: xe host-license-add license-file=/tmp/xs602.xslic > /dev/null
     - stateful: True
 {% endif %}
