@@ -1,0 +1,25 @@
+#!/bin/bash
+if ! which xl > /dev/null;then
+    exit
+fi
+
+free_mem=$(xl info | grep free_memory | cut -d ':' -f2 | sed -n 's/\s\+//gp')
+total_mem=$(xl info | grep total_memory | cut -d ':' -f2 | sed -n 's/\s\+//gp')
+VAL=$(expr $free_mem / 1024 )
+#VAL=$(($free_mem * 100 / $total_mem))
+
+WARN=64
+CRIT=32
+if [ $VAL -lt $WARN ];then
+    if [ $VAL -lt $CRIT ];then
+        STATE=2
+        STATE_TEXT="CRIT - free_memory is: $VAL GB"
+    fi
+    STATE=1
+    STATE_TEXT="WARN - free_memory is: $VAL GB"
+else
+    STATE=0
+    STATE_TEXT="OK - free_memory is: $VAL GB"
+fi
+OUTPUT="$STATE xs.free_memory free_memory=$VAL;$WARN;$CRIT; $STATE_TEXT"
+echo "$OUTPUT"
