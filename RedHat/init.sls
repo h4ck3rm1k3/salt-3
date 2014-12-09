@@ -1,6 +1,6 @@
 include:
-  - .yum
-  - .repos
+  - yum
+  - repos
   - ipmi
   - ntp
   - salt.minion
@@ -27,12 +27,14 @@ disable_selinux:
     - name: senenforce 0 ;sed -i '/^SELINUX/s/enforcing/disabled/' /etc/selinux/config
     - onlyif: test -f /etc/selinux/config
     - stateful: True
+{% endif %}
 
 crond:
   service:
     - running
     - enable: True
-  pkg.installed:
+  pkg:
+    - installed
     - name: time
 
 cpanm:

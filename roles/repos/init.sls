@@ -1,10 +1,7 @@
-scl-utils:
-  pkg.installed
-
 yum_repos:
   file.recurse:
     - name: /etc/yum.repos.d
-    - source: salt://RedHat/repos/files
+    - source: salt://repos/files
 
 {% if grains['os'] == 'RedHat' %}
 sed -i '/releasever/s/\$releasever/6/' /etc/yum.repos.d/*:
