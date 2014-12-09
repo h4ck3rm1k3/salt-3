@@ -3,7 +3,6 @@ include:
   - repos
   - ipmi
   - ntp
-  - salt.minion
   - cmk.agent
 
 sshd_config:
