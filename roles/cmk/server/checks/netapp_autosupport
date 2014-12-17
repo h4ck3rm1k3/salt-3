@@ -1,0 +1,44 @@
+#autosupportStatus 1.3.6.1.4.1.789.1.2.7.4
+#autosupportStatusMessage 1.3.6.1.4.1.789.1.2.7.4
+#autosupportSuccessfulSends 1.3.6.1.4.1.789.1.2.7.4
+#autosupportFailedSends 1.3.6.1.4.1.789.1.2.7.4
+def inventory_netapp_autosupport(info):
+    inventory = []
+    for line in info:
+        inventory.append((None, None))
+    return inventory 
+
+def check_netapp_autosupport(item, params, info):
+    status_code = {
+      '1': 'ok',
+      '2': 'smtpFailure',
+      '3': 'postFailure',
+      '4': 'smtpPostFailure',
+      '5': 'unknown',
+    }
+
+    for status, msg, ok, failed in info:
+        ret_code = ''
+        perfdata = [
+            ("successful", ok, None, None, None, None),
+            ("failed", failed, None, None, None, None),
+        ]
+        if status == '1' :
+            ret_code = 0
+            ret_msg = 'OK - %s (ok:%s/failed:%s)' % (msg, ok, failed)
+        elif status in ['2', '3', '4'] :
+            ret_code = 1
+            ret_msg = 'WARN - %s (ok:%s/failed:%s)' % (msg, ok, failed)
+
+    return (ret_code, ret_msg, perfdata)
+
+#cluster nodeEntry
+check_info["netapp_autosupport"] = {
+    "check_function"        : check_netapp_autosupport,
+    "inventory_function"    : inventory_netapp_autosupport,
+    "service_description"   : "AutoSupport Status",
+    "has_perfdata"          : True,
+    "group"                 : 'netapp',
+    "snmp_scan_function"    : lambda oid: oid(".1.3.6.1.4.1.789.1.2.7"),
+    "snmp_info"             : ( ".1.3.6.1.4.1.789.1.2.7", [ 1, 2, 3, 4 ]),
+}

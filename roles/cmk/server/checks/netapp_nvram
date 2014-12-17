@@ -1,0 +1,63 @@
+#NetApp Cluster Mode(FAS8040)
+#NETAPP-MIB nodeName                               column       1.3.6.1.4.1.789.1.25.2.1.1
+#NETAPP-MIB nodeOwner                              column       1.3.6.1.4.1.789.1.25.2.1.2
+#NETAPP-MIB nodeLocation                           column       1.3.6.1.4.1.789.1.25.2.1.3
+#NETAPP-MIB nodeModel                              column       1.3.6.1.4.1.789.1.25.2.1.4
+#NETAPP-MIB nodeSerialNumber                       column       1.3.6.1.4.1.789.1.25.2.1.5
+#NETAPP-MIB nodeAssetTag                           column       1.3.6.1.4.1.789.1.25.2.1.6
+#NETAPP-MIB nodeUptime                             column       1.3.6.1.4.1.789.1.25.2.1.7
+#NETAPP-MIB nodeNvramId                            column       1.3.6.1.4.1.789.1.25.2.1.8
+#NETAPP-MIB nodeSystemId                           column       1.3.6.1.4.1.789.1.25.2.1.9
+#NETAPP-MIB nodeVendor                             column       1.3.6.1.4.1.789.1.25.2.1.10
+#NETAPP-MIB nodeHealth                             column       1.3.6.1.4.1.789.1.25.2.1.11
+#NETAPP-MIB nodeEligibility                        column       1.3.6.1.4.1.789.1.25.2.1.12
+#NETAPP-MIB nodeEpsilon                            column       1.3.6.1.4.1.789.1.25.2.1.13
+#NETAPP-MIB nodeUuid                               column       1.3.6.1.4.1.789.1.25.2.1.14
+#NETAPP-MIB nodeCpuUptime                          column       1.3.6.1.4.1.789.1.25.2.1.15
+#NETAPP-MIB nodeCpuBusyTime                        column       1.3.6.1.4.1.789.1.25.2.1.16
+#NETAPP-MIB nodeNvramBatteryStatus                 column       1.3.6.1.4.1.789.1.25.2.1.17
+#NETAPP-MIB nodeEnvOverTemperature                 column       1.3.6.1.4.1.789.1.25.2.1.18
+#NETAPP-MIB nodeEnvFailedFanCount                  column       1.3.6.1.4.1.789.1.25.2.1.19
+#NETAPP-MIB nodeEnvFailedFanMessage                column       1.3.6.1.4.1.789.1.25.2.1.20
+#NETAPP-MIB nodeEnvFailedPowerSupplyCount          column       1.3.6.1.4.1.789.1.25.2.1.21
+#NETAPP-MIB nodeEnvFailedPowerSupplyMessage        column       1.3.6.1.4.1.789.1.25.2.1.22
+#NETAPP-MIB nodeProductVersion                     column       1.3.6.1.4.1.789.1.25.2.1.23
+#NETAPP-MIB nodeFirmwareVersion                    column       1.3.6.1.4.1.789.1.25.2.1.24
+#
+def inventory_netapp_nvram(info):
+    inventory = []
+    for line in info:
+        node = line[0]
+        inventory.append((node, None))
+    return inventory 
+
+def check_netapp_nvram(item, params, info):
+    STATUS = {}
+    STATUS['OK'] = {'1': 'ok', '4': 'notPresent', '9': 'fullyCharged'}
+    STATUS['WARN'] = {'1': 'partiallyDischarged', '2': 'fullyDischarged', '5': 'nearEndOfLife', '7': 'unknown', '8': 'overCharged'}
+    STATUS['CRIT'] = {'3': 'fullyDischarged','6': 'atEndOfLife'}
+
+    RETURN = {'code': 3, 'msg': 'UNKNOWN - No NvramBatteryStatus Received' }
+    for node, nodeNvramBatteryStatus in info:
+        if node == item:
+            if nodeNvramBatteryStatus in STATUS['OK'].keys():
+                RETURN['code'] = 0
+                RETURN['msg'] = 'OK - NvramBatteryStatus of %s is: %s(%s)' % (item, STATUS['OK'][nodeNvramBatteryStatus], nodeNvramBatteryStatus)
+            elif nodeNvramBatteryStatus in STATUS['WARN'].keys():
+                RETURN['code'] = 1
+                RETURN['msg'] = 'WARN - NvramBatteryStatus of %s is: %s(%s)' % (item, STATUS['WARN'][nodeNvramBatteryStatus], nodeNvramBatteryStatus)
+            elif nodeNvramBatteryStatus in STATUS['CRIT'].keys():
+                RETURN['code'] = 2
+                RETURN['msg'] = 'CRIT - NvramBatteryStatus of %s is: %s(%s)' % (item, STATUS['CRIT'][nodeNvramBatteryStatus], nodeNvramBatteryStatus)
+    return (RETURN['code'], RETURN['msg'])
+
+#cluster nodeEntry
+check_info["netapp_nvram"] = {
+    "check_function"        : check_netapp_nvram,
+    "inventory_function"    : inventory_netapp_nvram,
+    "service_description"   : "nodeNvramBatteryStatus_%s",
+    "has_perfdata"          : False,
+    "group"                 : 'netapp',
+    "snmp_scan_function"    : lambda oid: oid(".1.3.6.1.4.1.789.1.25"),
+    "snmp_info"             : ( ".1.3.6.1.4.1.789.1.25.2.1", [ 1, 17 ]),
+}
