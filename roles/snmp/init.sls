@@ -5,10 +5,11 @@ net-snmp:
   file:
     - managed
     - name: /etc/snmp/snmpd.conf
-    - source: salt:/snmp/snmpd.conf.jinja
+    - source: salt://snmp/snmpd.conf.jinja
     - template: jinja
   service:
     - running
+    - name: snmpd
     - enable: True
     - reload: True
     - require:
