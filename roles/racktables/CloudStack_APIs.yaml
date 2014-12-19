@@ -1,0 +1,34 @@
+APIs:
+  DomainAdmin:
+    - Configuration
+    - Domain
+    - Account
+    - User
+    - Login
+    - SSH
+    - ResourceLimit
+    - Hypervisor
+    - Volume
+    - Network
+    - Router
+    - Template
+    - Iso
+    - Zone
+    - Pod
+    - Cluster
+    - Host
+    - FirewallRule
+    - LoadBalancerRule
+    - NetworkOffering
+    - ServiceOffering
+    - DiskOffering
+    - VPN
+    - NAT
+    - VirtualMachine
+    - VMGroup
+    - SecurityGroup
+    - Snapshot
+    - GuestOS
+    - Address
+    - AsyncJob
+    - Event
