@@ -32,7 +32,7 @@ sed -i '/^default/s/0/1/' $grub_conf
 
 echo "title Install $inst_os" >> $grub_conf
 echo -e "\troot (hd0,0)" >> $grub_conf
-echo -e "\tkernel /$inst_os/vmlinuz repo=$src_path/$os/x86_64/$ver ks=$src_ks/ks.php?role=minimal" >> $grub_conf
+echo -e "\tkernel /$inst_os/vmlinuz repo=$src_path/$os/x86_64/$ver ks=$src_ks/ks.php?os=$os&ver=$ver&role=$role" >> $grub_conf
 echo -e "\tinitrd /$inst_os/initrd.img" >> $grub_conf
 }
 
