@@ -1,0 +1,33 @@
+<html>  
+ <head>  
+ <title>CloudStack API</title>  
+ </head>  
+   
+ <form action="/submit.py" method="post">  
+      <div id="wrapper" style="width: 500px;margin: auto;border: 1px solid black">  
+           <div id="header">  
+{% if name %} 
+                <h1>Welcome {{ name }}</h1>  
+{% else %}
+                <h1>Welcome {{ name }}</h1>  
+{% endif %}
+                <p>This is the CloudStack API frontend. Please use the fields below to build your VMs in mass :-)</p>  
+           </div>  
+           <div id="content">  
+                <div id="col1" style="float:left;width:248px;text-align:right">Server Name Prefix: </div>  
+                <div id="col2" style="float:left;width:248px;"><input type="text" name="prefix" placeholder="Example: RACKPOOL"><br /></div>  
+           </div>  
+           <div id="content">  
+                <div id="col1" style="float:left;width:248px;text-align:right">Start Number: </div>  
+                <div id="col2" style="float:left;width:248px;"><input type="text" name="startnum" placeholder="Example: 21"><br /></div>  
+           </div>  
+           <div id="content">  
+                <div id="col1" style="float:left;width:248px;text-align:right">Quantity: </div>  
+                <div id="col2" style="float:left;width:248px;"><input type="text" name="quantity" placeholder="Example: 5"><br /><br /></div>  
+           </div>  
+           <div id="footer" align="center">  
+                <input type="submit" name="submit" value="Build 'em!">  
+           </div>  
+      </div>  
+ </form>  
+ </html> 
