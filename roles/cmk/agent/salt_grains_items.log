@@ -1,0 +1,68 @@
+dns01:
+  cpu_flags: fpu de tsc msr pae cx8 cmov pat clflush mmx fxsr sse sse2 ss ht syscall nx lm rep_good aperfmperf unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes hypervisor lahf_lm ida arat epb pln pts dts
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: x86_64
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain: hdtr.com
+  external_ip: 111.205.45.254
+  fqdn: dns03.hdtr.com
+  fqdn_ip4:
+      192.168.12.59
+  fqdn_ip6:
+  gpus:
+  host: dns03
+  hwaddr_interfaces: {'lo': '00:00:00:00:00:00', 'eth0': '76:d6:dc:8e:d2:e3'}
+  id: dns01
+  ip_interfaces: {'lo': ['127.0.0.1'], 'eth0': ['192.168.12.59']}
+  ipv4:
+      127.0.0.1
+      192.168.12.59
+  ipv6:
+      ::1
+      fe80::74d6:dcff:fe8e:d2e3
+  kernel: Linux
+  kernelrelease: 2.6.32-220.el6.x86_64
+  localhost: dns03
+  lsb_distrib_codename: Final
+  lsb_distrib_id: CentOS
+  lsb_distrib_release: 6.2
+  master: salt
+  mem_total: 1998
+  nodename: dns03
+  num_cpus: 4
+  num_gpus: 0
+  os: CentOS
+  os_family: RedHat
+  osarch: x86_64
+  oscodename: Final
+  osfinger: CentOS-6
+  osfullname: CentOS
+  osmajorrelease:
+      6
+      2
+  osrelease: 6.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib64/python26.zip
+      /usr/lib64/python2.6
+      /usr/lib64/python2.6/plat-linux2
+      /usr/lib64/python2.6/lib-tk
+      /usr/lib64/python2.6/lib-old
+      /usr/lib64/python2.6/lib-dynload
+      /usr/lib64/python2.6/site-packages
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.6.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  server_id: 641878713
+  shell: /bin/sh
+  test: None
+  virtual: xen
+  virtual_subtype: Xen PV DomU
