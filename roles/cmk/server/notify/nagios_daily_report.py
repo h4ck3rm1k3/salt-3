@@ -10,7 +10,7 @@ def signature(content):
     signature = '【华电天仁】'
     signature = unicode(signature, 'utf-8')
     signature = signature.encode('utf-8')
-    content = '%s\n%s\n' % (signature, content)
+    content = '%s\n%s\n' % (content, signature)
     return content
 
 def send_sms(username, password, apikey, mobile, content):
@@ -70,19 +70,16 @@ c.setopt(pycurl.CONNECTTIMEOUT, 60)
 username = 'hdtr'
 password = 'Tianren.SMS'
 apikey = '8d683e752ec57d1bf38f46ca6c562b19'
-mobile = '15117985354'
+mobile = '15117985354,15810076742,13718981491,18610455950,15210662599'
 
 omd_status = commands.getoutput('omd status')
 sms_balance = query_sms(username, password, apikey)
-sms_date = commands.getoutput("date '+%F %T'")
+sms_date = commands.getoutput("date '+%T'")
 content = '''
-<<<Report time>>>
-%s
-<<<NAGIOS status>>>
 %s
 <<<SMS balance>>>
 %s
-''' % (sms_date, omd_status, sms_balance)
+''' % (sms_date, sms_balance)
 
 send_result = send_sms(username, password, apikey, mobile, content)
 sms_balance = query_sms(username, password, apikey)
